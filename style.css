@@ -917,6 +917,21 @@ body {
     padding: 9px 0;
     margin: 9px 0 0;
 }
+.cd-footer-1 .item {
+    vertical-align: top;
+    position: relative;
+    display: inline-block;
+    margin: 0 20px 0 0;
+    height: 120px;
+    box-sizing: border-box;
+    padding: 17px 15px;
+}
+.cd-footer-1 .item a {
+    display: block-inline;
+    color: #09223f;
+    font-weight: 700;
+    font-size: 14px;
+}
 
 /*BOOTSTRAP EDIT*/
 .container {
