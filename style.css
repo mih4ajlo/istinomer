@@ -793,6 +793,20 @@ body {
     font-size: 12px;
     line-height: 16px;
 }
+.cd-more-news-1 .more a {
+    border-bottom: 5px #c4161c solid;
+    display: block;
+    color: #c4161c;
+    padding: 15px 0 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+}
+.cd-more-news-1 .more a:hover {
+    color: #fff;
+    text-decoration: none;
+    background: #c4161c;
+}
 /*FOOTER*/
 .cd-move-top-1 {
     box-sizing: border-box;
