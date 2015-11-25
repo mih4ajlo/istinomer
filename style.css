@@ -832,6 +832,47 @@ body {
 .cd-advertisement-1 img {
     width: 100%;
 }
+
+/*RECOMMEND*/
+.cd-recommend-1 .headline {
+    border-bottom: 1px #a5a7aa solid;
+    margin: 0 0 20px;
+    background: #c4161c;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 20px;
+}
+.cd-recommend-1 h2 a, .cd-recommend-1 h2 a:hover {
+    color: #c4161c;
+}
+.cd-recommend-1 .text {
+    font-size: 14px;
+    line-height: 24px;
+    color: #000;
+}
+.cd-recommend-1 .all-btn {
+    margin: 10px 0 0;
+    color: #fff;
+    background: #c4161c;
+    font-size: 14px;
+    padding: 15px 25px;
+    display: inline-block;
+    float: right;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+}
+.cd-recommend-1 .all-btn:hover {
+    background: #db191f;
+    text-decoration: none;
+}
+.cd-recommend-1 .border {
+    padding: 20px 0 0;
+    border-bottom: 1px #a5a7aa solid;
+    margin: 0 1%;
+}
 /*BOOTSTRAP EDIT*/
 .container {
 	max-width: 960px;
