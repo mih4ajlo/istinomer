@@ -820,6 +820,18 @@ body {
     font-size: 14px;
 }
 
+/*BANNER LIST*/
+.cd-advertisement-1 {
+    width: 100%;
+    height: 250px;
+    background: #e7e7e8;
+    overflow: hidden;
+    margin: 0 0 40px;
+}
+
+.cd-advertisement-1 img {
+    width: 100%;
+}
 /*BOOTSTRAP EDIT*/
 .container {
 	max-width: 960px;
