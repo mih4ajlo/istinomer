@@ -826,9 +826,8 @@ body {
     height: 250px;
     background: #e7e7e8;
     overflow: hidden;
-    margin: 0 0 40px;
+    /*margin: 0 0 40px;*/
 }
-
 .cd-advertisement-1 img {
     width: 100%;
 }
@@ -873,6 +872,46 @@ body {
     border-bottom: 1px #a5a7aa solid;
     margin: 0 1%;
 }
+
+/*POPULAR QUOTES*/
+.cd-popular-quotes-1 {
+    background: #e7e7e8;
+}
+.cd-popular-quotes-1 .headline {
+    background: #c4161c;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 10px 20px;
+    margin: 0 0 10px;
+}
+.cd-popular-quotes-1 .info {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #c4161c;
+}
+.cd-popular-quotes-1 .fa-quote-left {
+    position: absolute;
+    top: 35px;
+    left: 10px;
+    color: #a5a7aa;
+}
+.cd-popular-quotes-1 .text {
+    padding: 40px 10px;
+    font-size: 14px;
+    line-height: 16px;
+    font-style: italic;
+}
+.cd-popular-quotes-1 .text a, .cd-popular-quotes-1 .text a:hover {
+    color: #09223f;
+}
+.cd-popular-quotes-1 .more a {
+    display: inline-block;
+    color: #c4161c;
+    font-size: 14px;
+}
+
 /*BOOTSTRAP EDIT*/
 .container {
 	max-width: 960px;
