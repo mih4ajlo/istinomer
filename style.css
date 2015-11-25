@@ -916,6 +916,8 @@ body {
     background: #e7e7e8;
     padding: 9px 0;
     margin: 9px 0 0;
+    position: relative;
+    overflow: hidden;
 }
 .cd-footer-1 .item {
     vertical-align: top;
