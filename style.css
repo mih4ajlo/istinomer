@@ -74,13 +74,13 @@ body {
     border-top: 1px solid #a5a7aa;*/
     /*background: #f5f5f5;*/
 }
-.logo {
+.cd-header-1 .logo {
     width: 40%;
     margin-top: 10px;
     float: left;
     text-align: center;
 }
-.logo img {
+.cd-header-1 .logo img {
     width: 95%;
     max-width: 250px;
 }
@@ -807,18 +807,6 @@ body {
     text-decoration: none;
     background: #c4161c;
 }
-/*FOOTER*/
-.cd-move-top-1 {
-    box-sizing: border-box;
-    margin: 0 0 20px -70px;
-    background: #a5a7aa;
-    color: #d9dadc;
-    width: 50px;
-    height: 50px;
-    padding: 2px 0 0;
-    text-align: center;
-    font-size: 14px;
-}
 
 /*BANNER LIST*/
 .cd-advertisement-1 {
@@ -910,6 +898,24 @@ body {
     display: inline-block;
     color: #c4161c;
     font-size: 14px;
+}
+
+/*FOOTER*/
+.cd-move-top-1 {
+    box-sizing: border-box;
+    margin: 0 0 20px -70px;
+    background: #a5a7aa;
+    color: #d9dadc;
+    width: 50px;
+    height: 50px;
+    padding: 2px 0 0;
+    text-align: center;
+    font-size: 14px;
+}
+.cd-footer-1 .content {
+    background: #e7e7e8;
+    padding: 9px 0;
+    margin: 9px 0 0;
 }
 
 /*BOOTSTRAP EDIT*/
