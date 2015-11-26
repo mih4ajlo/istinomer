@@ -1,11 +1,11 @@
 function hnmaxHeight() {
     var maxHeight = 0;
 
-    $('.cd-popular-quotes-1').each(function() {
+    $('.cd-popular-quotes-1 .item').each(function() {
      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
    });
 
-   $('.cd-popular-quotes-1').each(function() {
+   $('.cd-popular-quotes-1 .item').each(function() {
      $(this).height(maxHeight);
    });
 };
