@@ -844,6 +844,11 @@ body {
     font-weight: 700;
     padding: 10px 20px;
 }
+.cd-recommend-1 h2 a {
+    padding: 20px;
+    padding-bottom: 0px;
+    display: block;
+}
 .cd-recommend-1 h2 a, .cd-recommend-1 h2 a:hover {
     color: #c4161c;
 }
@@ -851,6 +856,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     color: #000;
+    padding: 20px;
 }
 .cd-recommend-1 .all-btn {
     margin: 10px 0 0;
@@ -874,7 +880,9 @@ body {
     border-bottom: 1px #a5a7aa solid;
     margin: 0 1%;
 }
-
+.cd-recommend-1 .pic img {
+    width: 100%;
+}
 /*POPULAR QUOTES*/
 .cd-popular-quotes-1 {
     background: #e7e7e8;
