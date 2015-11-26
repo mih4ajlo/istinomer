@@ -688,7 +688,7 @@ body {
     position: relative;
 }
 .cd-more-news-1 .item-big .pic-wrapper a {
-    width: 301px;
+    /*width: 301px;*/
     height: 200px;
     display: block;
     position: absolute;
