@@ -265,6 +265,8 @@ body {
     font-weight: 400;
     font-size: 18px;
     font-family: 'DinPro', sans-serif;
+    margin-top: -1px;
+    cursor: pointer;
 }
 .cd-main-nav-1 .item-1.selected {
     background: #fff;
