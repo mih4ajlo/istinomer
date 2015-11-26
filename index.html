@@ -406,7 +406,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 
 				if(!mni_active){
 					mni_active = tab;
-					$('#mni-position').animate({left:(tab-1)*(-930)},0);
+					$('#mni-position').animate({left:(tab-1)*(-960)},0);
 					$('.dropdown-wrapper').slideDown('fast');
 					$('.mni').removeClass('selected');
 					$('#mni-'+tab).addClass('selected');
@@ -414,14 +414,14 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 				}else if(mni_active==tab){
 					mni_active = false;
 
-					$('#mni-position').animate({left:(tab-1)*(-930)},0);
+					$('#mni-position').animate({left:(tab-1)*(-960)},0);
 					$('.dropdown-wrapper').slideUp('fast');
 					$('.mni').removeClass('selected');		
 
 				}else if(mni_active!=tab){
 					mni_active = tab;
 
-					$('#mni-position').animate({left:(tab-1)*(-930)},"fast");
+					$('#mni-position').animate({left:(tab-1)*(-960)},"fast");
 					$('.mni').removeClass('selected');
 					$('#mni-'+tab).addClass('selected');
 				}
@@ -961,7 +961,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 		<a href="pregled_ocena/4/10/Nedosledno">Nedosledno</a>
 		</div>
 		<!-- /.bottom-nav -->
-		<div class="bottom-nav" style="height:2">
+		<div class="bottom-nav">
 		<a class="sd-1" href="pregled_aktera/">Svi akteri</a>
 		<a class="sd-1" href="pregled_stranaka/">Sve stranke</a>
 		</div>
