@@ -873,6 +873,7 @@ body {
     -moz-border-radius: 5px;
     -o-border-radius: 5px;
     border-radius: 5px;
+    font-family: "Roboto", sans-serif;
 }
 .cd-recommend-1 .all-btn:hover {
     background: #db191f;
@@ -1008,6 +1009,14 @@ body {
     right: 0;
     bottom: 0;
     background: url(http://www.istinomer.rs/images/square_bottom.png) no-repeat;
+}
+.cd-footer-1 .social:before {
+    content: 'Pratite nas';
+    display: block;
+    color: #c4161c;
+    font-size: 18px;
+    font-weight: 700;
+    margin: 0 0 10px;
 }
 
 /*BOOTSTRAP EDIT*/
