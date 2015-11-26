@@ -823,7 +823,7 @@ body {
 /*RECOMMEND*/
 .cd-recommend-1 .headline {
     border-bottom: 1px #a5a7aa solid;
-    margin: 0 0 20px;
+    /*margin: 0 0 20px;*/
     background: #c4161c;
     color: #fff;
     font-size: 18px;
