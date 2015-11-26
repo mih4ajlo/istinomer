@@ -360,9 +360,10 @@ body {
 .cd-main-nav-1 .bottom-nav {
     background: #a5a7aa;
     width: 920px;
-    height: 22px;
+    height: 40px;
     float: left;
     padding: 5px;
+    margin-top: -10px;
 }
 .cd-main-nav-1 .bottom-nav a {
     display: inline-block;
