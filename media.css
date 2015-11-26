@@ -15,8 +15,8 @@
         margin-top: 10px;
     }
     .cd-header-1 .header {
-        border-top: 1px solid #ccc;
-        margin-top: 20px;
+        /*border-top: 1px solid #ccc;
+        margin-top: 20px;*/
     }
     .cd-header-1 .top-nav, .cd-header-1 .top-nav .info, .cd-header-1 .top-nav .social, .cd-header-1 .top-nav .search {
         float: none;
