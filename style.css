@@ -266,6 +266,10 @@ body {
     font-size: 18px;
     font-family: 'DinPro', sans-serif;
 }
+.cd-main-nav-1 .item-1.selected {
+    background: #fff;
+    color: #09223f;
+}
 .cd-main-nav-1 .item-1 .fa {
     font-weight: 400;
     font-size: 10px;
@@ -319,8 +323,9 @@ body {
 .cd-main-nav-1 .item-2 {
     box-sizing: border-box;
     float: left;
-    width: 181px;
-    margin: 0 0 20px 10px;
+    width: 192px;
+    /*margin: 0 0 20px 10px;*/ /*was*/
+    padding: 10px;
 }
 .cd-main-nav-1 .item-2 a {
     color: #000;
@@ -338,12 +343,13 @@ body {
     box-sizing: border-box;
     position: relative;
     display: block;
-    width: 176px;
+    width: auto;
+    /*width: 176px;*/ /*was*/
     height: 116px;
     overflow: hidden;
     margin: 0 0 5px;
     border: 1px solid #e7e7e8;
-    margin-top: 10px;
+    /*margin-top: 10px;*/ /*was*/
 }
 .cd-main-nav-1 .item-2 .picture img {
     height: 116px;
