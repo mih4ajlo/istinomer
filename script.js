@@ -1,14 +1,14 @@
-// function hnmaxHeight() {
-//     var maxHeight = 0;
+function hnmaxHeight() {
+    var maxHeight = 0;
 
-//     $('.hn-col-1').each(function() {
-//      maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
-//    });
+    $('.cd-popular-quotes-1').each(function() {
+     maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+   });
 
-//    $('.hn-col-1').each(function() {
-//      $(this).height(maxHeight);
-//    });
-// };
+   $('.cd-popular-quotes-1').each(function() {
+     $(this).height(maxHeight);
+   });
+};
 
 function setDimensions() { /*.cd-hot-news-1, */
 	// if (jQuery(".cd-hot-news-1").css('display') === 'block') {
@@ -46,14 +46,14 @@ function fontSize() {
 	window.onload = fontSize;
 }
 jQuery(document).ready(function() {
-	// hnmaxHeight();
+	hnmaxHeight();
     setDimensions();
     fontSize();
     // toggleCurrent();
 });
 
 jQuery(window).resize(function() {
-	// hnmaxHeight();
+	hnmaxHeight();
     setDimensions();
 });
 
