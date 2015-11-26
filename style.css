@@ -900,6 +900,8 @@ body {
 }
 .cd-popular-quotes-1 .item {
     position: relative;
+    padding-bottom: 20px;
+    box-sizing: content-box;
 }
 .cd-popular-quotes-1 .info {
     text-align: center;
@@ -923,7 +925,7 @@ body {
 }
 .cd-popular-quotes-1 .fa-quote-right {
     position: absolute;
-    bottom: 10px;
+    bottom: 30px;
     right: 10px;
     color: #a5a7aa;
 }
