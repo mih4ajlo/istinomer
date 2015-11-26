@@ -898,16 +898,33 @@ body {
     padding: 10px 20px;
     margin: 0 0 10px;
 }
+.cd-popular-quotes-1 .item {
+    position: relative;
+}
 .cd-popular-quotes-1 .info {
     text-align: center;
     font-size: 16px;
     font-weight: 700;
     color: #c4161c;
 }
+.cd-popular-quotes-1 .info span {
+    display: block;
+}
+.cd-popular-quotes-1 .info a {
+    margin: 5px 0 0;
+    display: inline-block;
+    color: #c4161c;
+}
 .cd-popular-quotes-1 .fa-quote-left {
     position: absolute;
     top: 35px;
     left: 10px;
+    color: #a5a7aa;
+}
+.cd-popular-quotes-1 .fa-quote-right {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
     color: #a5a7aa;
 }
 .cd-popular-quotes-1 .text {
@@ -958,6 +975,30 @@ body {
     color: #09223f;
     font-weight: 700;
     font-size: 14px;
+}
+.cd-footer-1 .item:after, .cd-footer-1 .item:before {
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 17px;
+    content: '';
+}
+.cd-footer-1 .item:before {
+    left: 0;
+    top: 0;
+    background: url(http://www.istinomer.rs/images/square_top.png) no-repeat;
+}
+.cd-footer-1 .item:after, .cd-footer-1 .item:before {
+    display: block;
+    position: absolute;
+    width: 15px;
+    height: 17px;
+    content: '';
+}
+.cd-footer-1 .item:after {
+    right: 0;
+    bottom: 0;
+    background: url(http://www.istinomer.rs/images/square_bottom.png) no-repeat;
 }
 
 /*BOOTSTRAP EDIT*/
