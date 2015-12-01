@@ -634,7 +634,7 @@ body {
 }
 .cd-question-and-answer-1 .question:before {
     color: #c4161c;
-    content: '?:';
+    content: 'P:';
     display: inline-block;
     margin: 0 10px 0 0;
     font-weight: 700;
@@ -648,7 +648,7 @@ body {
 }
 .cd-question-and-answer-1 .answer:before {
     color: #c4161c;
-    content: 'T:';
+    content: 'O:';
     display: inline-block;
     margin: 0 10px 0 0;
     font-weight: 700;
@@ -664,6 +664,10 @@ body {
     display: inline-block;
     color: #c4161c;
     font-size: 14px;
+}
+.ask-us {
+    position: absolute;
+    right: 10px;
 }
 
 /*ANKETA*/
