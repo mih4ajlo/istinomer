@@ -981,6 +981,10 @@ body {
 /*POPULAR QUOTES*/
 .cd-popular-quotes-1 {
     background: #e7e7e8;
+    margin-right: 5px;
+}
+.cd-popular-quotes-wrap .grid-4:nth-child(3) .cd-popular-quotes-1 {
+    margin-right: 0px;
 }
 .cd-popular-quotes-1 .headline {
     background: #c4161c;
