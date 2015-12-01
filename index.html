@@ -176,11 +176,11 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 						<img src="images/header-mouth.png" alt="">
 					</div>
 					<div class="btn-hot-news-1" id="hot-news-btn" onclick="hot_news()"> <!--col-xs-12 col-sm-2-->
-						NAJNOVIJE 
 						<span>
 						21<i class="fa fa-caret-down"></i>
 						<i class="fa fa-caret-up"></i>
 						</span>
+						NOVO <!--backend-->
 					</div>
 				</div>
 				<!-- /.btn-hot-news-1 -->
@@ -202,12 +202,12 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 			}
 			var hnews_active_slide = 1;
 			function hot_news_change_slide(side){
-				var hnews_max_slides = Math.ceil($('.hn-col-1').size()/3);	
+				var hnews_max_slides = Math.ceil($('.hn-col-wrap').size()*2);	
 				
 				if(side=="right" && (hnews_active_slide<hnews_max_slides)){
 					$('#hnews-btn-left').removeClass('disabled');
 
-					$('#hnews-position').animate({left:(hnews_active_slide)*(-jQuery(".hn-col-wrap").outerWidth())},"fast");
+					$('#hnews-position').animate({left:(hnews_active_slide)*(-jQuery(".hn-col-1").outerWidth())},"fast");
 					hnews_active_slide ++;
 					if(hnews_active_slide==hnews_max_slides){
 						$('#hnews-btn-right').addClass('disabled');
@@ -216,7 +216,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					
 					$('#hnews-btn-right').removeClass('disabled');
 					hnews_active_slide --;
-					$('#hnews-position').animate({left:(hnews_active_slide)*(-jQuery(".hn-col-wrap").outerWidth())+jQuery(".hn-col-wrap").outerWidth()},"fast");
+					$('#hnews-position').animate({left:(hnews_active_slide)*(-jQuery(".hn-col-1").outerWidth())+jQuery(".hn-col-1").outerWidth()},"fast");
 					
 					if(hnews_active_slide==1){
 						$('#hnews-btn-left').addClass('disabled');
@@ -274,124 +274,116 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 				<div class="position" id="hnews-position">
 					<div class="hn-col-wrap hn-current">
 						<div class="hn-col-1 col-xs-4">
-							<div class="headline">24 Novembar, 2015</div>
-							<a href="ocena/3230/Pocetak-radova-na-pruzi-Beograd-Budimpesta-do-kraja-2015godine">
-							Početak radova na pruzi Beograd - Budimpešta do kraja 2015. godine</a>
+							<div class="hn">
+								<div class="headline">24 Novembar, 2015</div>
+								<a href="ocena/3230/Pocetak-radova-na-pruzi-Beograd-Budimpesta-do-kraja-2015godine">
+								Početak radova na pruzi Beograd - Budimpešta do kraja 2015. godine</a>
+							</div>
+							<div class="hn">
+								<div class="headline">23 Novembar, 2015</div>
+								<a href="ocena/3229/Do-kraja-godine-Nacrt-zakona-o-poreklu-imovine">
+								Do kraja godine Nacrt zakona o poreklu imovine</a>
+							</div>
+							<div class="hn">
+								<div class="headline no-news">22 Novembar, 2015</div>
+							</div>
 						</div>
 						<!-- /.hn-col-1 -->
 						<div class="hn-col-1 col-xs-4">
-						<div class="headline">23 Novembar, 2015</div>
-						<a href="ocena/3229/Do-kraja-godine-Nacrt-zakona-o-poreklu-imovine">
-						Do kraja godine Nacrt zakona o poreklu imovine</a>
+							<div class="hn">
+								<div class="headline">21 Novembar, 2015</div>
+								<a href="ocena/3226/Dve-zemlje-priznale-Kosovo-od-kada-sam-predsednik-Vlade">
+								Dve zemlje priznale Kosovo od kada sam predsednik Vlade</a>
 
+								<a href="clanak/1310/Napadnuta-Miroslava-Milenovic-clanica-Saveta-za-borbu-protiv-korupcije">
+								Napadnuta Miroslava Milenović, članica Saveta za borbu protiv korupcije</a>
+							</div>
+							<div class="hn">
+								<div class="headline">20 Novembar, 2015</div>
+								<a href="ocena/3227/Dinamican-rast-u-godinama-koje-su-pred-nama">
+								Dinamičan rast u godinama koje su pred nama</a>
+
+								<a href="clanak/1300/Cepanje-ili-pluralizam-niskog-SNS">
+								"Cepanje" ili "pluralizam" niškog SNS</a>
+							</div>
 						</div>
 						<!-- /.hn-col-1 -->
 						<div class="hn-col-1 col-xs-4">
-							<div class="headline">22 Novembar, 2015</div>
+							<div class="hn">
+								<div class="headline">19 Novembar, 2015</div>
+									<a href="ocena/3222/Nakon-incidenta-sa-dronom-mi-smo-reagovali-hladne-glave">
+									Nakon incidenta sa dronom, mi smo reagovali hladne glave</a>
+
+									<a href="ocena/3224/U-aprilu-2017svi-auto-putevi-gotovi">
+									U aprilu 2017. svi auto-putevi gotovi</a>
+
+									<a href="clanak/1307/Teroristi-su-kidnapovali-islamsku-ideju">
+									Teroristi su kidnapovali islamsku ideju</a>
+							</div>
+							<div class="hn">
+								<div class="headline">18 Novembar, 2015</div>
+								<a href="clanak/1303/Novcana-pomoc-prosvetarima-bacanje-prasine-u-oci">
+								Novčana pomoć prosvetarima bacanje prašine u oči</a>
+
+								<a href="clanak/1306/Selektivne-reforme">
+								Selektivne reforme</a>
+
+							</div>
+						</div>
+					</div>
+						<!-- /.hn-col-1 -->
+					<div class="hn-col-wrap">
+						<div class="hn-col-1 col-xs-4">
+							<div class="hn">
+								<div class="headline">17 Novembar, 2015</div>
+								<a href="clanak/1301/Prvi-put-u-istoriji">
+								Prvi put u istoriji</a>
+
+								<a href="clanak/1304/Vlast-opozicija-i-gratis-tv-prenos">
+								Vlast, opozicija i “gratis” tv prenos</a>
+
+								<a href="clanak/1305/Kuca-na-obali-ne-moze-vikendica-moze">
+								Kuća na obali ne može, vikendica može?!</a>
+							</div>
+							<div class="hn">
+								<div class="headline">16 Novembar, 2015</div>
+								<a href="ocena/3217/U-oktobru-2014-otvaramo-pesacku-stazu-na-Brankovom-mostu">
+								U oktobru (2014) otvaramo pešačku stazu na Brankovom mostu</a>
+								<a href="ocena/3221/Do-leta-2016sve-skole-ce-biti-sredjene">
+								Do leta 2016. sve škole će biti sređene</a>
+							</div>
+						</div>
+						<!-- /.hn-col-1 -->
+						<div class="hn-col-1 col-xs-4">	
+							<div class="hn">
+								<div class="headline">15 Novembar, 2015</div>
+								<a href="ocena/3220/Do-kraja-godine-stize-velika-investicija-u-Novi-Sad">
+								Do kraja godine stiže velika investicija u Novi Sad</a>
+							</div>
+							<div class="hn">
+								<div class="headline">14 Novembar, 2015</div>
+								<a href="ocena/3218/Izmena-Zakona-o-Agenciji-za-borbu-protiv-korupcije">
+								Izmena Zakona o Agenciji za borbu protiv korupcije 						</a>
+
+								<a href="ocena/3219/Na-kraju-2015ce-biti-vece-plate-nego-na-kraju-2014godine">
+								Na kraju 2015. će biti veće plate nego na kraju 2014. godine						</a>
+							</div>
+						</div>
+						<!-- /.hn-col-1 -->
+						<div class="hn-col-1 col-xs-4">
+							<div class="hn">
+								<div class="headline">13 Novembar, 2015</div>
+								<a href="clanak/1297/Gazda-koji-ne-isplati-platu-treba-krivicno-da-odgovara">
+								Gazda koji ne isplati platu treba krivično da odgovara</a>
+
+								<a href="clanak/1298/Nacelnik-Komunalne-policije-bez-odgovornosti-suspendovan-samo-njegov-vozac">
+								Načelnik Komunalne policije bez odgovornosti, suspendovan samo njegov vozač?!</a>
+							</div>
 						</div>
 						<!-- /.hn-col-1 -->
 					</div>
-					<div class="hn-col-wrap">
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">21 Novembar, 2015</div>
-						<a href="ocena/3226/Dve-zemlje-priznale-Kosovo-od-kada-sam-predsednik-Vlade">
-						Dve zemlje priznale Kosovo od kada sam predsednik Vlade</a>
-
-						<a href="clanak/1310/Napadnuta-Miroslava-Milenovic-clanica-Saveta-za-borbu-protiv-korupcije">
-						Napadnuta Miroslava Milenović, članica Saveta za borbu protiv korupcije</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">20 Novembar, 2015</div>
-						<a href="ocena/3227/Dinamican-rast-u-godinama-koje-su-pred-nama">
-						Dinamičan rast u godinama koje su pred nama						</a>
-
-						<a href="clanak/1300/Cepanje-ili-pluralizam-niskog-SNS">
-						"Cepanje" ili "pluralizam" niškog SNS						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">19 Novembar, 2015</div>
-						<a href="ocena/3222/Nakon-incidenta-sa-dronom-mi-smo-reagovali-hladne-glave">
-						Nakon incidenta sa dronom, mi smo reagovali hladne glave						</a>
-
-						<a href="ocena/3224/U-aprilu-2017svi-auto-putevi-gotovi">
-						U aprilu 2017. svi auto-putevi gotovi						</a>
-
-						<a href="clanak/1307/Teroristi-su-kidnapovali-islamsku-ideju">
-						Teroristi su kidnapovali islamsku ideju						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-					</div>
-					<div class="hn-col-wrap">
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">18 Novembar, 2015</div>
-						<a href="clanak/1303/Novcana-pomoc-prosvetarima-bacanje-prasine-u-oci">
-						Novčana pomoć prosvetarima bacanje prašine u oči 						</a>
-
-						<a href="clanak/1306/Selektivne-reforme">
-						Selektivne reforme						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">17 Novembar, 2015</div>
-						<a href="clanak/1301/Prvi-put-u-istoriji">
-						Prvi put u istoriji						</a>
-
-						<a href="clanak/1304/Vlast-opozicija-i-gratis-tv-prenos">
-						Vlast, opozicija i “gratis” tv prenos						</a>
-
-						<a href="clanak/1305/Kuca-na-obali-ne-moze-vikendica-moze">
-						Kuća na obali ne može, vikendica može?!						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">16 Novembar, 2015</div>
-						<a href="ocena/3217/U-oktobru-2014-otvaramo-pesacku-stazu-na-Brankovom-mostu">
-						U oktobru (2014) otvaramo pešačku stazu na Brankovom mostu 						</a>
-
-						<a href="ocena/3221/Do-leta-2016sve-skole-ce-biti-sredjene">
-						Do leta 2016. sve škole će biti sređene 						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-					</div>
-					<div class="hn-col-wrap">
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">15 Novembar, 2015</div>
-						<a href="ocena/3220/Do-kraja-godine-stize-velika-investicija-u-Novi-Sad">
-						Do kraja godine stiže velika investicija u Novi Sad						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">14 Novembar, 2015</div>
-						<a href="ocena/3218/Izmena-Zakona-o-Agenciji-za-borbu-protiv-korupcije">
-						Izmena Zakona o Agenciji za borbu protiv korupcije 						</a>
-
-						<a href="ocena/3219/Na-kraju-2015ce-biti-vece-plate-nego-na-kraju-2014godine">
-						Na kraju 2015. će biti veće plate nego na kraju 2014. godine						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">13 Novembar, 2015</div>
-						<a href="clanak/1297/Gazda-koji-ne-isplati-platu-treba-krivicno-da-odgovara">
-						Gazda koji ne isplati platu treba krivično da odgovara 						</a>
-
-						<a href="clanak/1298/Nacelnik-Komunalne-policije-bez-odgovornosti-suspendovan-samo-njegov-vozac">
-						Načelnik Komunalne policije bez odgovornosti, suspendovan samo njegov vozač?!						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-					</div>                    			
+					<!-- /.position -->
 				</div>
-				<!-- /.position -->
 			</div>
 			<!-- /.hot-news-wrapper -->
 			<div class="btn-right col-xs-1" id="hnews-btn-right" onClick="hot_news_change_slide('right')">
@@ -1217,9 +1209,9 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 </div>
 <!-- /.gd-bg-1 -->
 
-	<div class="gd-container-1 sd-1 container">
+	<div class="gd-container-1 sd-1 container after-main">
 		<div class="grid-8 col-xs-12 col-sm-8 content-left">	
-			<div class="cd-video-box-1 ">
+			<div class="cd-video-box-1">
 				<div class="headline">
 					Video
 				</div>
@@ -1319,13 +1311,14 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
         	
         	
             <!--=============== PITAJTE ISTINOMER ==============================================-->
-            <div class="cd-question-and-answer-1" style="margin:0px;">
+            <div class="cd-question-and-answer-1">
 				<div class="headline">Pitajte Istinomer</div>
 				<!-- /.headline -->
-				<div class="wrapper-scroll" id="question-and-answer-scroller">	
+				<div class="wrapper-scroll"> <!-- id="question-and-answer-scroller" -->	
 			
 					<div class="question">
-						<div>Šta se dešava sa Vučićevim obećanjem da će Vlada doneti Zakon o poreklu imovine?</div><div><br></div>					</div>
+						Šta se dešava sa Vučićevim obećanjem da će Vlada doneti Zakon o poreklu imovine? <!--izbrisati div backend-->
+					</div>
 					<!-- /.question -->
 					
 					<div class="answer">
@@ -1341,14 +1334,14 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 				      });
 				   });
 				</script>
-				<div class="more">
+				<!--<div class="more">
 					<a href="pitanje_odgovor/24/Hoce-li-se-doneti-Zakon-o-poreklu-imovine">Pročitaj celo pitanje i odgovor <i class="fa fa-angle-double-right"></i></a>
-				</div>
+				</div>-->
 				<div class="more">
 					<a href="pregled_pitanja_i_odgovora/">Pogledaj sva pitanja <i class="fa fa-angle-double-right"></i></a>
 				</div>
 				<div class="more">
-					Imaš pitanje? <a href="pitaj_istinomer/">Pitaj nas <i class="fa fa-angle-double-right"></i></a>
+					<!--Imaš pitanje? --><a href="pitaj_istinomer/">Pitaj nas <i class="fa fa-angle-double-right"></i></a>
 				</div>	
 			</div>
 			<!-- /.cd-question-and-answer-1 -->
@@ -1504,7 +1497,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 		
 
 
-		<div class="container">
+		<div class="container other-news">
 			<div class="grid-4 col-xs-12 col-sm-4">
 				<div class="cd-more-news-1 sd-1">
 					<div class="headline">Obećanja</div>
@@ -1513,7 +1506,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 						
 						<div class="pic-wrapper">
 							<a href="ocena/3217/U-oktobru-2014-otvaramo-pesacku-stazu-na-Brankovom-mostu"></a>
-							<div class="pic" style="height:205px">
+							<div class="pic" style="">
 								                        	<!-- /.icon-video -->		
 	                        <img src="pictures/ocena/slika/c95163b3a5bcfc809448677243da3aaa.jpg" alt="" /></div>
 							<div class="status">
@@ -1530,11 +1523,10 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 						<h1  style="height:66px;"><a href="ocena/3217/U-oktobru-2014-otvaramo-pesacku-stazu-na-Brankovom-mostu">U oktobru (2014) otvaramo pešačku stazu na Brankovom mostu </a></h1>
 						<h2>"Leva pešačka staza na Brankovom mostu u smeru ka Novom Beogradu biće sanirana i otvorena za pešake početkom oktobra."[...]</h2>
 						<h3>Gradski menadžer o rekonstrukciji Brankovog mosta. (Beta, 6. 9. 2014. godine)</h3>
-
 					</div>
 					<!-- /.item-big -->					
-										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
+					<div class="item">
+						<div class="alpha">
 							<div class="pic">
 								
 								<a href="ocena/3218/Izmena-Zakona-o-Agenciji-za-borbu-protiv-korupcije"></a>
@@ -1543,8 +1535,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3218/Izmena-Zakona-o-Agenciji-za-borbu-protiv-korupcije">
 									 Izmena Zakona o Agenciji za borbu protiv korupcij[...]
@@ -1557,7 +1549,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
+						<div class="alpha">
 							<div class="pic">
 								
 								<a href="ocena/3213/U-2014dobijamo-prvu-zenu-generala"></a>
@@ -1566,8 +1558,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3213/U-2014dobijamo-prvu-zenu-generala">
 									U 2014. dobijamo prvu ženu generala
@@ -1580,7 +1572,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
+						<div class="alpha">
 							<div class="pic">
 								
 								<a href="ocena/3208/Projektna-dokumentacija-za-Klinicki-centar-Srbije-do-jula"></a>
@@ -1589,8 +1581,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3208/Projektna-dokumentacija-za-Klinicki-centar-Srbije-do-jula">
 									Projektna dokumentacija za Klinički centar Srbije [...]
@@ -1603,7 +1595,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
+						<div class="alpha">
 							<div class="pic">
 								
 								<a href="ocena/3076/Koridori-i-Putevi-Srbije-od-januara-2015-jedno-preduzece"></a>
@@ -1612,8 +1604,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3076/Koridori-i-Putevi-Srbije-od-januara-2015-jedno-preduzece">
 									"Koridori" i "Putevi Srbije" od januara (2015) jed[...]
@@ -1643,7 +1635,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 						
 						<div class="pic-wrapper">
 							<a href="ocena/3223/Imali-smo-drugi-BDP-u-regionu-sada-nazadujemo"></a>
-							<div class="pic" style="height:205px">
+							<div class="pic" style="">
 								                        	<!-- /.icon-video -->		
 	                        <img src="pictures/ocena/slika/e5c0b22210fcbd437d82810f9ec92637.JPG" alt="" /></div>
 							<div class="status">
@@ -1664,7 +1656,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item-big -->					
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
+						<div class="alpha">
 							<div class="pic">
 								
 								<a href="ocena/3226/Dve-zemlje-priznale-Kosovo-od-kada-sam-predsednik-Vlade"></a>
@@ -1673,8 +1665,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3226/Dve-zemlje-priznale-Kosovo-od-kada-sam-predsednik-Vlade">
 									Dve zemlje priznale Kosovo od kada sam predsednik [...]
@@ -1687,7 +1679,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
+						<div class="alpha">
 							<div class="pic">
 								
 								<a href="ocena/3222/Nakon-incidenta-sa-dronom-mi-smo-reagovali-hladne-glave"></a>
@@ -1696,8 +1688,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3222/Nakon-incidenta-sa-dronom-mi-smo-reagovali-hladne-glave">
 									Nakon incidenta sa dronom, mi smo reagovali hladne[...]
@@ -1710,7 +1702,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
+						<div class="alpha">
 							<div class="pic">
 								
 								<a href="ocena/3215/Kurs-evra-se-nije-menjao-od-kada-sam-ja-predsednik-Vlade"></a>
@@ -1719,8 +1711,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3215/Kurs-evra-se-nije-menjao-od-kada-sam-ja-predsednik-Vlade">
 									Kurs evra se nije menjao od kada sam ja predsednik[...]
@@ -1733,7 +1725,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
+						<div class="alpha">
 							<div class="pic">
 								
 								<a href="ocena/3209/Ne-vidi-se-da-je-nacelnik-Komunalne-policije-na-snimcima-KRIK-a"></a>
@@ -1742,8 +1734,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3209/Ne-vidi-se-da-je-nacelnik-Komunalne-policije-na-snimcima-KRIK-a">
 									Ne vidi se da je načelnik Komunalne policije na sn[...]
@@ -1767,7 +1759,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 			</div>
 			<!-- /.grid-4 -->
 		    <div class="grid-4 col-xs-12 col-sm-4">
-				<div class="cd-more-news-1 sd-1">
+				<div class="cd-more-news-1 sd-1 doslednost">
 					<div class="headline">
 						Doslednost				</div>
 					<!-- /.headline -->
@@ -1775,7 +1767,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 						
 						<div class="pic-wrapper">
 							<a href="ocena/3086/Necemo-traziti-od-MMF-a-prolongiranje-rokova-za-firme-u-restrukturiranju"></a>
-							<div class="pic" style="height:205px">
+							<div class="pic" style="">
 								                        	<!-- /.icon-video -->		
 	                        <img src="pictures/ocena/slika/67ad64fe6b0f13a9491ff05bce054e74.jpg" alt="" /></div>
 							<div class="status">
@@ -1796,7 +1788,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item-big -->					
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
+						<div class="alpha">
 							<div class="pic">
 								
 								<a href="ocena/3095/Podnecu-ostavku-ako-to-trazi-Agencija-za-borbu-protiv-korupcije"></a>
@@ -1805,8 +1797,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3095/Podnecu-ostavku-ako-to-trazi-Agencija-za-borbu-protiv-korupcije">
 									Podneću ostavku ako to traži Agencija za borbu pro[...]
@@ -1819,7 +1811,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
+						<div class="alpha">
 							<div class="pic">
 								
 								<a href="ocena/3081/Beograd-na-vodi-zavrsen-do-2019"></a>
@@ -1828,8 +1820,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3081/Beograd-na-vodi-zavrsen-do-2019">
 									"Beograd na vodi" završen do 2019.
@@ -1842,7 +1834,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
+						<div class="alpha">
 							<div class="pic">
 								
 								<a href="ocena/3044/Odustajem-od-namere-da-utvrdim-ko-je-vlasnik-Politike"></a>
@@ -1851,8 +1843,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3044/Odustajem-od-namere-da-utvrdim-ko-je-vlasnik-Politike">
 									Odustajem od namere da utvrdim ko je vlasnik “Poli[...]
@@ -1865,7 +1857,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
+						<div class="alpha">
 							<div class="pic">
 								
 								<a href="ocena/3025/Kobre-su-premijerovom-bratu-samo-pravile-drustvo"></a>
@@ -1874,8 +1866,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3025/Kobre-su-premijerovom-bratu-samo-pravile-drustvo">
 									“Kobre” su premijerovom bratu samo pravile društvo[...]
@@ -1949,11 +1941,11 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 						Istinomer podstiče demokratsku, tolerantnu debatu o svim pokrenutim pitanjima i otvoreni smo za nove ideje i predloge. Ocenjeni političari su dobrodošli da pruže dodatna objašnjenja, ospore date ocene ili dodatno osvetle probleme iz svog ugla gledanja. Naše je da dosledno i bez sujete priznamo i ispravimo svaku grešku koju napravimo. <br />
 	Posebno ističemo da nas je pismo potpredsednice Vlade Zorane Mihajlović dodatno motivisalo da nastavimo da radimo naš posao. Potpredsednica Vlade Mihajlović je pismom usmerila fokus debate na argumente i činjenice, tako da, iskreno pozdravljamo ovakav način komunikacije potpredsednice Vlade.				</div>
 					<!-- /.text -->
-					<a href="http://www.istinomer.rs/clanak/1279/Odgovoran-potez-potpredsednice-Vlade-Zorane-Mihajlovic" class="all-btn">CEO TEKST</a>
+					<a href="http://www.istinomer.rs/clanak/1279/Odgovoran-potez-potpredsednice-Vlade-Zorane-Mihajlovic" class="all-btn">CEO TEKST <i class="fa fa-angle-double-right"></i></a>
 				</div>
 				<!-- /.grid-8 -->
 				<div class="clear"></div>
-				<div class="border"></div>
+				<!-- <div class="border"></div> --> <!--delete from backend-->
 				<!-- /.border -->
 			</div>
 			<!-- /.cd-recommend-1 -->
