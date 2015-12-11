@@ -29,7 +29,7 @@ function setDimensions() { /*.cd-hot-news-1, */
         jQuery(".hn-col-1").css("float", "left");
     }
 
-    $(".cd-poll-1").css("height", 728-$(".cd-question-and-answer-1").height()-15);
+    $(".cd-poll-1").css("height", 676-$(".cd-question-and-answer-1").height()-15);
 
     window.onload = setDimensions;
 }
