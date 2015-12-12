@@ -67,6 +67,9 @@ function fontSize() {
 function showSearch() {
     $(".search-input").toggle();
     $(".search-btn").addClass('selected');
+    if($(".search-input").css("display")=="none") {
+        $(".search-btn").removeClass('selected');
+    }
 }
 
 jQuery(document).ready(function() {
