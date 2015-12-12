@@ -148,6 +148,9 @@ body {
     border: 1px solid #ccc;
     border-bottom: 0px;
 }
+.top-content .trending .tr-main:hover p {
+    color: #c4161c;
+}
 .top-content .trending .trending-img {
     display: block;
     width: 90px;
@@ -213,6 +216,21 @@ body {
 .trending-toggle .fa-caret-up {
     display: none;
 }
+.trending-toggle.selected {
+    background: #09223f;
+    border: 1px solid #09223f;
+}
+.trending-toggle.selected .fa-caret-down {
+    display: none;
+}
+.trending-toggle.selected .fa-caret-up {
+    display: inherit;
+    position: absolute;
+    top: 21px;
+    left: 15px;
+    font-size: large !important;
+    color: #fff;
+}
 .trending-dropdown {
     width: 488px;
     position: absolute;
@@ -234,7 +252,7 @@ body {
     color: #c4161c;
 }
 .trending-dropdown li:nth-child(odd) {
-    background: #eee;
+    background: #f0f0f0;
 }
 .trending-dropdown li:nth-child(even) {
     border-top: 1px solid #ccc;

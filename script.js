@@ -74,6 +74,10 @@ function showSearch() {
 
 function trDropdown() {
     $(".trending-dropdown").toggle();
+    $(".trending-toggle").addClass('selected');
+    if($(".trending-dropdown").css("display")=="none") {
+        $(".trending-toggle").removeClass('selected');
+    }
 }
 
 jQuery(document).ready(function() {
