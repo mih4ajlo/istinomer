@@ -123,15 +123,34 @@ body {
 }
 .search-btn {
     position: absolute;
-    right: 2px;
-    top: 2px;
+    right: 10px;
+    top: 0px;
+    padding: 10px;
     color: #fff;
-    padding: 2px 0 0;
-    text-align: center;
-    background: #c4161c;
-    width: 20px;
-    height: 20px;
-    border-radius: 4px;
+    cursor: pointer;
+}
+.search-btn.selected {
+    background: #fff;
+    color: #c4161c;
+}
+.search-btn .fa {
+    font-size: large;
+}
+.search-input {
+    display: none;
+    position: absolute;
+    top: 37px;
+    right: -1px;
+    padding: 10px;
+    background: #fff;
+    border: 1px solid #c4161c;
+    border-top: 0px;
+}
+.search-input input {
+    width: 200px;
+    box-shadow: inset 0 0 15px 0 rgba(0,0,0,0.1);
+    border: transparent;
+    padding: 5px;
 }
 /*HEADER*/
 .header {

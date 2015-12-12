@@ -63,6 +63,12 @@ function fontSize() {
 
 	window.onload = fontSize;
 }
+
+function showSearch() {
+    $(".search-input").toggle();
+    $(".search-btn").addClass('selected');
+}
+
 jQuery(document).ready(function() {
 	hnmaxHeight();
     setDimensions();
