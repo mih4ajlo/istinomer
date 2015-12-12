@@ -72,6 +72,10 @@ function showSearch() {
     }
 }
 
+function trDropdown() {
+    $(".trending-dropdown").toggle();
+}
+
 jQuery(document).ready(function() {
 	hnmaxHeight();
     setDimensions();
