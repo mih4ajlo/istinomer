@@ -796,10 +796,10 @@ body {
 }
 .cd-question-and-answer-1 .question:before {
     color: #c4161c;
-    content: 'P:';
+    content: '?:';
     display: inline-block;
+    font-family: "Graffiare";
     margin: 0 10px 0 0;
-    font-weight: 700;
     font-size: 24px;
 }
 .cd-question-and-answer-1 .answer {
@@ -809,12 +809,12 @@ body {
     font-size: 14px;
 }
 .cd-question-and-answer-1 .answer:before {
-    color: #c4161c;
-    content: 'O:';
+    content: "";
     display: inline-block;
-    margin: 0 10px 0 0;
-    font-weight: 700;
-    font-size: 24px;
+    background-image: url(images/tt.jpg);
+    background-size: 30px;
+    width: 30px;
+    height: 30px;
 }
 .cd-question-and-answer-1 .more {
     text-align: right;
