@@ -300,7 +300,7 @@ body {
     font-size: small !important;
     position: absolute;
     top: 25px;
-    right: 17px;
+    right: 12px;
 }
 .cd-header-1 .btn-hot-news-1 .fa-caret-up, .cd-header-1 .btn-hot-news-1.selected .fa-caret-down {
     display: none;
@@ -1126,8 +1126,8 @@ body {
     float: right;
     color: #c4161c;
     font-size: 14px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 .cd-recommend-1 .all-btn:hover {
     /*background: #db191f;*/
