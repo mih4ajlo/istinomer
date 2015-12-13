@@ -7,8 +7,12 @@ function scroll() {
     if ($(window).scrollTop() >= origOffsetY) {
         $('.cd-main-nav-1').addClass('nav-sticky');
         // $('.content').addClass('menu-padding');
+        $(".back-to-top").css("display", "inherit");
+        $(".search-btn").css("right", 30);
     } else {
         $('.cd-main-nav-1').removeClass('nav-sticky');
+        $(".back-to-top").css("display", "none");
+        $(".search-btn").css("right", 20);
         // $('.content').removeClass('menu-padding');
     }
 
@@ -99,11 +103,19 @@ function trDropdown() {
     }
 }
 
+function backToTop() {
+    jQuery('.back-to-top').click(function(){
+        jQuery("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+    });
+}
+
 jQuery(document).ready(function() {
 	hnmaxHeight();
     setDimensions();
     fontSize();
     stickyMainMenu();
+    backToTop();
     // toggleCurrent();
 });
 
