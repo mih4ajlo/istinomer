@@ -12,6 +12,7 @@
 <!-- <link href="http://myoshu.github.io/Istinomer/collector.css" rel="stylesheet" type="text/css" /> -->
 
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin-ext' rel='stylesheet' type='text/css'>
+<!-- <link rel="stylesheet" type="text/css" href="file:///F:/Github/Istinomer/style.css"> -->
 <link rel="stylesheet" type="text/css" href="http://myoshu.github.io/Istinomer/style.css">
 <link rel="stylesheet" type="text/css" href="http://myoshu.github.io/Istinomer/media.css">
 <link rel="stylesheet" type="text/css" href="http://myoshu.github.io/Istinomer/font-awesome/css/font-awesome.min.css">
@@ -42,6 +43,7 @@
 
 <script  src="js/scroller/jquery.mCustomScrollbar.min.js"></script>
 
+<!-- <script type="text/javascript" src="file:///F:/Github/Istinomer/script.js"></script> -->
 <script type="text/javascript" src="http://myoshu.github.io/Istinomer/script.js"></script>
 
 <script>
@@ -115,20 +117,6 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 		}
 	}
 </script>
-<style>
-/*.cd-main-nav-1 .bottom-nav {
-	height: 22px;
-}
-.cd-main-nav-1 .item-2 {
-	margin: 0 0 0 10px;
-}
-.cd-main-nav-1 .dropdown-wrapper {
-	height: 244px;
-}
-.gd-sticky-2 {
-	z-index: 0;
-}*/
-</style>
 <div id="top-page"></div>
 <!-- ======================= LOADER ========================-->
 <div id="loader">
@@ -145,24 +133,26 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 	<div class="grid-12">
 		<div class="cd-header-1">
 			<div class="top-nav">
-				<div class="info">
+				<!--<div class="info">
 					<a href="o-istinomeru" class="link-1">O Istinomeru</a>
 					<span>|</span>
 					<a href="kontakt/" class="link-1">Kontakt</a>
-				</div>
+				</div>-->
 				<div class="social">
-					<a href="https://www.facebook.com/Istinomer" target="_blank"><i class="fa fa-facebook-square"></i></a>
-					<a href="https://twitter.com/istinomer" target="_blank"><i class="fa fa-twitter-square"></i></a>
-					<a href="https://www.youtube.com/user/Istinomer" target="_blank"><i class="fa fa-youtube-square"></i></a>
-					<a href="https://plus.google.com/115238630692666107568" target="_blank"><i class="fa fa-google-plus-square"></i></a>
-					<a href="http://www.istinomer.rs/feed/" target="_blank"><i class="fa fa-rss-square"></i></a>
+					<a href="https://www.facebook.com/Istinomer" target="_blank"><i class="fa fa-facebook"></i></a>
+					<a href="http://www.facebook.com/verge" class="icon-facebook" title="Like us on Facebook" target="_blank">
+    </a>
+					<a href="https://twitter.com/istinomer" target="_blank"><i class="fa fa-twitter"></i></a>
+					<a href="https://www.youtube.com/user/Istinomer" target="_blank"><i class="fa fa-youtube-play"></i></a>
+					<a href="https://plus.google.com/115238630692666107568" target="_blank"><i class="fa fa-google-plus"></i></a>
+					<a href="http://www.istinomer.rs/feed/" target="_blank"><i class="fa fa-rss"></i></a>
 				</div>
 				<!-- /.social-->
 				
-				<div class="search">
+				<!-- <div class="search">
 					<input type="text" name="search_website" value="" onkeypress="return runScript(event)" />
 					<div class="search-btn"><i class="fa fa-search" onclick="search_website()"></i></div>
-				</div>
+				</div> -->
 				<!-- /.search-->
 			</div><!-- /.top-nav-->
 			<div class="header">
@@ -170,15 +160,56 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					<a href=""><img src="images/header-logo.png" alt=""></a> <!--style = "top: 50px;" -->
 				</div>
 				<div class="top-content"><!--col-xs-12 col-sm-8-->
-					<div class="mouth">
+					<!--<div class="mouth">
 						<img src="images/header-mouth.png" alt="">
+					</div>-->
+					<div class="trending pull-left">
+						<div class="tr-main">
+							<a href="#">
+								<div class="trending-img">
+									<img src="http://www.istinomer.rs/pictures/home_slider/slika/slider3x2.jpg">
+								</div>
+								<div class="text">
+									<span class="header">Najposećenije</span>
+									<p>Opozicija u Beogradu za reviziju projekta "Beograd na vodi"</p>
+								</div>
+							</a>
+						</div>
+						<ul class="trending-dropdown">
+							<li class="">
+								<a href="#">
+									<div class="text">
+										<p>Puška koja puca iza ćoška</p>
+									</div>
+								</a>
+							</li>
+							<li class="">
+								<a href="#">
+									<div class="text">
+										<p>Magla oko Beograda na vodi</p>
+									</div>
+								</a>
+							</li>
+							<li class="">
+								<a href="#">
+									<div class="text">
+										<p>FILM: Da se ne lažemo!</p>
+									</div>
+								</a>
+							</li>
+						</ul>
+						<div class="trending-toggle" onclick="trDropdown()">
+							<i class="fa fa-caret-down"></i>
+							<i class="fa fa-caret-up"></i>
+						</div>
 					</div>
 					<div class="btn-hot-news-1" id="hot-news-btn" onclick="hot_news()"> <!--col-xs-12 col-sm-2-->
-						NAJNOVIJE 
 						<span>
-						21<i class="fa fa-caret-down"></i>
+						21
+						<i class="fa fa-caret-down"></i>
 						<i class="fa fa-caret-up"></i>
 						</span>
+						NOVO <!--backend-->
 					</div>
 				</div>
 				<!-- /.btn-hot-news-1 -->
@@ -200,12 +231,12 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 			}
 			var hnews_active_slide = 1;
 			function hot_news_change_slide(side){
-				var hnews_max_slides = Math.ceil($('.hn-col-1').size()/3);	
+				var hnews_max_slides = Math.ceil($('.hn-col-wrap').size()*2);	
 				
 				if(side=="right" && (hnews_active_slide<hnews_max_slides)){
 					$('#hnews-btn-left').removeClass('disabled');
 
-					$('#hnews-position').animate({left:(hnews_active_slide)*(-jQuery(".hn-col-wrap").outerWidth())},"fast");
+					$('#hnews-position').animate({left:(hnews_active_slide)*(-jQuery(".hn-col-1").outerWidth())},"fast");
 					hnews_active_slide ++;
 					if(hnews_active_slide==hnews_max_slides){
 						$('#hnews-btn-right').addClass('disabled');
@@ -214,7 +245,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					
 					$('#hnews-btn-right').removeClass('disabled');
 					hnews_active_slide --;
-					$('#hnews-position').animate({left:(hnews_active_slide)*(-jQuery(".hn-col-wrap").outerWidth())+jQuery(".hn-col-wrap").outerWidth()},"fast");
+					$('#hnews-position').animate({left:(hnews_active_slide)*(-jQuery(".hn-col-1").outerWidth())+jQuery(".hn-col-1").outerWidth()},"fast");
 					
 					if(hnews_active_slide==1){
 						$('#hnews-btn-left').addClass('disabled');
@@ -272,124 +303,116 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 				<div class="position" id="hnews-position">
 					<div class="hn-col-wrap hn-current">
 						<div class="hn-col-1 col-xs-4">
-							<div class="headline">24 Novembar, 2015</div>
-							<a href="ocena/3230/Pocetak-radova-na-pruzi-Beograd-Budimpesta-do-kraja-2015godine">
-							Početak radova na pruzi Beograd - Budimpešta do kraja 2015. godine</a>
+							<div class="hn">
+								<div class="headline">24 Novembar, 2015</div>
+								<a href="ocena/3230/Pocetak-radova-na-pruzi-Beograd-Budimpesta-do-kraja-2015godine">
+								Početak radova na pruzi Beograd - Budimpešta do kraja 2015. godine</a>
+							</div>
+							<div class="hn">
+								<div class="headline">23 Novembar, 2015</div>
+								<a href="ocena/3229/Do-kraja-godine-Nacrt-zakona-o-poreklu-imovine">
+								Do kraja godine Nacrt zakona o poreklu imovine</a>
+							</div>
+							<div class="hn">
+								<div class="headline no-news">22 Novembar, 2015</div>
+							</div>
 						</div>
 						<!-- /.hn-col-1 -->
 						<div class="hn-col-1 col-xs-4">
-						<div class="headline">23 Novembar, 2015</div>
-						<a href="ocena/3229/Do-kraja-godine-Nacrt-zakona-o-poreklu-imovine">
-						Do kraja godine Nacrt zakona o poreklu imovine</a>
+							<div class="hn">
+								<div class="headline">21 Novembar, 2015</div>
+								<a href="ocena/3226/Dve-zemlje-priznale-Kosovo-od-kada-sam-predsednik-Vlade">
+								Dve zemlje priznale Kosovo od kada sam predsednik Vlade</a>
 
+								<a href="clanak/1310/Napadnuta-Miroslava-Milenovic-clanica-Saveta-za-borbu-protiv-korupcije">
+								Napadnuta Miroslava Milenović, članica Saveta za borbu protiv korupcije</a>
+							</div>
+							<div class="hn">
+								<div class="headline">20 Novembar, 2015</div>
+								<a href="ocena/3227/Dinamican-rast-u-godinama-koje-su-pred-nama">
+								Dinamičan rast u godinama koje su pred nama</a>
+
+								<a href="clanak/1300/Cepanje-ili-pluralizam-niskog-SNS">
+								"Cepanje" ili "pluralizam" niškog SNS</a>
+							</div>
 						</div>
 						<!-- /.hn-col-1 -->
 						<div class="hn-col-1 col-xs-4">
-							<div class="headline">22 Novembar, 2015</div>
+							<div class="hn">
+								<div class="headline">19 Novembar, 2015</div>
+									<a href="ocena/3222/Nakon-incidenta-sa-dronom-mi-smo-reagovali-hladne-glave">
+									Nakon incidenta sa dronom, mi smo reagovali hladne glave</a>
+
+									<a href="ocena/3224/U-aprilu-2017svi-auto-putevi-gotovi">
+									U aprilu 2017. svi auto-putevi gotovi</a>
+
+									<a href="clanak/1307/Teroristi-su-kidnapovali-islamsku-ideju">
+									Teroristi su kidnapovali islamsku ideju</a>
+							</div>
+							<div class="hn">
+								<div class="headline">18 Novembar, 2015</div>
+								<a href="clanak/1303/Novcana-pomoc-prosvetarima-bacanje-prasine-u-oci">
+								Novčana pomoć prosvetarima bacanje prašine u oči</a>
+
+								<a href="clanak/1306/Selektivne-reforme">
+								Selektivne reforme</a>
+
+							</div>
+						</div>
+					</div>
+						<!-- /.hn-col-1 -->
+					<div class="hn-col-wrap">
+						<div class="hn-col-1 col-xs-4">
+							<div class="hn">
+								<div class="headline">17 Novembar, 2015</div>
+								<a href="clanak/1301/Prvi-put-u-istoriji">
+								Prvi put u istoriji</a>
+
+								<a href="clanak/1304/Vlast-opozicija-i-gratis-tv-prenos">
+								Vlast, opozicija i “gratis” tv prenos</a>
+
+								<a href="clanak/1305/Kuca-na-obali-ne-moze-vikendica-moze">
+								Kuća na obali ne može, vikendica može?!</a>
+							</div>
+							<div class="hn">
+								<div class="headline">16 Novembar, 2015</div>
+								<a href="ocena/3217/U-oktobru-2014-otvaramo-pesacku-stazu-na-Brankovom-mostu">
+								U oktobru (2014) otvaramo pešačku stazu na Brankovom mostu</a>
+								<a href="ocena/3221/Do-leta-2016sve-skole-ce-biti-sredjene">
+								Do leta 2016. sve škole će biti sređene</a>
+							</div>
+						</div>
+						<!-- /.hn-col-1 -->
+						<div class="hn-col-1 col-xs-4">	
+							<div class="hn">
+								<div class="headline">15 Novembar, 2015</div>
+								<a href="ocena/3220/Do-kraja-godine-stize-velika-investicija-u-Novi-Sad">
+								Do kraja godine stiže velika investicija u Novi Sad</a>
+							</div>
+							<div class="hn">
+								<div class="headline">14 Novembar, 2015</div>
+								<a href="ocena/3218/Izmena-Zakona-o-Agenciji-za-borbu-protiv-korupcije">
+								Izmena Zakona o Agenciji za borbu protiv korupcije 						</a>
+
+								<a href="ocena/3219/Na-kraju-2015ce-biti-vece-plate-nego-na-kraju-2014godine">
+								Na kraju 2015. će biti veće plate nego na kraju 2014. godine						</a>
+							</div>
+						</div>
+						<!-- /.hn-col-1 -->
+						<div class="hn-col-1 col-xs-4">
+							<div class="hn">
+								<div class="headline">13 Novembar, 2015</div>
+								<a href="clanak/1297/Gazda-koji-ne-isplati-platu-treba-krivicno-da-odgovara">
+								Gazda koji ne isplati platu treba krivično da odgovara</a>
+
+								<a href="clanak/1298/Nacelnik-Komunalne-policije-bez-odgovornosti-suspendovan-samo-njegov-vozac">
+								Načelnik Komunalne policije bez odgovornosti, suspendovan samo njegov vozač?!</a>
+							</div>
 						</div>
 						<!-- /.hn-col-1 -->
 					</div>
-					<div class="hn-col-wrap">
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">21 Novembar, 2015</div>
-						<a href="ocena/3226/Dve-zemlje-priznale-Kosovo-od-kada-sam-predsednik-Vlade">
-						Dve zemlje priznale Kosovo od kada sam predsednik Vlade</a>
-
-						<a href="clanak/1310/Napadnuta-Miroslava-Milenovic-clanica-Saveta-za-borbu-protiv-korupcije">
-						Napadnuta Miroslava Milenović, članica Saveta za borbu protiv korupcije</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">20 Novembar, 2015</div>
-						<a href="ocena/3227/Dinamican-rast-u-godinama-koje-su-pred-nama">
-						Dinamičan rast u godinama koje su pred nama						</a>
-
-						<a href="clanak/1300/Cepanje-ili-pluralizam-niskog-SNS">
-						"Cepanje" ili "pluralizam" niškog SNS						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">19 Novembar, 2015</div>
-						<a href="ocena/3222/Nakon-incidenta-sa-dronom-mi-smo-reagovali-hladne-glave">
-						Nakon incidenta sa dronom, mi smo reagovali hladne glave						</a>
-
-						<a href="ocena/3224/U-aprilu-2017svi-auto-putevi-gotovi">
-						U aprilu 2017. svi auto-putevi gotovi						</a>
-
-						<a href="clanak/1307/Teroristi-su-kidnapovali-islamsku-ideju">
-						Teroristi su kidnapovali islamsku ideju						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-					</div>
-					<div class="hn-col-wrap">
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">18 Novembar, 2015</div>
-						<a href="clanak/1303/Novcana-pomoc-prosvetarima-bacanje-prasine-u-oci">
-						Novčana pomoć prosvetarima bacanje prašine u oči 						</a>
-
-						<a href="clanak/1306/Selektivne-reforme">
-						Selektivne reforme						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">17 Novembar, 2015</div>
-						<a href="clanak/1301/Prvi-put-u-istoriji">
-						Prvi put u istoriji						</a>
-
-						<a href="clanak/1304/Vlast-opozicija-i-gratis-tv-prenos">
-						Vlast, opozicija i “gratis” tv prenos						</a>
-
-						<a href="clanak/1305/Kuca-na-obali-ne-moze-vikendica-moze">
-						Kuća na obali ne može, vikendica može?!						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">16 Novembar, 2015</div>
-						<a href="ocena/3217/U-oktobru-2014-otvaramo-pesacku-stazu-na-Brankovom-mostu">
-						U oktobru (2014) otvaramo pešačku stazu na Brankovom mostu 						</a>
-
-						<a href="ocena/3221/Do-leta-2016sve-skole-ce-biti-sredjene">
-						Do leta 2016. sve škole će biti sređene 						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-					</div>
-					<div class="hn-col-wrap">
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">15 Novembar, 2015</div>
-						<a href="ocena/3220/Do-kraja-godine-stize-velika-investicija-u-Novi-Sad">
-						Do kraja godine stiže velika investicija u Novi Sad						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">14 Novembar, 2015</div>
-						<a href="ocena/3218/Izmena-Zakona-o-Agenciji-za-borbu-protiv-korupcije">
-						Izmena Zakona o Agenciji za borbu protiv korupcije 						</a>
-
-						<a href="ocena/3219/Na-kraju-2015ce-biti-vece-plate-nego-na-kraju-2014godine">
-						Na kraju 2015. će biti veće plate nego na kraju 2014. godine						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-						<div class="hn-col-1 col-xs-4">
-						<div class="headline">13 Novembar, 2015</div>
-						<a href="clanak/1297/Gazda-koji-ne-isplati-platu-treba-krivicno-da-odgovara">
-						Gazda koji ne isplati platu treba krivično da odgovara 						</a>
-
-						<a href="clanak/1298/Nacelnik-Komunalne-policije-bez-odgovornosti-suspendovan-samo-njegov-vozac">
-						Načelnik Komunalne policije bez odgovornosti, suspendovan samo njegov vozač?!						</a>
-
-						</div>
-						<!-- /.hn-col-1 -->
-					</div>                    			
+					<!-- /.position -->
 				</div>
-				<!-- /.position -->
 			</div>
 			<!-- /.hot-news-wrapper -->
 			<div class="btn-right col-xs-1" id="hnews-btn-right" onClick="hot_news_change_slide('right')">
@@ -438,7 +461,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 		<!-- /.grid-12-->
 		<div id="sticky-nav">
 <div class="grid-12">
-<div class="cd-main-nav-1" >
+<div class="cd-main-nav-1">
 	<div class="main-nav">
 		<div class="item-1 mni" id="mni-1" onClick="main_nav(1)">
 			OBEĆANJA
@@ -500,6 +523,15 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 			<i class="fa fa-caret-up"></i>
 		</div>
 		<!-- /.item -->
+		<div class="search-btn">
+			<i class="fa fa-search" onclick="showSearch()"></i><!--onclick="search_website()"-->
+			<div class="search-input">
+				<input class="" type="text" name="search_website" value="" onkeypress="return runScript(event)" />
+			</div>
+		</div>
+		<div class="back-to-top" id="back-to-top">
+			<div class="tt_icon"></div>
+		</div>
 	</div>
 	<div class="clear"></div>
 	<!-- /.clear -->
@@ -509,426 +541,429 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 			<div class="position" id="mni-position">
 			<div class="item-2 ocena_1">
 				<a href="ocena/3217/U-oktobru-2014-otvaramo-pesacku-stazu-na-Brankovom-mostu">
-					<div class="picture">
+					<div class="picture"><div class="img-shadow-sm">
 						<img src="pictures/ocena/slika/c95163b3a5bcfc809448677243da3aaa.jpg" alt="*" />
-					</div>
+					</div></div>
 					<!-- /.picture -->
 					U oktobru (2014) otvaramo pešačku stazu na Brankovom mostu
 				</a>
 			</div>
 			<div class="item-2 ocena_1">
 				<a href="ocena/3218/Izmena-Zakona-o-Agenciji-za-borbu-protiv-korupcije">
-					<div class="picture">
+					<div class="picture"><div class="img-shadow-sm">
 						<img src="pictures/ocena/slika/1e70e69657ae0f8f6b2e0fe09b120d3e.png" alt="*" />
-					</div>
+					</div></div>
 					<!-- /.picture -->
 					Izmena Zakona o Agenciji za borbu protiv korupcije
 				</a>
 			</div>
 			<div class="item-2 ocena_1">
 				<a href="ocena/3213/U-2014dobijamo-prvu-zenu-generala">
-					<div class="picture">
+					<div class="picture"><div class="img-shadow-sm">
 					<img src="pictures/ocena/slika/4bb59d380309c67427cc09974224434d.jpg" alt="*" />
-					</div>
+					</div></div>
 					<!-- /.picture -->
 					U 2014. dobijamo prvu ženu generala
 				</a>
 			</div>
 			<div class="item-2 ocena_1">
 				<a href="ocena/3208/Projektna-dokumentacija-za-Klinicki-centar-Srbije-do-jula">
-					<div class="picture">
+					<div class="picture"><div class="img-shadow-sm">
 						<img src="pictures/ocena/slika/fe18f07cb97f70d6c00d07b8f4432e60.jpg" alt="*" />
-					</div>
+					</div></div>
 					<!-- /.picture -->
 					Projektna dokumentacija za Klinički centar Srbije do jula
 				</a>
 			</div>
 			<div class="item-2 ocena_1">
 				<a href="ocena/3076/Koridori-i-Putevi-Srbije-od-januara-2015-jedno-preduzece">
-				<div class="picture">
+				<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/ocena/slika/21720207_b.jpg" alt="*" />
-				</div>
+				</div></div>
 				<!-- /.picture -->
 				"Koridori" i "Putevi Srbije" od januara (2015) jedno preduzeće									</a>
 			</div>
 			<div class="item-2 ocena_2">
 				<a href="ocena/3223/Imali-smo-drugi-BDP-u-regionu-sada-nazadujemo">
-				<div class="picture">
+				<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/ocena/slika/e5c0b22210fcbd437d82810f9ec92637.JPG" alt="*" />
-				</div>
+				</div></div>
 				<!-- /.picture -->
 				Imali smo drugi BDP u regionu, sada nazadujemo									</a>
 			</div>
 			<div class="item-2 ocena_2">
 			<a href="ocena/3226/Dve-zemlje-priznale-Kosovo-od-kada-sam-predsednik-Vlade">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="pictures/ocena/slika/cede2de5e1acb9483229ee1807ff874e.png" alt="*" />
-			</div>
+			</div></div>
 			<!-- /.picture -->
 			Dve zemlje priznale Kosovo od kada sam predsednik Vlade 									</a>
 			</div>
 			<div class="item-2 ocena_2">
 			<a href="ocena/3222/Nakon-incidenta-sa-dronom-mi-smo-reagovali-hladne-glave">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="pictures/ocena/slika/837c2654cef867db2db3802b7200c9b0.jpg" alt="*" />
-			</div>
+			</div></div>
 			<!-- /.picture -->
 			Nakon incidenta sa dronom, mi smo reagovali hladne glave									</a>
 			</div>
 			<div class="item-2 ocena_2">
 			<a href="ocena/3215/Kurs-evra-se-nije-menjao-od-kada-sam-ja-predsednik-Vlade">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="pictures/ocena/slika/6b3c03b9a79826b5d15b6e5105f1b157.jpg" alt="*" />
-			</div>
+			</div></div>
 			<!-- /.picture -->
 			Kurs evra se nije menjao od kada sam ja predsednik Vlade									</a>
 			</div>
 			<div class="item-2 ocena_2">
 			<a href="ocena/3209/Ne-vidi-se-da-je-nacelnik-Komunalne-policije-na-snimcima-KRIK-a">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="pictures/ocena/slika/3eb240559752f00da267ae0bb4b6c1f3.jpg" alt="*" />
-			</div>
+			</div></div>
 			<!-- /.picture -->
 			Ne vidi se da je načelnik Komunalne policije na snimcima KRIK-a									</a>
 			</div>
 			<div class="item-2 ocena_3">
 			<a href="ocena/3086/Necemo-traziti-od-MMF-a-prolongiranje-rokova-za-firme-u-restrukturiranju">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="pictures/ocena/slika/67ad64fe6b0f13a9491ff05bce054e74.jpg" alt="*" />
-			</div>
+			</div></div>
 			<!-- /.picture -->
 			Nećemo tražiti od MMF-a prolongiranje rokova za firme u restrukturiranju									</a>
 			</div>
 			<div class="item-2 ocena_3">
 			<a href="ocena/3095/Podnecu-ostavku-ako-to-trazi-Agencija-za-borbu-protiv-korupcije">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="pictures/ocena/slika/75e57cc0e532d2875ce829752f354c65.jpg" alt="*" />
-			</div>
+			</div></div>
 			<!-- /.picture -->
 			Podneću ostavku ako to traži Agencija za borbu protiv korupcije									</a>
 			</div>
 			<div class="item-2 ocena_3">
 			<a href="ocena/3081/Beograd-na-vodi-zavrsen-do-2019">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="pictures/ocena/slika/aleksandar-vucic-beograd-na-vodi-foto-blekberi-1390045910-429769.jpg" alt="*" />
-			</div>
+			</div></div>
 			<!-- /.picture -->
 			"Beograd na vodi" završen do 2019.									</a>
 			</div>
 			<div class="item-2 ocena_3">
 			<a href="ocena/3044/Odustajem-od-namere-da-utvrdim-ko-je-vlasnik-Politike">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="pictures/ocena/slika/22654330_b.jpg" alt="*" />
-			</div>
+			</div></div>
 			<!-- /.picture -->
 			Odustajem od namere da utvrdim ko je vlasnik “Politike”									</a>
 			</div>
 			<div class="item-2 ocena_3">
 			<a href="ocena/3025/Kobre-su-premijerovom-bratu-samo-pravile-drustvo">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="pictures/ocena/slika/Bratislav-Gašić.jpg" alt="*" />
-			</div>
+			</div></div>
 			<!-- /.picture -->
 			“Kobre” su premijerovom bratu samo pravile društvo									</a>
 			</div>
 			<div class="item-2">
 			<a href="akter/15/Aleksandar-Vucic/">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="pictures/akter/slika/7667bc329078241cc6d8df5c3132da92.JPG" alt="*" />
-			</div>
+			</div></div>
 			<!-- /.picture -->
 			Aleksandar Vučić									</a>
 			</div>
 			<div class="item-2">
 			<a href="akter/3/Sinisa-Mali/">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="pictures/akter/slika/f1d65c0511e53718edf829ca18a00cb3.jpg" alt="*" />
-			</div>
+			</div></div>
 			<!-- /.picture -->
 			Siniša Mali									</a>
 			</div>
 			<div class="item-2">
 			<a href="akter/272/Zorana-Mihajlovic/">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="pictures/akter/slika/de434e05b3117a12eaee7f191d6d48f2.jpg" alt="*" />
-			</div>
+			</div></div>
 			<!-- /.picture -->
 			Zorana Mihajlović									</a>
 			</div>
 			<div class="item-2">
 			<a href="akter/375/Zoran-Babic/">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="pictures/akter/slika/26de1b43a5014e26d03ffbde6656c3e4.jpg" alt="*" />
-			</div>
+			</div></div>
 			<!-- /.picture -->
 			Zoran Babić									</a>
 			</div>
 			<div class="item-2">
 			<a href="akter/108/Tomislav-Nikolic/">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="pictures/akter/slika/0b872a1b732e2f00e16f6fe27b83bef0.JPG" alt="*" />
-			</div>
+			</div></div>
 			<!-- /.picture -->
 			Tomislav Nikolić									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1290/Cekajuci-Rekonkvistu">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/b21781f8d76de7c709e6c1f40df7f1d7.jpg" alt="*" />
-				</div>
+				</div></div>
 			<!-- /.picture -->
 			Čekajući Rekonkvistu									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1264/Vanredno-stanje">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/70ed1440073585af7e3f7bbbd597424e.jpg" alt="*" />
-				</div>
+				</div></div>
 			<!-- /.picture -->
 			Vanredno stanje									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1231/Smesna-strana-svega">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/30b493850708e7e216c3559e5b3fa52e.jpg" alt="*" />
-				</div>
+				</div></div>
 			<!-- /.picture -->
 			Smešna strana svega									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1220/Misje-kolo">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/b9ac89f84d392cb1658d0a9bf683fef0.jpg" alt="*" />
-				</div>
+				</div></div>
 			<!-- /.picture -->
 			Mišje kolo									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1178/Dvodnevni-protektorat">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/9c83092a5aecead47e4b2186af6e2912.jpg" alt="*" />
-				</div>
+				</div></div>
 			<!-- /.picture -->
 			Dvodnevni protektorat									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1310/Napadnuta-Miroslava-Milenovic-clanica-Saveta-za-borbu-protiv-korupcije">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/4b3e55d493a0fe095f380bbed85536e8.jpg" alt="*" />
-				</div>
+				</div></div>
 			<!-- /.picture -->
 			Napadnuta Miroslava Milenović, članica Saveta za borbu protiv korupcije									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1300/Cepanje-ili-pluralizam-niskog-SNS">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/c1efd3779494b53f86228cf67b1f9272.jpg" alt="*" />
-				</div>
+				</div></div>
 			<!-- /.picture -->
 			"Cepanje" ili "pluralizam" niškog SNS									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1307/Teroristi-su-kidnapovali-islamsku-ideju">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/f74baabfd2ec6859bceb07a190183827.JPG" alt="*" />
-				</div>
+				</div></div>
 			<!-- /.picture -->
 			Teroristi su kidnapovali islamsku ideju									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1303/Novcana-pomoc-prosvetarima-bacanje-prasine-u-oci">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/225f2a34ef6d3a1b4e3ae9e46357d48d.jpg" alt="*" />
-				</div>
+				</div></div>
 			<!-- /.picture -->
 			Novčana pomoć prosvetarima bacanje prašine u oči 									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1306/Selektivne-reforme">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/e383e3d6aa5c22849013b0ee76c82269.jpg" alt="*" />
-				</div>
+				</div></div>
 			<!-- /.picture -->
 			Selektivne reforme</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1269/U-Srbiji-se-plagiranje-podstice">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/3fed30e20bfb29dad3b45a779cf0838e.jpg" alt="*" />
-				</div>
+				</div></div>
 			U Srbiji se plagiranje podstiče 									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1225/Objavljen-ugovor-za-Beograd-na-vodi">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/aa2a19d1dde272556b4ed9e48fb9b3cd.png" alt="*" />
-				</div>
+				</div></div>
 			Objavljen ugovor za “Beograd na vodi”									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1217/Zasto-su-ruseni-nehumani-objekti">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/a71c9a8d4f81c4c361c5a8c3bfbe8900.jpg" alt="*" />
-				</div>
+				</div></div>
 			Zašto su rušeni “nehumani objekti”?									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1195/Vucic-Ugovor-o-Beogradu-na-vodi-za-dve-nedelje">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/6db4076571cb5aac1769317078cb49b3.jpg" alt="*" />
-				</div>
+				</div></div>
 			Vučić: Ugovor o „Beogradu na vodi“ za dve nedelje									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1183/Gde-je-ugovor-za-Beograd-na-vodi">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/9ab8ccc76e1b9751630c217b18bad2de.jpg" alt="*" />
-				</div>
+				</div></div>
 			Gde je ugovor za “Beograd na vodi”?									</a>
 			</div>
 			<div class="item-2">
 			<a href="video/351/Medije-u-Srbiji-kupuju-stranke-politicari-i-avanturisti">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/video/slika/5e24abdc06d3f47bccc673b2eb04fb7a.jpg" alt="*" />
-				</div>
+				</div></div>
 			Medije u Srbiji kupuju stranke, političari i avanturisti 									</a>
 			</div>
 			<div class="item-2">
 			<a href="video/350/Investicije-su-tri-puta-manje-nego-u-nase-vreme">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/video/slika/2db96d76e217bdf9a09e315da48cd6e0.jpg" alt="*" />
-				</div>
+				</div></div>
 			Investicije su tri puta manje nego u naše vreme 									</a>
 			</div>
 			<div class="item-2">
 			<a href="video/348/Cekajuci-Rekonkvistu">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/video/slika/SO8xCtLSIO4.jpg" alt="*" />
-				</div>
+				</div></div>
 			Čekajući Rekonkvistu 									</a>
 			</div>
 			<div class="item-2">
 			<a href="video/347/Nacelnik-Komunalne-policije-bez-odgovornosti-suspendovan-samo-njegov-vozac">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/video/slika/bb2c2849ac5552b812bd0a63bc08c927.jpg" alt="*" />
-				</div>
+				</div></div>
 			Načelnik Komunalne policije bez odgovornosti, suspendovan samo njegov vozač?!									</a>
 			</div>
 			<div class="item-2">
 			<a href="video/340/Jos-se-ne-zna-ko-i-koliko-duguje-za-zakup-drzavnih-nepokretnosti">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/video/slika/41a29f194a206399caff3ca699781d8a.png" alt="*" />
-				</div>
+				</div></div>
 			Još se ne zna ko i koliko duguje za zakup državnih nepokretnosti 									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/521/Bombe-na-godisnjicu-Vlade-10deo">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/DSC09542.jpg" alt="*" />
-				</div>
+				</div></div>
 			Bombe na godišnjicu Vlade (10. deo)									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/518/Put-u-Rambuje-9deo">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/DSC09107.jpg" alt="*" />
-				</div>
+				</div></div>
 			Put u Rambuje (9. deo)									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/517/Smene-kazne-i-zabrane-8deo">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/DSC08720.jpg" alt="*" />
-				</div>
+				</div></div>
 			Smene, kazne i zabrane (8. deo)									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/516/Udar-na-nedrzavne-medije-7deo">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/DSC09026.jpg" alt="*" />
-				</div>
+				</div></div>
 			Udar na nedržavne medije! (7. deo)									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/514/Usvojen-Zakon-o-informisanju-6deo">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/DSC08185.jpg" alt="*" />
-				</div>
+				</div></div>
 			Usvojen Zakon o informisanju (6. deo)									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1298/Nacelnik-Komunalne-policije-bez-odgovornosti-suspendovan-samo-njegov-vozac">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/2689b15d57ca8173339a2987163a840e.jpg" alt="*" />
-				</div>
+				</div></div>
 			Načelnik Komunalne policije bez odgovornosti, suspendovan samo njegov vozač?!									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1284/Gotova-prica-postupanje-pocelo">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/fcf56d40d6529fffcbfbc9a045d52c0f.png" alt="*" />
-				</div>
+				</div></div>
 			"Gotova priča, postupanje počelo"									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1276/Sluzbena-beleska-Komunalne-policije-puna-nelogicnosti">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/f915e6d60c5c7d0c2e171b95ddb3c468.jpg" alt="*" />
-				</div>
+				</div></div>
 			Službena beleška Komunalne policije puna nelogičnosti									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1275/Komunalna-policija-Prinuda-koriscena-uvek-po-zakonu">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/95afad5d9d74032df717b456d72f9a10.jpg" alt="*" />
-				</div>
+				</div></div>
 			Komunalna policija: Prinuda korišćena uvek po zakonu									</a>
 			</div>
 			<div class="item-2">
 			<a href="clanak/1272/Nacelnica-Gradske-uprave-nije-videla-oduzimanje-opreme-novinarima">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 				<img src="pictures/clanak/slika/7130036d298d2121f6278716fae90c41.jpg" alt="*" />
-				</div>
+				</div></div>
 			Načelnica Gradske uprave nije videla oduzimanje opreme novinarima! 									</a>
 			</div>
 			<div class="item-2">
 			<a href="#">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="_preview/p11.png" alt="*" />
-			</div>
+			</div></div>
 			Smenjivali smo samo one kojima je istekao mandat
 			</a>
 			</div>
 			<div class="item-2">
 			<a href="#">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="_preview/p22.png" alt="*" />
-			</div>
+			</div></div>
 			Smenjivali smo samo one kojima je istekao mandat
 			</a>
 			</div>
 			<div class="item-2">
 			<a href="#">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="_preview/p33.png" alt="*" />
-			</div>
+			</div></div>
 			Smenjivali smo samo one kojima je istekao mandat
 			</a>
 			</div>
 			<div class="item-2">
 			<a href="#">
-			<div class="picture">
+			<div class="picture"><div class="img-shadow-sm">
 			<img src="_preview/p44.png" alt="*" />
 			</div>
+			</div>
 			Smenjivali smo samo one kojima je istekao mandat
 			</a>
 			</div>
 			<div class="item-2">
 			<a href="#">
 			<div class="picture">
-			<img src="_preview/p55.png" alt="*" />
+				<div class="img-shadow-sm">
+					<img src="_preview/p55.png" alt="*" />
+				</div>
 			</div>
-			Smenjivali smo samo one kojima je istekao mandat
+				Smenjivali smo samo one kojima je istekao mandat
 			</a>
 			</div>
 			<div class="clear"></div>
@@ -1106,12 +1141,12 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 								<div class="cd-top-news-filter"></div>
 								<!-- /.filter -->
 								<div class="headline">
-									Imali smo drugi BDP u regionu, sada nazadujemo
-																<div class="status">
+									<p>Imali smo drugi BDP u regionu, sada nazadujemo</p>
+									<div class="status">
 										<img src="images/status/15-bg.png" alt="">
 									</div>
 									<!-- /.status -->
-		                            						</div>
+		                        </div>
 								<!-- /.headline -->
 							</div>
 							<!-- /.item -->
@@ -1127,8 +1162,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 								<div class="cd-top-news-filter"></div>
 								<!-- /.filter -->
 								<div class="headline">
-									Napadnuta Miroslava Milenović, članica Saveta za borbu protiv korupcije
-															</div>
+									<p>Napadnuta Miroslava Milenović, članica Saveta za borbu protiv korupcije</p>
+								</div>
 								<!-- /.headline -->
 							</div>
 							<!-- /.item -->
@@ -1144,8 +1179,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 								<div class="cd-top-news-filter"></div>
 								<!-- /.filter -->
 								<div class="headline">
-									#BELEŽNICA Početak radova na pruzi Beograd - Budimpešta do kraja 2015. godine
-															</div>
+									<p>#BELEŽNICA Početak radova na pruzi Beograd - Budimpešta do kraja 2015. godine</p>
+								</div>
 								<!-- /.headline -->
 							</div>
 							<!-- /.item -->
@@ -1161,7 +1196,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 								<div class="cd-top-news-filter"></div>
 								<!-- /.filter -->
 								<div class="headline">
-									#BELEŽNICA Do kraja godine Nacrt zakona o poreklu imovine
+									<p>#BELEŽNICA Do kraja godine Nacrt zakona o poreklu imovine</p>
 															</div>
 								<!-- /.headline -->
 							</div>
@@ -1178,7 +1213,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 								<div class="cd-top-news-filter"></div>
 								<!-- /.filter -->
 								<div class="headline">
-									Dve zemlje priznale Kosovo od kada sam predsednik Vlade
+									<p>Dve zemlje priznale Kosovo od kada sam predsednik Vlade</p>
 																<div class="status">
 										<img src="images/status/16-bg.png" alt="">
 									</div>
@@ -1200,7 +1235,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 								<div class="cd-top-news-filter"></div>
 								<!-- /.filter -->
 								<div class="headline">
-									#BELEŽNICA Početak izgradnje pruge Beograd-Budimpešta do kraja 2015.
+									<p>#BELEŽNICA Početak izgradnje pruge Beograd-Budimpešta do kraja 2015.</p>
 															</div>
 								<!-- /.headline -->
 							</div>
@@ -1215,10 +1250,10 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 </div>
 <!-- /.gd-bg-1 -->
 
-	<div class="gd-container-1 sd-1 container">
+	<div class="gd-container-1 sd-1 container after-main">
 		<div class="grid-8 col-xs-12 col-sm-8 content-left">	
-			<div class="cd-video-box-1 ">
-				<div class="headline">
+			<div class="cd-video-box-1">
+				<div class="headline heading-h">
 					Video
 				</div>
 				<!-- /.headline -->
@@ -1228,74 +1263,84 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					<iframe width="621" height="400" src="//www.youtube.com/embed/15eS4rdtLVo?rel=0&wmode=transparent" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<!-- /.video-player -->	
-                				<div class="headline">
+	            <!-- <div class="headline">
 					Izdvajamo
+				</div> -->
+				<div class="other-videos"> <!--id="video-scroller"-->
+					<div class="ov-wrap">
+						<div class="position" id="ov-position">
+							<div class="item col-xs-4">
+								<a href="video/350/Investicije-su-tri-puta-manje-nego-u-nase-vreme"></a>
+								<div class="pic">
+									<img src="pictures/video/slika/2db96d76e217bdf9a09e315da48cd6e0.jpg" alt="">
+								</div>
+								<h2>
+									Investicije su tri puta manje nego u naše vreme 						</h2>
+							</div>
+							<!-- /.item grid-4 -->
+							<div class="item col-xs-4">
+								<a href="video/347/Nacelnik-Komunalne-policije-bez-odgovornosti-suspendovan-samo-njegov-vozac"></a>
+								<div class="pic">
+									<img src="pictures/video/slika/bb2c2849ac5552b812bd0a63bc08c927.jpg" alt="">
+								</div>
+								<h2>
+									Načelnik Komunalne policije bez odgovornosti, suspendovan samo njegov vozač?!						</h2>
+							</div>
+							<!-- /.item grid-4 -->
+							<div class="item col-xs-4">
+								<a href="video/340/Jos-se-ne-zna-ko-i-koliko-duguje-za-zakup-drzavnih-nepokretnosti"></a>
+								<div class="pic">
+									<img src="pictures/video/slika/41a29f194a206399caff3ca699781d8a.png" alt="">
+								</div>
+								<h2>
+									Još se ne zna ko i koliko duguje za zakup državnih nepokretnosti 						</h2>
+							</div>
+							<!-- /.item grid-4 -->
+							<div class="item col-xs-4">
+								<a href="video/339/Nova-prica-o-Sinisi-Malom-i-jos-jednoj-sumnjivoj-privatizaciji"></a>
+								<div class="pic">
+									<img src="pictures/video/slika/WkL9TVJ7VXw.jpg" alt="">
+								</div>
+								<h2>
+									Nova priča o Siniši Malom i još jednoj sumnjivoj privatizaciji 						</h2>
+							</div>
+							<!-- /.item grid-4 -->
+							<div class="item col-xs-4">
+								<a href="video/332/Celnici-Komunalne-policije-sprecavaju-rad-novinara"></a>
+								<div class="pic">
+									<img src="pictures/video/slika/fbfedea51a3b249e015010af5f7d5c88.jpg" alt="">
+								</div>
+								<h2>
+									Čelnici Komunalne policije sprečavaju rad novinara! 						</h2>
+							</div>
+							<!-- /.item grid-4 -->
+							<div class="item col-xs-4">
+								<a href="video/330/Predlog-zakona-o-ulaganjima-sluti-korupciju"></a>
+								<div class="pic">
+									<img src="pictures/video/slika/dd0b7c493faf6078f112ea18d31eff32.jpg" alt="">
+								</div>
+								<h2>
+									Predlog zakona o ulaganjima sluti korupciju 						</h2>
+							</div>
+							<!-- /.item grid-4 -->
+							<div class="item col-xs-4">
+								<a href="video/329/Krivicna-odgovornost-za-potpisnike-ugovora-o-Beogradu-na-vodi"></a>
+								<div class="pic">
+									<img src="pictures/video/slika/AeCjqoctrmY.jpg" alt="">
+								</div>
+								<h2>
+									Krivična odgovornost za potpisnike ugovora o "Beogradu na vodi"						</h2>
+							</div>
+						<!-- /.item grid-4 -->
+						</div>
+					</div>
+					<div class="btn-left" id="ov-btn-left" onclick="ov-video-left('left')">
+						<i class="fa fa-chevron-left"></i>
+					</div>
+					<div class="btn-right" id="ov-btn-right" onclick="ov-video-change('right')">
+						<i class="fa fa-chevron-right"></i>
+					</div>
 				</div>
-				<div class="other-videos" id="video-scroller">
-					<div class="item col-xs-4">
-						<a href="video/350/Investicije-su-tri-puta-manje-nego-u-nase-vreme"></a>
-						<div class="pic">
-							<img src="pictures/video/slika/2db96d76e217bdf9a09e315da48cd6e0.jpg" alt="">
-						</div>
-						<h2>
-							Investicije su tri puta manje nego u naše vreme 						</h2>
-					</div>
-					<!-- /.item grid-4 -->
-					<div class="item col-xs-4">
-						<a href="video/347/Nacelnik-Komunalne-policije-bez-odgovornosti-suspendovan-samo-njegov-vozac"></a>
-						<div class="pic">
-							<img src="pictures/video/slika/bb2c2849ac5552b812bd0a63bc08c927.jpg" alt="">
-						</div>
-						<h2>
-							Načelnik Komunalne policije bez odgovornosti, suspendovan samo njegov vozač?!						</h2>
-					</div>
-					<!-- /.item grid-4 -->
-					<div class="item col-xs-4">
-						<a href="video/340/Jos-se-ne-zna-ko-i-koliko-duguje-za-zakup-drzavnih-nepokretnosti"></a>
-						<div class="pic">
-							<img src="pictures/video/slika/41a29f194a206399caff3ca699781d8a.png" alt="">
-						</div>
-						<h2>
-							Još se ne zna ko i koliko duguje za zakup državnih nepokretnosti 						</h2>
-					</div>
-					<!-- /.item grid-4 -->
-					<div class="item col-xs-4">
-						<a href="video/339/Nova-prica-o-Sinisi-Malom-i-jos-jednoj-sumnjivoj-privatizaciji"></a>
-						<div class="pic">
-							<img src="pictures/video/slika/WkL9TVJ7VXw.jpg" alt="">
-						</div>
-						<h2>
-							Nova priča o Siniši Malom i još jednoj sumnjivoj privatizaciji 						</h2>
-					</div>
-					<!-- /.item grid-4 -->
-					<div class="item col-xs-4">
-						<a href="video/332/Celnici-Komunalne-policije-sprecavaju-rad-novinara"></a>
-						<div class="pic">
-							<img src="pictures/video/slika/fbfedea51a3b249e015010af5f7d5c88.jpg" alt="">
-						</div>
-						<h2>
-							Čelnici Komunalne policije sprečavaju rad novinara! 						</h2>
-					</div>
-					<!-- /.item grid-4 -->
-					<div class="item col-xs-4">
-						<a href="video/330/Predlog-zakona-o-ulaganjima-sluti-korupciju"></a>
-						<div class="pic">
-							<img src="pictures/video/slika/dd0b7c493faf6078f112ea18d31eff32.jpg" alt="">
-						</div>
-						<h2>
-							Predlog zakona o ulaganjima sluti korupciju 						</h2>
-					</div>
-					<!-- /.item grid-4 -->
-					<div class="item col-xs-4">
-						<a href="video/329/Krivicna-odgovornost-za-potpisnike-ugovora-o-Beogradu-na-vodi"></a>
-						<div class="pic">
-							<img src="pictures/video/slika/AeCjqoctrmY.jpg" alt="">
-						</div>
-						<h2>
-							Krivična odgovornost za potpisnike ugovora o "Beogradu na vodi"						</h2>
-					</div>
-					<!-- /.item grid-4 -->
-									</div>
                 				<!-- /.other-videos -->	
                 				<script>
 				   $(function(){
@@ -1309,7 +1354,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 				</script>
 			</div>
 			<!-- /.cd-video-box-1 -->
-        		</div>
+        </div>
 		<!-- /.grid-8 -->
 
 
@@ -1317,13 +1362,14 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
         	
         	
             <!--=============== PITAJTE ISTINOMER ==============================================-->
-            <div class="cd-question-and-answer-1" style="margin:0px;">
-				<div class="headline">Pitajte Istinomer</div>
+            <div class="cd-question-and-answer-1">
+				<div class="headline heading-h">Pitajte Istinomer</div>
 				<!-- /.headline -->
-				<div class="wrapper-scroll" id="question-and-answer-scroller">	
+				<div class="wrapper-scroll"> <!-- id="question-and-answer-scroller" -->	
 			
 					<div class="question">
-						<div>Šta se dešava sa Vučićevim obećanjem da će Vlada doneti Zakon o poreklu imovine?</div><div><br></div>					</div>
+						Šta se dešava sa Vučićevim obećanjem da će Vlada doneti Zakon o poreklu imovine? <!--izbrisati div backend-->
+					</div>
 					<!-- /.question -->
 					
 					<div class="answer">
@@ -1339,14 +1385,14 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 				      });
 				   });
 				</script>
-				<div class="more">
+				<!--<div class="more">
 					<a href="pitanje_odgovor/24/Hoce-li-se-doneti-Zakon-o-poreklu-imovine">Pročitaj celo pitanje i odgovor <i class="fa fa-angle-double-right"></i></a>
-				</div>
+				</div>-->
 				<div class="more">
 					<a href="pregled_pitanja_i_odgovora/">Pogledaj sva pitanja <i class="fa fa-angle-double-right"></i></a>
 				</div>
-				<div class="more">
-					Imaš pitanje? <a href="pitaj_istinomer/">Pitaj nas <i class="fa fa-angle-double-right"></i></a>
+				<div class="more ask-us">
+					<!--Imaš pitanje? --><a href="pitaj_istinomer/">Pitaj nas <i class="fa fa-angle-double-right"></i></a>
 				</div>	
 			</div>
 			<!-- /.cd-question-and-answer-1 -->
@@ -1397,7 +1443,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 
 			<div class="modul_anketa">
 			<style>
-				.cd-poll-1 .more {
+				/*.cd-poll-1 .more {
 				  text-align: right;
 				  margin: 0 10px 0px 0;
 				  padding:10px 0px 0px 0px;
@@ -1408,11 +1454,11 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 				  display: inline-block;
 				  color: #c4161c;
 				  font-size: 14px;
-				}
+				}*/
 			</style>
 		    <div class="cd-poll-1">
 
-				<div class="headline">
+				<div class="headline heading-h">
 					Anketa
 				</div>
 				<!-- /.headline -->
@@ -1502,18 +1548,21 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 		
 
 
-		<div class="container">
+		<div class="container other-news">
 			<div class="grid-4 col-xs-12 col-sm-4">
 				<div class="cd-more-news-1 sd-1">
-					<div class="headline">Obećanja</div>
+					<div class="headline heading-h">Obećanja</div>
 					<!-- /.headline -->
 					    <div class="item-big">
 						
 						<div class="pic-wrapper">
-							<a href="ocena/3217/U-oktobru-2014-otvaramo-pesacku-stazu-na-Brankovom-mostu"></a>
-							<div class="pic" style="height:205px">
-								                        	<!-- /.icon-video -->		
-	                        <img src="pictures/ocena/slika/c95163b3a5bcfc809448677243da3aaa.jpg" alt="" /></div>
+							<div class="pic">
+								<a class="img-shadow-lg width-100p" href="ocena/3217/U-oktobru-2014-otvaramo-pesacku-stazu-na-Brankovom-mostu">
+								
+		                        	<img src="pictures/ocena/slika/c95163b3a5bcfc809448677243da3aaa.jpg" alt="" />
+		                        
+		                        </a>
+		                    </div>
 							<div class="status">
 								<img src="images/status/20-bg.png" alt="">
 							</div>
@@ -1528,12 +1577,11 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 						<h1  style="height:66px;"><a href="ocena/3217/U-oktobru-2014-otvaramo-pesacku-stazu-na-Brankovom-mostu">U oktobru (2014) otvaramo pešačku stazu na Brankovom mostu </a></h1>
 						<h2>"Leva pešačka staza na Brankovom mostu u smeru ka Novom Beogradu biće sanirana i otvorena za pešake početkom oktobra."[...]</h2>
 						<h3>Gradski menadžer o rekonstrukciji Brankovog mosta. (Beta, 6. 9. 2014. godine)</h3>
-
 					</div>
 					<!-- /.item-big -->					
-										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
-							<div class="pic">
+					<div class="item">
+						<div class="alpha">
+							<div class="pic box-shadow-inset-sm">
 								
 								<a href="ocena/3218/Izmena-Zakona-o-Agenciji-za-borbu-protiv-korupcije"></a>
 									                        	<!-- /.icon-video -->		
@@ -1541,8 +1589,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3218/Izmena-Zakona-o-Agenciji-za-borbu-protiv-korupcije">
 									 Izmena Zakona o Agenciji za borbu protiv korupcij[...]
@@ -1555,8 +1603,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
-							<div class="pic">
+						<div class="alpha">
+							<div class="pic box-shadow-inset-sm">
 								
 								<a href="ocena/3213/U-2014dobijamo-prvu-zenu-generala"></a>
 									                        	<!-- /.icon-video -->		
@@ -1564,8 +1612,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3213/U-2014dobijamo-prvu-zenu-generala">
 									U 2014. dobijamo prvu ženu generala
@@ -1578,8 +1626,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
-							<div class="pic">
+						<div class="alpha">
+							<div class="pic box-shadow-inset-sm">
 								
 								<a href="ocena/3208/Projektna-dokumentacija-za-Klinicki-centar-Srbije-do-jula"></a>
 									                        	<!-- /.icon-video -->		
@@ -1587,8 +1635,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3208/Projektna-dokumentacija-za-Klinicki-centar-Srbije-do-jula">
 									Projektna dokumentacija za Klinički centar Srbije [...]
@@ -1601,8 +1649,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
-							<div class="pic">
+						<div class="alpha">
+							<div class="pic box-shadow-inset-sm">
 								
 								<a href="ocena/3076/Koridori-i-Putevi-Srbije-od-januara-2015-jedno-preduzece"></a>
 									                        	<!-- /.icon-video -->		
@@ -1610,8 +1658,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3076/Koridori-i-Putevi-Srbije-od-januara-2015-jedno-preduzece">
 									"Koridori" i "Putevi Srbije" od januara (2015) jed[...]
@@ -1634,16 +1682,17 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 			<!-- /.grid-4 -->
 			<div class="grid-4 col-xs-12 col-sm-4">
 				<div class="cd-more-news-1 sd-1">
-					<div class="headline">
+					<div class="headline heading-h">
 						Istinitost				</div>
 					<!-- /.headline -->
-					                					<div class="item-big">
+					    <div class="item-big">
 						
 						<div class="pic-wrapper">
-							<a href="ocena/3223/Imali-smo-drugi-BDP-u-regionu-sada-nazadujemo"></a>
-							<div class="pic" style="height:205px">
-								                        	<!-- /.icon-video -->		
-	                        <img src="pictures/ocena/slika/e5c0b22210fcbd437d82810f9ec92637.JPG" alt="" /></div>
+							<div class="pic">
+								<a class="img-shadow-lg" href="ocena/3223/Imali-smo-drugi-BDP-u-regionu-sada-nazadujemo">	
+	                        		<img src="pictures/ocena/slika/e5c0b22210fcbd437d82810f9ec92637.JPG" alt="" />
+	                        	</a>
+	                        </div>
 							<div class="status">
 								<img src="images/status/15-bg.png" alt="">
 							</div>
@@ -1662,8 +1711,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item-big -->					
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
-							<div class="pic">
+						<div class="alpha">
+							<div class="pic box-shadow-inset-sm">
 								
 								<a href="ocena/3226/Dve-zemlje-priznale-Kosovo-od-kada-sam-predsednik-Vlade"></a>
 									                        	<!-- /.icon-video -->		
@@ -1671,8 +1720,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3226/Dve-zemlje-priznale-Kosovo-od-kada-sam-predsednik-Vlade">
 									Dve zemlje priznale Kosovo od kada sam predsednik [...]
@@ -1685,8 +1734,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
-							<div class="pic">
+						<div class="alpha">
+							<div class="pic box-shadow-inset-sm">
 								
 								<a href="ocena/3222/Nakon-incidenta-sa-dronom-mi-smo-reagovali-hladne-glave"></a>
 									                        	<!-- /.icon-video -->		
@@ -1694,8 +1743,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3222/Nakon-incidenta-sa-dronom-mi-smo-reagovali-hladne-glave">
 									Nakon incidenta sa dronom, mi smo reagovali hladne[...]
@@ -1708,8 +1757,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
-							<div class="pic">
+						<div class="alpha">
+							<div class="pic box-shadow-inset-sm">
 								
 								<a href="ocena/3215/Kurs-evra-se-nije-menjao-od-kada-sam-ja-predsednik-Vlade"></a>
 									                        	<!-- /.icon-video -->		
@@ -1717,8 +1766,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3215/Kurs-evra-se-nije-menjao-od-kada-sam-ja-predsednik-Vlade">
 									Kurs evra se nije menjao od kada sam ja predsednik[...]
@@ -1731,8 +1780,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
-							<div class="pic">
+						<div class="alpha">
+							<div class="pic box-shadow-inset-sm">
 								
 								<a href="ocena/3209/Ne-vidi-se-da-je-nacelnik-Komunalne-policije-na-snimcima-KRIK-a"></a>
 									                        	<!-- /.icon-video -->		
@@ -1740,8 +1789,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3209/Ne-vidi-se-da-je-nacelnik-Komunalne-policije-na-snimcima-KRIK-a">
 									Ne vidi se da je načelnik Komunalne policije na sn[...]
@@ -1765,17 +1814,18 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 			</div>
 			<!-- /.grid-4 -->
 		    <div class="grid-4 col-xs-12 col-sm-4">
-				<div class="cd-more-news-1 sd-1">
-					<div class="headline">
+				<div class="cd-more-news-1 sd-1 doslednost">
+					<div class="headline heading-h">
 						Doslednost				</div>
 					<!-- /.headline -->
-					                					<div class="item-big">
+					    <div class="item-big">
 						
 						<div class="pic-wrapper">
-							<a href="ocena/3086/Necemo-traziti-od-MMF-a-prolongiranje-rokova-za-firme-u-restrukturiranju"></a>
-							<div class="pic" style="height:205px">
-								                        	<!-- /.icon-video -->		
-	                        <img src="pictures/ocena/slika/67ad64fe6b0f13a9491ff05bce054e74.jpg" alt="" /></div>
+							<div class="pic">
+								<a class="img-shadow-lg width-100p" href="ocena/3086/Necemo-traziti-od-MMF-a-prolongiranje-rokova-za-firme-u-restrukturiranju">
+	                        		<img src="pictures/ocena/slika/67ad64fe6b0f13a9491ff05bce054e74.jpg" alt="" />
+	                        	</a>
+	                        </div>
 							<div class="status">
 								<img src="images/status/10-bg.png" alt="">
 							</div>
@@ -1794,8 +1844,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item-big -->					
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
-							<div class="pic">
+						<div class="alpha">
+							<div class="pic box-shadow-inset-sm">
 								
 								<a href="ocena/3095/Podnecu-ostavku-ako-to-trazi-Agencija-za-borbu-protiv-korupcije"></a>
 									                        	<!-- /.icon-video -->		
@@ -1803,8 +1853,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3095/Podnecu-ostavku-ako-to-trazi-Agencija-za-borbu-protiv-korupcije">
 									Podneću ostavku ako to traži Agencija za borbu pro[...]
@@ -1817,8 +1867,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
-							<div class="pic">
+						<div class="alpha">
+							<div class="pic box-shadow-inset-sm">
 								
 								<a href="ocena/3081/Beograd-na-vodi-zavrsen-do-2019"></a>
 									                        	<!-- /.icon-video -->		
@@ -1826,8 +1876,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3081/Beograd-na-vodi-zavrsen-do-2019">
 									"Beograd na vodi" završen do 2019.
@@ -1840,8 +1890,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
-							<div class="pic">
+						<div class="alpha">
+							<div class="pic box-shadow-inset-sm">
 								
 								<a href="ocena/3044/Odustajem-od-namere-da-utvrdim-ko-je-vlasnik-Politike"></a>
 									                        	<!-- /.icon-video -->		
@@ -1849,8 +1899,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3044/Odustajem-od-namere-da-utvrdim-ko-je-vlasnik-Politike">
 									Odustajem od namere da utvrdim ko je vlasnik “Poli[...]
@@ -1863,8 +1913,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div>
 					<!-- /.item -->
 										                					<div class="item">
-						<div class="grid-4 alpha col-xs-4">
-							<div class="pic">
+						<div class="alpha">
+							<div class="pic box-shadow-inset-sm">
 								
 								<a href="ocena/3025/Kobre-su-premijerovom-bratu-samo-pravile-drustvo"></a>
 									                        	<!-- /.icon-video -->		
@@ -1872,8 +1922,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 							</div>
 							<!-- /.pic -->
 						</div>
-						<!-- /.grid-4 alpha col-xs-4 -->
-						<div class="grid-8 omega col-xs-8">
+						<!-- /.alpha -->
+                        <div class="omega col-xs-7">
 							<h2>
 								<a href="ocena/3025/Kobre-su-premijerovom-bratu-samo-pravile-drustvo">
 									“Kobre” su premijerovom bratu samo pravile društvo[...]
@@ -1903,21 +1953,24 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 
 			<div class="grid-4 col-xs-4">
 				<div class="cd-advertisement-1">
-					<a href="http://www.istinomer.rs/pregled_video_kategorije/11/Istinomer-intervju/" target="_blank"><img src="pictures/homepage_banner/slika/e185de0b66ee9ef444d91e112de54107.jpg" border="0" title="Intervui o političkoj odgovornosti"/></a>
+					<a href="http://www.istinomer.rs/pregled_video_kategorije/11/Istinomer-intervju/" target="_blank" class="img-shadow-lg"><img src="pictures/homepage_banner/slika/e185de0b66ee9ef444d91e112de54107.jpg" border="0" title="Intervui o političkoj odgovornosti"/></a>
 				</div>
 				<!-- /.cd-advertisement-1 -->
 			</div>
 			<!-- /.grid-4 -->
 			<div class="grid-4 col-xs-4">
 				<div class="cd-advertisement-1">
-					<a href="https://apps.facebook.com/istinomer_quiz/" target="_blank"><img src="pictures/homepage_banner/slika/0b223d52b7729cc564a47e12c9d3c739.png" border="0" title="Proveri svoje znanje o politici"/></a>
+					<a class="img-shadow-lg" href="https://apps.facebook.com/istinomer_quiz/" target="_blank">
+						<img src="pictures/homepage_banner/slika/0b223d52b7729cc564a47e12c9d3c739.png" border="0" title="Proveri svoje znanje o politici"/></a>
 				</div>
 				<!-- /.cd-advertisement-1 -->
 			</div>
 			<!-- /.grid-4 -->
 			<div class="grid-4 col-xs-4">
 				<div class="cd-advertisement-1">
-					<a href="http://www.deklaracija.rs" target="_blank"><img src="pictures/homepage_banner/slika/053b5cbe3e1a3dd5217dd16fc5a1bd0d.png" border="0" title="Tvoj podrška znači. Potpiši deklaraciju!"/></a>
+					<a class="img-shadow-lg" href="http://www.deklaracija.rs" target="_blank">
+						<img src="pictures/homepage_banner/slika/053b5cbe3e1a3dd5217dd16fc5a1bd0d.png" border="0" title="Tvoj podrška znači. Potpiši deklaraciju!"/>
+					</a>
 				</div>
 				<!-- /.cd-advertisement-1 -->
 			</div>
@@ -1926,7 +1979,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 			
 			<div class="cd-recommend-1">
 				<div class="grid-12 col-xs-12">
-					<div class="headline">
+					<div class="headline heading-h">
 						Istinomer preporučuje
 					</div>
 					<!-- /.headline -->
@@ -1936,7 +1989,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 
 				<div class="grid-4 col-xs-12 col-sm-4">
 					<div class="pic">
-						<a href="http://www.istinomer.rs/clanak/1279/Odgovoran-potez-potpredsednice-Vlade-Zorane-Mihajlovic">
+						<a class="img-shadow-lg" href="http://www.istinomer.rs/clanak/1279/Odgovoran-potez-potpredsednice-Vlade-Zorane-Mihajlovic">
 						<img src="pictures/istinomer_preporucuje/slika/a03f00285972c8a38230c61329929ed1.jpg" alt="" />
 						</a>
 					</div>
@@ -1947,34 +2000,20 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 						Istinomer podstiče demokratsku, tolerantnu debatu o svim pokrenutim pitanjima i otvoreni smo za nove ideje i predloge. Ocenjeni političari su dobrodošli da pruže dodatna objašnjenja, ospore date ocene ili dodatno osvetle probleme iz svog ugla gledanja. Naše je da dosledno i bez sujete priznamo i ispravimo svaku grešku koju napravimo. <br />
 	Posebno ističemo da nas je pismo potpredsednice Vlade Zorane Mihajlović dodatno motivisalo da nastavimo da radimo naš posao. Potpredsednica Vlade Mihajlović je pismom usmerila fokus debate na argumente i činjenice, tako da, iskreno pozdravljamo ovakav način komunikacije potpredsednice Vlade.				</div>
 					<!-- /.text -->
-					<a href="http://www.istinomer.rs/clanak/1279/Odgovoran-potez-potpredsednice-Vlade-Zorane-Mihajlovic" class="all-btn">CEO TEKST</a>
+					<a href="http://www.istinomer.rs/clanak/1279/Odgovoran-potez-potpredsednice-Vlade-Zorane-Mihajlovic" class="all-btn">CEO TEKST <i class="fa fa-angle-double-right"></i></a>
 				</div>
 				<!-- /.grid-8 -->
 				<div class="clear"></div>
-				<div class="border"></div>
+				<!-- <div class="border"></div> --> <!--delete from backend-->
 				<!-- /.border -->
 			</div>
 			<!-- /.cd-recommend-1 -->
 			
-			
+			<div class="cd-popular-quotes-wrap">
 			<div class="grid-4 col-xs-12 col-sm-4">
 				<!--=============== STO ZELENIJE TO PLIVA ==============================================-->
-	    		<style>
-		.cd-popular-quotes-1 .more {
-		  text-align: right;
-		  /*margin: 0 10px 10px 0;
-		  padding:0px 0px 10px 0px;*/
-		  font-size: 14px;
-		}
-		
-		.cd-popular-quotes-1 .more a {
-		  display: inline-block;
-		  color: #c4161c;
-		  font-size: 14px;
-		}
-	</style>
 	<div class="cd-popular-quotes-1">
-				<div class="headline">
+				<div class="headline heading-h">
 					Što zelenije to pliva
 				</div>
 				<!-- /.headline -->
@@ -2014,7 +2053,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 		}
 	</style>
 	<div class="cd-popular-quotes-1 ">
-				<div class="headline">
+				<div class="headline heading-h">
 					Dnevnik uvreda
 				</div>
 				<!-- /.headline -->
@@ -2054,7 +2093,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 		}
 	</style>
 	<div class="cd-popular-quotes-1 ">
-				<div class="headline">
+				<div class="headline heading-h">
 					Beležnica
 				</div>
 				<!-- /.headline -->
@@ -2080,6 +2119,8 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 			<!-- /.cd-popular-quotes-1 -->		</div>
 			<!-- /.grid-4 -->
 		</div>
+
+		</div>
 		
 		<div class="clear"></div>
 </div>
@@ -2096,7 +2137,7 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 		<div class="grid-12">
 			<div class="cd-footer-1">
 				
-					<img src="images/footer-logo.png" alt="" class="logo">
+				<img src="images/footer-logo.png" alt="" class="logo">
 				
 				<div class="clear"></div>
 				<div class="content">
@@ -2123,11 +2164,11 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					</div><!-- /.grid-8 -->
 					<div class="grid-4 col-xs-4">
 						<div class="social">
-							<a href="https://www.facebook.com/Istinomer" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a>
-							<a href="https://twitter.com/istinomer" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a>
-							<a href="https://www.youtube.com/user/Istinomer" target="_blank"><i class="fa fa-youtube-square fa-2x"></i></a>
-							<a href="https://plus.google.com/115238630692666107568" target="_blank"><i class="fa fa-google-plus-square fa-2x"></i></a>
-							<a href="http://www.istinomer.rs/feed/" target="_blank"><i class="fa fa-rss-square fa-2x"></i></a>
+							<a href="https://www.facebook.com/Istinomer" target="_blank"><i class="fa fa-facebook"></i></a>
+							<a href="https://twitter.com/istinomer" target="_blank"><i class="fa fa-twitter"></i></a>
+							<a href="https://www.youtube.com/user/Istinomer" target="_blank"><i class="fa fa-youtube-play"></i></a>
+							<a href="https://plus.google.com/115238630692666107568" target="_blank"><i class="fa fa-google-plus"></i></a>
+							<a href="http://www.istinomer.rs/feed/" target="_blank"><i class="fa fa-rss"></i></a>
 						</div>
 						<!-- /.social -->
 					</div><!-- /.grid-4 -->
