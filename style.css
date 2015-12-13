@@ -128,14 +128,13 @@ body {
 .cd-header-1 .logo {
     width: 25%;
     height: 60px;
-    margin-top: -20px;
+    margin-top: -25px;
     margin-left: -20px;
     float: left;
     text-align: center;
 }
 .cd-header-1 .logo img {
-    width: 100%;
-    max-width: 250px;
+    width: 250px;
 }
 .top-content {
     float: right;
@@ -1145,6 +1144,7 @@ body {
 .cd-popular-quotes-1 {
     /*background: #e7e7e8;*/
     margin-right: 5px;
+    margin-bottom: 5px;
     box-shadow: 0 0 10px #bbb inset;
 }
 .cd-popular-quotes-wrap .grid-4:nth-child(3) .cd-popular-quotes-1 {
@@ -1158,11 +1158,13 @@ body {
 .cd-popular-quotes-1 .info {
     text-align: center;
     font-size: 16px;
-    font-weight: 700;
+    /*font-weight: 700;*/
     color: #c4161c;
+    margin-top: 20px;
 }
 .cd-popular-quotes-1 .info span {
     display: block;
+    font-size: 14px;
 }
 .cd-popular-quotes-1 .info a {
     margin: 5px 0 0;
@@ -1204,7 +1206,14 @@ body {
 }
 
 /*FOOTER*/
-.cd-move-top-1 {
+.footer {
+    background: #09223f;
+    font-family: "DinPro";
+}
+.footer-logo {
+    margin: 5px 0 10px 10px;
+}
+/*.cd-move-top-1 {
     box-sizing: border-box;
     margin: 0 0 20px -70px;
     background: #a5a7aa;
@@ -1214,12 +1223,13 @@ body {
     padding: 2px 0 0;
     text-align: center;
     font-size: 14px;
+}*/
+.cd-footer-1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .cd-footer-1 .content {
-    /* background: #e7e7e8; */
-    /*padding: 9px 0;*/
-    /*margin: 9px 0 0;*/
-    padding: 5px;
+    margin-top: 20px;
     position: relative;
     overflow: hidden;
 }
@@ -1228,15 +1238,23 @@ body {
     position: relative;
     display: inline-block;
     margin: 0 20px 0 0;
-    height: 120px;
+    height: 130px;
     box-sizing: border-box;
     padding: 17px 15px;
 }
+.cd-footer-1 .item .link {
+    margin-bottom: 10px;
+}
 .cd-footer-1 .item a {
     display: block-inline;
-    color: #09223f;
-    font-weight: 700;
-    font-size: 14px;
+    color: #fff;
+    opacity: 0.8;
+    /*font-weight: 700;*/
+    font-size: 20px;
+}
+.cd-footer-1 .item a:hover {
+    text-decoration: none;
+    opacity: 1;
 }
 .cd-footer-1 .item:after, .cd-footer-1 .item:before {
     display: block;
@@ -1249,6 +1267,7 @@ body {
     left: 0;
     top: 0;
     background: url(http://www.istinomer.rs/images/square_top.png) no-repeat;
+    opacity: 0.2;
 }
 .cd-footer-1 .item:after, .cd-footer-1 .item:before {
     display: block;
@@ -1261,16 +1280,26 @@ body {
     right: 0;
     bottom: 0;
     background: url(http://www.istinomer.rs/images/square_bottom.png) no-repeat;
+    opacity: 0.2;
 }
 .cd-footer-1 .social:before {
     content: 'Pratite nas';
     display: block;
     color: #c4161c;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 20px;
+    /*font-weight: 700;*/
     margin: 0 0 10px;
+    font-family: 'DinPro';
+    text-transform: uppercase;
 }
-
+.cd-footer-1 .social .fa {
+    color: #fff;
+    margin-right: 10px;
+    opacity: 0.7;
+}
+.cd-footer-1 .social .fa:hover {
+    opacity: 0.9;
+}
 /*BOOTSTRAP EDIT*/
 .container {
     max-width: 960px;
