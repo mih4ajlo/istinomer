@@ -15,8 +15,8 @@
     src: url(fonts/Graffiare.ttf);
 }
 @font-face {
-    font-family: Verge;
-    src: url(fonts/verge.woff);
+    font-family: Test;
+    src: url(fonts/constan.ttf);
 }
 h1, h2, p {
     margin: 0 !important;
@@ -691,10 +691,7 @@ body {
 .cd-top-news-1 .item .headline {
     position: absolute;
     width: 80%;
-    /*height: 100%;*/
     bottom: 0px;
-    /*width: 170px;
-    height: 150px;*/
     padding: 10px;
     color: #fff;
     font-size: 15px;
@@ -703,11 +700,6 @@ body {
     text-shadow: 1px 1px 2px rgba(0,0,0,1)
 }
 .cd-top-news-1 .item .headline .status {
-   /* position: absolute;
-    right: 5px;
-    bottom: 20px;*/
-    /*margin-top: 10px;*/
-    /*text-align: center;*/
     position: absolute;
     top: -25px;
 }
@@ -721,6 +713,7 @@ body {
 }
 /*VIDEO*/
 .cd-video-box-1 {
+    position: relative;
     overflow: hidden;
     padding-right: 5px;
     box-sizing: border-box;
@@ -731,11 +724,15 @@ body {
 
 .cd-video-box-1 .other-videos {
     /*background: #09223f;*/
-    padding: 10px;
+    width: 100%;
+    overflow: hidden;
+    margin-top: 5px;
+    position: relative;
+    height: 200px;
 }
 .cd-video-box-1 .other-videos .item {
-    width: 195px;
-    margin: 0 6px;
+    width: 200px;
+    margin-right: 5px;
 }
 .cd-video-box-1 .other-videos .item a {
     display: block;
@@ -746,28 +743,36 @@ body {
 }
 .cd-video-box-1 .other-videos .item .pic {
     position: relative;
-    /*margin: 0 0 5px;*/
     height: 110px;
     overflow: hidden;
 }
 .cd-video-box-1 .other-videos .item .pic img {
-    width: 100%;
-    /*height: 117px;*/
+    min-width: 100%;
+    height: 130%;
 }
 .cd-video-box-1 .other-videos .item h2 {
     color: #09223f;
     line-height: 20px;
     font-size: 14px;
     font-weight: 500;
+    padding-top: 5px;
 }
-.cd-video-box-1 .other-videos .mCustomScrollBox {
-    height: auto !important;
+.cd-video-box-1 .ov-wrap {
+    width: 96%;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.cd-video-box-1 .other-videos .position {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 9999px;
+    min-height: 200px;
 }
 
-
-/*.content-right {
-    background: #e7e7e8;
-}*/
 
 /*Q&A*/
 .cd-question-and-answer-1 {
@@ -781,7 +786,6 @@ body {
     /*height: 176px;*/
     overflow: hidden;
     padding: 10px;
-    margin: 0 0 10px;
 }
 .mCSB_container {
     width: auto;
