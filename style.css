@@ -565,7 +565,7 @@ body {
 }
 .cd-main-nav-1 .item-2 .picture img {
     height: 116px;
-    position: absolute;
+    /*position: absolute;*/
     top: 0;
     left: 0;
     bottom: 0;
@@ -758,12 +758,12 @@ body {
     padding-top: 5px;
 }
 .cd-video-box-1 .ov-wrap {
-    width: 96%;
+    width: 94%;
     height: 200px;
     position: relative;
     overflow: hidden;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 3%;
+    margin-right: 3%;
 }
 .cd-video-box-1 .other-videos .position {
     position: absolute;
@@ -771,6 +771,18 @@ body {
     top: 0;
     width: 9999px;
     min-height: 200px;
+}
+.cd-video-box-1 .other-videos .btn-left {
+    position: absolute;
+    top: 52px;
+    left: 2px;
+    color: #bbb;
+}
+.cd-video-box-1 .other-videos .btn-right {
+    position: absolute;
+    top: 52px;
+    right: 2px;
+    color: #bbb;
 }
 
 
@@ -1313,13 +1325,12 @@ body {
     margin-left: .2em;
 }*/
 
-.img-shadow-lg {
+.img-shadow-lg, .img-shadow-sm {
     position: relative;
     max-width: 100%;
-    width: 100%;
+    /*width: 100%;*/
     float: left;
 }
-
 .img-shadow-lg::before {
     content: "";
     position: absolute;
@@ -1330,8 +1341,18 @@ body {
     box-shadow: inset 0 0 80px #000;
     -moz-box-shadow: inset 0 0 80px #000;
     -webkit-box-shadow: inset 0 0 80px #000;
-} 
-
-.img-shadow-lg img {
+}
+.img-shadow-lg img, .img-shadow-sm img {
     float: left;
+}
+.img-shadow-sm::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    box-shadow: inset 0 0 40px #000;
+    -moz-box-shadow: inset 0 0 40px #000;
+    -webkit-box-shadow: inset 0 0 40px #000;
 }
