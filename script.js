@@ -8,7 +8,7 @@ function scroll() {
         $('.cd-main-nav-1').addClass('nav-sticky');
         // $('.content').addClass('menu-padding');
         $(".back-to-top").css("display", "inherit");
-        $(".search-btn").css("right", 30);
+        $(".search-btn").css("right", 40);
     } else {
         $('.cd-main-nav-1').removeClass('nav-sticky');
         $(".back-to-top").css("display", "none");
