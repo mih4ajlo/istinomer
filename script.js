@@ -1,3 +1,22 @@
+function stickyMainMenu() {
+
+var menu = $('.cd-main-nav-1');
+var origOffsetY = menu.offset().top;
+
+function scroll() {
+    if ($(window).scrollTop() >= origOffsetY) {
+        $('.cd-main-nav-1').addClass('nav-sticky');
+        // $('.content').addClass('menu-padding');
+    } else {
+        $('.cd-main-nav-1').removeClass('nav-sticky');
+        // $('.content').removeClass('menu-padding');
+    }
+
+
+   }
+  document.onscroll = scroll;
+};
+
 function hnmaxHeight() {
     var maxHeight = 0;
 
@@ -84,6 +103,7 @@ jQuery(document).ready(function() {
 	hnmaxHeight();
     setDimensions();
     fontSize();
+    stickyMainMenu();
     // toggleCurrent();
 });
 
