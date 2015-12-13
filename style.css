@@ -417,7 +417,7 @@ body {
     height: 24px;
 }
 .hn-col-wrap {
-    /*width: 879px;*/
+    width: 879px;
     float: left;
     display: flex;
     height: 220px;
