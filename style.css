@@ -775,12 +775,14 @@ body {
     top: 52px;
     left: 2px;
     color: #bbb;
+    cursor: pointer;
 }
 .cd-video-box-1 .other-videos .btn-right {
     position: absolute;
     top: 52px;
     right: 2px;
     color: #bbb;
+    cursor: pointer;
 }
 
 

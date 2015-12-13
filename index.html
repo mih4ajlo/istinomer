@@ -1327,15 +1327,15 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 						<!-- /.item grid-4 -->
 						</div>
 					</div>
-					<div class="btn-left" id="ov-btn-left" onclick="ov-video-left('left')">
+					<div class="btn-left" id="ov-btn-left" onclick="ov_video_change('left')">
 						<i class="fa fa-chevron-left"></i>
 					</div>
-					<div class="btn-right" id="ov-btn-right" onclick="ov-video-change('right')">
+					<div class="btn-right" id="ov-btn-right" onclick="ov_video_change('right')">
 						<i class="fa fa-chevron-right"></i>
 					</div>
 				</div>
                 				<!-- /.other-videos -->	
-                				<script>
+               <script>
 				   // $(function(){
 				   //    $("#video-scroller").mCustomScrollbar({
 				   //    	horizontalScroll:true,
@@ -1344,6 +1344,30 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 				        
 				   //    });
 				   // });
+					var ov_active_slide = 1;
+
+					function ov_video_change(side){
+						var ov_max_slides = 5;	
+						
+						if(side=="right" && (ov_active_slide<ov_max_slides)){
+							$('#ov-btn-left').removeClass('disabled');
+
+							$('#ov-position').animate({left:(ov_active_slide)*(-jQuery(".cd-video-box-1 .other-videos .item").outerWidth())},"fast");
+							ov_active_slide ++;
+							if(ov_active_slide==ov_max_slides){
+								$('#ov-btn-right').addClass('disabled');
+							}
+						}else if(side=="left" && (ov_active_slide>1)){
+							
+							$('#ov-btn-right').removeClass('disabled');
+							ov_active_slide --;
+							$('#ov-position').animate({left:(ov_active_slide)*(-jQuery(".cd-video-box-1 .other-videos .item").outerWidth())},"fast");
+							
+							if(ov_active_slide==1){
+								$('#ov-btn-left').addClass('disabled');
+							}
+						}
+					}
 				</script>
 			</div>
 			<!-- /.cd-video-box-1 -->

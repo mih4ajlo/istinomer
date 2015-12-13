@@ -24,7 +24,6 @@ function scroll() {
 function hideStickyMainMenu() {
     var previousScroll = 0,
     navOffset = $('.cd-main-nav-1').height()+260;
-    console.log(navOffset);
 
     $(window).scroll(function () {
 
