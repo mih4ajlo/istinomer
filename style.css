@@ -14,10 +14,6 @@
     font-family: Graffiare;
     src: url(fonts/Graffiare.ttf);
 }
-@font-face {
-    font-family: Test;
-    src: url(fonts/constan.ttf);
-}
 h1, h2, p {
     margin: 0 !important;
 }
@@ -834,13 +830,15 @@ body {
 .cd-question-and-answer-1 .more {
     text-align: right;
     margin-left: 10px;
-    font-size: 14px;
     display: inline-block;
 }
 .cd-question-and-answer-1 .more a {
-    display: inline-block;
     color: #c4161c;
-    font-size: 14px;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.cd-question-and-answer-1 .more.overview a {
+    color: #000;
 }
 .ask-us {
     position: absolute;
@@ -880,20 +878,25 @@ body {
 .cd-poll-1 .answer-btn {
     background: #c4161c;
     color: #fff;
-    /*border-radius: 5px;*/
     padding: 7px;
-    display: inline-block;
-    margin-top: 10px;
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 80px;
 }
 .cd-poll-1 .answer-btn:hover {
     background: #db191f;
     cursor: pointer;
 }
 .cd-poll-1 .show-result-btn {
-    display: inline-block;
-    margin: 5px 0 0;
-    font-size: 14px;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 12px;
     color: #000;
+    text-transform: uppercase;
 }
 .cd-poll-1 .show-result-btn:hover {
     color: #c4161c;
@@ -901,9 +904,7 @@ body {
 }
 .cd-poll-1 .more {
     text-align: right;
-    /*margin: 0 10px 0px 0;
-    padding: 10px 0px 0px 0px;*/
-    font-size: 14px;
+    font-size: 12px;
     position: absolute;
     bottom: 10px;
     right: 0px;
@@ -911,7 +912,6 @@ body {
 .cd-poll-1 .more a {
     display: inline-block;
     color: #c4161c;
-    font-size: 14px;
     margin-right: 10px;
 }
 
@@ -1184,7 +1184,7 @@ body {
     color: #a5a7aa;
 }
 .cd-popular-quotes-1 .text {
-    padding: 40px 10px;
+    padding: 25px 10px;
     font-size: 14px;
     line-height: 16px;
     font-style: italic;
@@ -1203,6 +1203,8 @@ body {
     display: inline-block;
     color: #c4161c;
     font-size: 14px;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 /*FOOTER*/
