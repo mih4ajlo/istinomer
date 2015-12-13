@@ -1086,38 +1086,38 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 </div>
 
 	<script type="text/javascript">
-		$(document).ready(function() {
-			// grab the initial top offset of the navigation 
-		   	var stickyNavTop = $('#sticky-nav').offset().top;
+	// 	$(document).ready(function() {
+	// 		// grab the initial top offset of the navigation 
+	// 	   	var stickyNavTop = $('#sticky-nav').offset().top;
 		   	
-		   	// our function that decides weather the navigation bar should have "fixed" css position or not.
-		   	var stickyNav = function(){
+	// 	   	// our function that decides weather the navigation bar should have "fixed" css position or not.
+	// 	   	var stickyNav = function(){
 
-			    var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+	// 		    var scrollTop = $(window).scrollTop(); // our current vertical position from the top
 			         
-			    // if we've scrolled more than the navigation, change its position to fixed to stick to top,
-			    // otherwise change it back to relative
-			    if ((scrollTop > stickyNavTop && !hot_news_open)||(scrollTop > 610 && hot_news_open)) { 
-			        $('#sticky-nav').addClass('gd-sticky-1');
-			        $('#sticky-arrow').fadeIn(400);
-			    } else {
-			        $('#sticky-nav').removeClass('gd-sticky-1'); 
-			        $('#sticky-arrow').fadeOut(400);
-			    }
-			};
+	// 		    // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+	// 		    // otherwise change it back to relative
+	// 		    if ((scrollTop > stickyNavTop && !hot_news_open)||(scrollTop > 610 && hot_news_open)) { 
+	// 		        $('#sticky-nav').addClass('gd-sticky-1');
+	// 		        $('#sticky-arrow').fadeIn(400);
+	// 		    } else {
+	// 		        $('#sticky-nav').removeClass('gd-sticky-1'); 
+	// 		        $('#sticky-arrow').fadeOut(400);
+	// 		    }
+	// 		};
 
-			stickyNav();
-			// and run it again every time you scroll
-			$(window).scroll(function() {
-				stickyNav();
-			});
-		});
+	// 		stickyNav();
+	// 		// and run it again every time you scroll
+	// 		$(window).scroll(function() {
+	// 			stickyNav();
+	// 		});
+	// 	});
 
-		function move_to_top(){
-			$('html, body').animate({
-	        scrollTop: $("#top-page").offset().top
-	    	}, 2000);
-		}
+	// 	function move_to_top(){
+	// 		$('html, body').animate({
+	//         scrollTop: $("#top-page").offset().top
+	//     	}, 2000);
+	// 	}
 
 	</script>
 	<div class="gd-bg-1 sd-1">
@@ -1336,14 +1336,14 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 				</div>
                 				<!-- /.other-videos -->	
                 				<script>
-				   $(function(){
-				      $("#video-scroller").mCustomScrollbar({
-				      	horizontalScroll:true,
-				      	theme: "light-thick"
+				   // $(function(){
+				   //    $("#video-scroller").mCustomScrollbar({
+				   //    	horizontalScroll:true,
+				   //    	theme: "light-thick"
 
 				        
-				      });
-				   });
+				   //    });
+				   // });
 				</script>
 			</div>
 			<!-- /.cd-video-box-1 -->
@@ -1370,14 +1370,14 @@ _atrk_opts = { atrk_acct:"DQCem1aIF5R1N8", domain:"istinomer.rs",dynamic: true};
 					<!-- /.answer -->
 				</div><!-- /.wrapper-scroll -->
 				<script>
-				   $(function(){
-				      $("#question-and-answer-scroller").mCustomScrollbar({
+				//    $(function(){
+				//       $("#question-and-answer-scroller").mCustomScrollbar({
 				      	
-				      	theme: "dark"
+				//       	theme: "dark"
 				        
-				      });
-				   });
-				</script>
+				//       });
+				//    });
+				// </script>
 				<!--<div class="more">
 					<a href="pitanje_odgovor/24/Hoce-li-se-doneti-Zakon-o-poreklu-imovine">Pročitaj celo pitanje i odgovor <i class="fa fa-angle-double-right"></i></a>
 				</div>-->

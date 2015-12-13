@@ -21,6 +21,27 @@ function scroll() {
   document.onscroll = scroll;
 };
 
+function hideStickyMainMenu() {
+    var previousScroll = 0,
+    navOffset = $('.cd-main-nav-1').height()+260;
+    console.log(navOffset);
+
+    $(window).scroll(function () {
+
+        var currentScroll = $(this).scrollTop();
+        if (currentScroll > navOffset) {
+            if (Math.abs(currentScroll - previousScroll) > 40) {
+                if (currentScroll > previousScroll) {
+                    $('.cd-main-nav-1').addClass("retreat");
+                } else {
+                    $('.cd-main-nav-1').removeClass("retreat");
+                }
+            }
+        }
+        previousScroll = currentScroll;
+    });
+}
+
 function hnmaxHeight() {
     var maxHeight = 0;
 
@@ -118,6 +139,7 @@ jQuery(document).ready(function() {
     fontSize();
     stickyMainMenu();
     backToTop();
+    hideStickyMainMenu();
     // toggleCurrent();
 });
 

@@ -445,6 +445,7 @@ body {
     font-size: 13px;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
+    display: inherit;
 }
 .cd-header-1 .btn-hot-news-1, .cd-main-nav-1 {
     text-align: center;
@@ -597,7 +598,9 @@ body {
     cursor: pointer;
     text-decoration: none;
 }
-
+.cd-main-nav-1.retreat {
+    display: none;
+}
 
 /*TOP-NEWS*/
 .gd-bg-1 {
