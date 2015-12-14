@@ -515,6 +515,14 @@ body {
     overflow: hidden;
     display: none;
 }
+@media screen and (max-width: 960px) {
+    .cd-main-nav-1 .dropdown-wrapper {
+        display: none !important;
+    }
+    .cd-main-nav-1 .item-1 .fa {
+        display: none !important;
+    }
+}
 .mni-position-wrapper {
     height: 244px;
     width: 100%;
@@ -912,7 +920,7 @@ body {
     text-transform: uppercase;
 }
 .cd-poll-1 .show-result-btn:hover {
-    color: #c4161c;
+    text-decoration: underline;
     cursor: pointer;
 }
 .cd-poll-1 .more {
