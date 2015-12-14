@@ -772,17 +772,25 @@ body {
 }
 .cd-video-box-1 .other-videos .btn-left {
     position: absolute;
-    top: 52px;
+    top: 35px;
+    width: 12px;
+    height: 50px;
     left: 2px;
     color: #bbb;
     cursor: pointer;
 }
 .cd-video-box-1 .other-videos .btn-right {
     position: absolute;
-    top: 52px;
-    right: 2px;
+    top: 35px;
+    width: 12px;
+    height: 50px;
+    right: 0px;
     color: #bbb;
     cursor: pointer;
+}
+.cd-video-box-1 .other-videos .fa {
+    position: absolute;
+    top: 17px;
 }
 
 
