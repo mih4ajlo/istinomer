@@ -22,24 +22,24 @@
         float: none;
     }
     .cd-header-1 .logo {
-        width: calc(100% - 105px);
+        /*width: calc(100% - 105px);
         margin-top: 10px;
-        float: left;
+        float: left;*/
     }
     .cd-header-1 .logo img {
-        width: 90%;
+        /*width: 90%;*/
     }
     .mouth {
         max-width: 100%;
         display: none;
     }
     .cd-header-1 .top-content {
-        width: 104px;
+        /*width: 104px;*/
     }
     .cd-header-1 .btn-hot-news-1 {
         position: relative;
         /*width: 100%;*/
-        height: 90px;
+        /*height: 90px;*/
     }
     .cd-header-1 .btn-hot-news-1 span {
         font-size: 25px;
