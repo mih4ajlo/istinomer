@@ -44,13 +44,19 @@ function hideStickyMainMenu() {
 function hnmaxHeight() {
     var maxHeight = 0;
 
-    $('.cd-popular-quotes-1 .item').each(function() {
-     maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
-   });
+    if ($(window).width() > 768) {
+        $('.cd-popular-quotes-1 .item').each(function() {
+         maxHeight = maxHeight > $(this).height() ? maxHeight : $(this).height();
+       });
 
-   $('.cd-popular-quotes-1 .item').each(function() {
-     $(this).height(maxHeight);
-   });
+       $('.cd-popular-quotes-1 .item').each(function() {
+         $(this).height(maxHeight);
+       });
+    } else {
+        $('.cd-popular-quotes-1 .item').each(function() {
+            $(this).height("auto");
+        });
+    }
 };
 
 function setDimensions() { /*.cd-hot-news-1, */
@@ -72,9 +78,9 @@ function setDimensions() { /*.cd-hot-news-1, */
         jQuery(".hn-col-1").css("float", "left");
     }
 
-    $(".cd-poll-1").css("height", 650-$(".cd-question-and-answer-1").height()-15);
-
     if($(window).width() >= 768) {
+        $(".cd-poll-1").css("height", 650-$(".cd-question-and-answer-1").height()-15);
+
         $(".cd-recommend-1 .pic").css("height",$(".cd-recommend-1 h2 a").outerHeight()+$(".cd-recommend-1 .text").outerHeight()+27);
 
         $(".cd-recommend-1 .pic img").css({
@@ -83,6 +89,8 @@ function setDimensions() { /*.cd-hot-news-1, */
             "margin-left":"-25%"
         });
     } else {
+        $(".cd-poll-1").css("height", "auto");
+
         $(".cd-recommend-1 .pic").css("height","auto");
 
         $(".cd-recommend-1 .pic img").css({

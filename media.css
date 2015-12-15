@@ -3,6 +3,13 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 13px !important;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .top-nav {
         text-align: center;
@@ -67,4 +74,16 @@
         transform: translate(0%, -50%);
         -webkit-transform: translate(0%, -50%);
     }*/
+    .cd-poll-1 .answer-btn, .cd-poll-1 .show-result-btn, .cd-poll-1 .answer-btn {
+        position: relative;
+        bottom: 0;
+        margin-top: 10px;
+    }
+    .cd-popular-quotes-1 {
+        margin-right: 0px;
+    }
+    .container {
+        padding-left: 5px !important;
+        padding-right: 5px !important;
+    }
 }
