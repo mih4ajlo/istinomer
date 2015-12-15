@@ -865,7 +865,7 @@ body {
 }
 .cd-question-and-answer-1 .question:before {
     color: #c4161c;
-    content: '?:';
+    content: '?';
     display: inline-block;
     font-family: "Graffiare";
     margin: 0 10px 0 0;
@@ -1249,6 +1249,7 @@ body {
 }
 .cd-popular-quotes-1 .text a, .cd-popular-quotes-1 .text a:hover {
     color: #09223f;
+    text-decoration: none;
 }
 .cd-popular-quotes-1 .more {
     text-align: right;
@@ -1283,13 +1284,14 @@ body {
     padding: 2px 0 0;
     text-align: center;
     /*font-size: 14px;*/
-}*/
+}
 .cd-footer-1 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 .cd-footer-1 .content {
     margin-top: 20px;
+    margin-bottom: 20px;
     position: relative;
     overflow: hidden;
 }
