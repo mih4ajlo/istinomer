@@ -14,6 +14,10 @@
     font-family: Graffiare;
     src: url(fonts/Graffiare.ttf);
 }
+@font-face {
+    font-family: DroidSerif;
+    src: url(fonts/DroidSerif-Regular.ttf);
+}
 h1, h2, p {
     margin: 0 !important;
 }
