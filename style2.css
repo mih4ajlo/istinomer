@@ -654,6 +654,10 @@ body {
 .gd-bg-1.sd-1 {
     margin: -25px 0 0;
 }
+* .gd-bg-1 .pic, * .other-videos, * .item-big .pic, * .item .alpha .pic, * .cd-advertisement-1 img, * .cd-recommend-1 img, * .mni-position-wrapper img, * .trending-img img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
 .cd-top-news-1 {
     margin-top: 25px;
     position: relative;
