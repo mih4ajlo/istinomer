@@ -1387,7 +1387,7 @@ body {
 .nav-sticky {
     position: fixed;
     top: 0;
-    width: 959px;
+    width: 1023px;
     z-index:10;
 }
 .img-shadow-lg, .img-shadow-sm {
