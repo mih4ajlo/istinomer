@@ -1,0 +1,24 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: "Open Sans", sans-serif;
+	font-size: 14px;
+}
+a {
+	color: #111;
+	text-decoration: none;
+}
+a:hover {
+	color: #09223f;
+}
+.versions {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+.logo {
+	margin-bottom: 20px;
+}
