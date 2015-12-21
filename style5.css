@@ -52,10 +52,15 @@ body {
 .content-box {
     min-height: 280px;
 }
+.item-big {
+    min-height: 416px; /*prebaci u js*/
+}
 .wrap-border {
-    border: 1px solid #a7a9ab;
+    border: 1px solid #ccc;
     padding: 20px;
     position: relative;
+    overflow: hidden;
+    background: #fff;
 }
 .wrap-first {
     border-right: 0px;
@@ -80,6 +85,9 @@ body {
 .all-more a:last-child {
     float: right;
 }
+.other-more {
+    margin-top: 20px;
+}
 .all-info {
     font-family: "DroidSerif";
     font-weight: 500;
@@ -97,8 +105,8 @@ body {
     font-size: 13px;
     display: block;
 }
-.item-big {
-    min-height: 416px; /*prebaci u js*/
+.heading-sans {
+    font-size: 18px;
 }
 /*TOP NAVIGATION*/
 .cd-header-1 {
@@ -1131,11 +1139,7 @@ body {
 .cd-advertisement-1 {
     width: 100%;
     max-height: 250px;
-    /*background: #e7e7e8;*/
-    overflow: hidden;
-}
-.homepage_banner_list .grid-4:nth-child(3) .cd-advertisement-1 {
-    padding-right: 0px;
+        overflow: hidden;
 }
 .cd-advertisement-1 a {
     width: 100%;
@@ -1144,44 +1148,18 @@ body {
     width: 100%;
 }
 /*RECOMMEND*/
-.cd-recommend-1 h2 a {
-    padding: 10px;
-    padding-bottom: 0px;
-    display: block;
-}
-.cd-recommend-1 h2 a, .cd-recommend-1 h2 a:hover {
-    color: #c4161c;
+.recommendation {
+    background: #f1f1f2;
 }
 .cd-recommend-1 .text {
-    /*font-size: 14px;*/
+    margin-top: 10px;
     line-height: 24px;
-    color: #000;
-    padding: 10px;
 }
-.cd-recommend-1 .all-btn {
-    /*margin: 10px 0 0;
-    color: #fff;
-    background: #c4161c;
-    font-size: 14px;
-    padding: 15px 25px;
-    display: inline-block;
-    float: right;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -o-border-radius: 5px;
-    border-radius: 5px;
-    font-family: "Roboto", sans-serif;*/
+/*.cd-recommend-1 .all-btn {
     display: inline-block;
     float: right;
     color: #c4161c;
-    /*font-size: 14px;*/
-    margin-right: 10px;
-    margin-bottom: 10px;
-}
-.cd-recommend-1 .all-btn:hover {
-    /*background: #db191f;*/
-    text-decoration: underline;
-}
+}*/
 .cd-recommend-1 .border {
     padding: 20px 0 0;
     border-bottom: 1px #a5a7aa solid;
@@ -1387,7 +1365,9 @@ body {
 .width-100p {
     width: 100%;
 }
-
+.width-100p img {
+    width: 100%;
+}
 .back-to-top {
     position: absolute;
     width: 30px;
@@ -1414,4 +1394,15 @@ body {
     -o-transform: rotate(-180deg);
     transform: rotate(-180deg);
     cursor: pointer;
+}
+.padding-20 {
+    padding: 20px !important;
+}
+.padding-top-bottom {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.padding-left-right {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
 }

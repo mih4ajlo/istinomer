@@ -78,28 +78,28 @@ function setDimensions() { /*.cd-hot-news-1, */
         jQuery(".hn-col-1").css("float", "left");
     }
 
-    if($(window).width() >= 768) {
-        // $(".cd-poll-1").css("height", 650-$(".cd-question-and-answer-1").height()-15);
-        // $(".cd-poll-1").css("height", $(".cd-question-and-answer-1").height());
+    // if($(window).width() >= 768) {
+    //     // $(".cd-poll-1").css("height", 650-$(".cd-question-and-answer-1").height()-15);
+    //     // $(".cd-poll-1").css("height", $(".cd-question-and-answer-1").height());
 
-        $(".cd-recommend-1 .pic").css("height",$(".cd-recommend-1 h2 a").outerHeight()+$(".cd-recommend-1 .text").outerHeight()+27);
+    //     $(".cd-recommend-1 .pic").css("height",$(".cd-recommend-1 h2 a").outerHeight()+$(".cd-recommend-1 .text").outerHeight()+27);
 
-        $(".cd-recommend-1 .pic img").css({
-            "width":"auto",
-            "height":"100%",
-            "margin-left":"-25%"
-        });
-    } else {
-        $(".cd-poll-1").css("height", "auto");
+    //     $(".cd-recommend-1 .pic img").css({
+    //         "width":"auto",
+    //         "height":"100%",
+    //         "margin-left":"-25%"
+    //     });
+    // } else {
+    //     $(".cd-poll-1").css("height", "auto");
 
-        $(".cd-recommend-1 .pic").css("height","auto");
+    //     $(".cd-recommend-1 .pic").css("height","auto");
 
-        $(".cd-recommend-1 .pic img").css({
-            "width":"100%",
-            "height":"auto",
-            "margin-left":0
-        });
-    }
+    //     $(".cd-recommend-1 .pic img").css({
+    //         "width":"100%",
+    //         "height":"auto",
+    //         "margin-left":0
+    //     });
+    // }
 
     window.onload = setDimensions;
 }
