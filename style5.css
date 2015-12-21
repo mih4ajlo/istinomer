@@ -83,12 +83,22 @@ body {
 .all-info {
     font-family: "DroidSerif";
     font-weight: 500;
+    margin-bottom: 20px;
 }
-.all-info a {
+.all-info {
     font-size: 18px;
 }
+.all-info h1 {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 5px !important;
+}
 .all-info span {
+    font-size: 13px;
     display: block;
+}
+.item-big {
+    min-height: 416px; /*prebaci u js*/
 }
 /*TOP NAVIGATION*/
 .cd-header-1 {
@@ -1033,31 +1043,12 @@ body {
     width: 300px;
     text-align: center;
 }
-.cd-more-news-1 .item-big .info {
-    margin: 5px 0;
-    font-size: 12px;
-    font-style: italic;
-    color: #c4161c;
-}
-.cd-more-news-1 .item-big .info a, .cd-more-news-1 .item-big .info a:hover {
-    color: #c4161c;
-}
-.cd-more-news-1 .item-big h1 {
-    font-size: 18px;
-    line-height: 22px;
-    /*font-weight: 700;*/
-    color: #000;
-    height: 46px;
-    margin-bottom: 5px !important;
-}
-.cd-more-news-1 .item-big h1 a, .cd-more-news-1 .item-big h1 a:hover {
-    color: #000;
-}
 .cd-more-news-1 .item-big h2 {
     height: 48px;
     color: #000;
     font-size: 13px;
     line-height: 16px;
+    margin-top: 20px !important;
 }
 .cd-more-news-1 .item-big h3 { /*backend delete*/
     height: 32px;
@@ -1209,21 +1200,8 @@ body {
 }
 .cd-popular-quotes-1 .item {
     position: relative;
-    /*padding-bottom: 20px;*/
     box-sizing: content-box;
 }
-/*.cd-popular-quotes-1 .info {
-    text-align: center;
-    font-size: 16px;
-    color: #c4161c;
-}
-.cd-popular-quotes-1 .info span {
-    display: block;
-}*/
-/*.cd-popular-quotes-1 .info a {
-    display: inline-block;
-    color: #c4161c;
-}*/
 .cd-popular-quotes-1 .fa-quote-left {
     position: absolute;
     top: 35px;
@@ -1241,9 +1219,6 @@ body {
     /*font-size: 14px;*/
     /*line-height: 16px;*/
     /*font-style: italic;*/
-}
-.cd-popular-quotes-1 .text {
-    padding-top: 20px;
 }
 .cd-popular-quotes-1 .text a, .cd-popular-quotes-1 .text a:hover {
     color: #09223f;
