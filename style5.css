@@ -1207,9 +1207,11 @@ body {
 .footer {
     background: #09223f;
     font-family: "DinPro";
+    height: 15px;
 }
 .footer-logo {
     /*margin: 5px 0 10px 10px;*/
+    float: right;
 }
 /*.cd-move-top-1 {
     box-sizing: border-box;
