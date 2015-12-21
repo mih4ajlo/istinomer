@@ -908,9 +908,6 @@ body {
 
 
 /*Q&A*/
-.cd-question-and-answer-1 {
-    padding: 0 0 10px;
-}
 .cd-question-and-answer-1 .wrapper-scroll {
     position: relative;
     overflow: hidden;
@@ -945,11 +942,6 @@ body {
 }
 
 /*ANKETA*/
-.cd-poll-1 {
-    /*background: #e7e7e8;*/
-    padding: 0 0 10px;
-    /*box-shadow: 0 0 10px #bbb inset;*/
-}
 .cd-poll-1 .question {
     color: #09223f;
     /*font-size: 14px;*/
@@ -1150,9 +1142,6 @@ body {
     max-height: 250px;
     /*background: #e7e7e8;*/
     overflow: hidden;
-    margin-top: 5px;
-    padding-right: 5px;
-    margin-bottom: 5px;
 }
 .homepage_banner_list .grid-4:nth-child(3) .cd-advertisement-1 {
     padding-right: 0px;
@@ -1164,10 +1153,6 @@ body {
     width: 100%;
 }
 /*RECOMMEND*/
-.cd-recommend-1 {
-    margin-bottom: 5px;
-    /*box-shadow: 0 0 10px #bbb inset;*/
-}
 .cd-recommend-1 h2 a {
     padding: 10px;
     padding-bottom: 0px;
