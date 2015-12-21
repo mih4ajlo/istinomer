@@ -55,6 +55,7 @@ body {
 .wrap-border {
     border: 1px solid #a7a9ab;
     padding: 20px;
+    position: relative;
 }
 .wrap-first {
     border-right: 0px;
@@ -70,7 +71,25 @@ body {
         border-left: 1px solid #a7a9ab;
     }
 }
-
+.all-more {
+    width: calc(100% - 40px);
+    position: absolute;
+    bottom: 20px;
+    text-transform: uppercase;
+}
+.all-more a:last-child {
+    float: right;
+}
+.all-info {
+    font-family: "DroidSerif";
+    font-weight: 500;
+}
+.all-info a {
+    font-size: 18px;
+}
+.all-info span {
+    display: block;
+}
 /*TOP NAVIGATION*/
 .cd-header-1 {
     margin-top: 20px;
@@ -924,22 +943,6 @@ body {
     width: 30px;
     height: 30px;
 }
-.cd-question-and-answer-1 .more {
-    text-align: right;
-    display: inline-block;
-}
-.cd-question-and-answer-1 .more a {
-    color: #c4161c;
-    font-size: 12px;
-    text-transform: uppercase;
-}
-.cd-question-and-answer-1 .more.overview a {
-    color: #000;
-}
-.ask-us {
-    /*position: absolute;
-    right: 10px;*/
-}
 
 /*ANKETA*/
 .cd-poll-1 {
@@ -956,8 +959,6 @@ body {
     /*margin: 0 10px 10px;*/
     /*padding: 0 0 10px;*/
     padding: 2px;
-    padding-left: 10px;
-    border-bottom: 1px #ddd solid;
 }
 .cd-poll-1 .answer label {
     margin: 0 0 0 5px;
@@ -993,16 +994,6 @@ body {
 .cd-poll-1 .show-result-btn:hover {
     text-decoration: underline;
     cursor: pointer;
-}
-.cd-poll-1 .more {
-    text-align: right;
-    font-size: 12px;
-    bottom: 10px;
-    right: 0px;
-}
-.cd-poll-1 .more a {
-    display: inline-block;
-    color: #c4161c;
 }
 
 /*MORE NEWS*/
@@ -1236,22 +1227,18 @@ body {
     /*padding-bottom: 20px;*/
     box-sizing: content-box;
 }
-.cd-popular-quotes-1 .info {
+/*.cd-popular-quotes-1 .info {
     text-align: center;
     font-size: 16px;
-    /*font-weight: 700;*/
     color: #c4161c;
-    /*margin-top: 20px;*/
 }
 .cd-popular-quotes-1 .info span {
     display: block;
-    /*font-size: 14px;*/
-}
-.cd-popular-quotes-1 .info a {
-    /*margin: 5px 0 0;*/
+}*/
+/*.cd-popular-quotes-1 .info a {
     display: inline-block;
     color: #c4161c;
-}
+}*/
 .cd-popular-quotes-1 .fa-quote-left {
     position: absolute;
     top: 35px;
@@ -1270,23 +1257,12 @@ body {
     /*line-height: 16px;*/
     /*font-style: italic;*/
 }
+.cd-popular-quotes-1 .text {
+    padding-top: 20px;
+}
 .cd-popular-quotes-1 .text a, .cd-popular-quotes-1 .text a:hover {
     color: #09223f;
     text-decoration: none;
-}
-.cd-popular-quotes-1 .more {
-    text-align: right;
-    /*font-size: 14px;*/
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-}
-.cd-popular-quotes-1 .more a {
-    display: inline-block;
-    color: #c4161c;
-    /*font-size: 14px;*/
-    /*margin-right: 5px;
-    margin-bottom: 5px;*/
 }
 
 /*FOOTER*/
