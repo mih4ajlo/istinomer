@@ -27,6 +27,9 @@
     font-family: DroidSerif;
     src: url(fonts/DroidSerif-Regular.ttf);
 }
+a {
+    color: #444 !important;
+}
 h1, h2, p {
     margin: 0 !important;
 }
@@ -544,12 +547,12 @@ body {
     position: relative;
     z-index: 99;
     width: calc(100% - 1px);
-    padding: 1px 0 0 1px;
     background: #09223f; /*c4161c*/
     font-size: 13px;
     font-weight: 400;
     -webkit-font-smoothing: antialiased;
     display: inherit;
+    border-bottom: 1px solid #f1f1f2;
 }
 .cd-header-1 .btn-hot-news-1, .cd-main-nav-1 {
     text-align: center;
@@ -736,23 +739,33 @@ body {
     width: 100%;
     overflow: hidden;
 }
-.cd-top-news-1 .item .cd-top-news-filter {
+/*.cd-top-news-1 .item .cd-top-news-filter {
     width: 100%;
     height: 100%;
     position: absolute;
     top: 0;
     left: 0;
-    /*background: url(http://www.istinomer.rs/images/yellow-filter.png);*/
     background: url(images/gray-filter.png);
-    /*-webkit-transition: all .6s ease-in-out;
-    transition: all .6s ease-in-out;*/
     visibility: visible;
     -moz-opacity: 1;
     -khtml-opacity: 1;
     opacity: 1;
     -ms-filter: " progid:DXImageTransform.Microsoft.Alpha" \ (Opacity=100);
     filter: alpha(opacity=100);
-    /*box-shadow: 0 0 200px #000 inset;*/
+}*/
+.cd-top-news-1 .item .cd-top-news-filter {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url(images/black-filter.png);
+    visibility: visible;
+    -moz-opacity: 0.6;
+    -khtml-opacity: 0.6;
+    opacity: 0.6;
+    -ms-filter: " progid:DXImageTransform.Microsoft.Alpha" \ (Opacity=40);
+    filter: alpha(opacity=60);
 }
 .cd-top-news-1 .item:hover {
     cursor: pointer;
@@ -982,12 +995,9 @@ body {
     background: #c4161c;
     color: #fff;
     padding: 7px;
-    bottom: 40px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
     width: 80px;
-    margin-top: 10px;
+    text-align: center;
+    float: right;
 }
 .cd-poll-1 .answer-btn:hover {
     background: #db191f;
@@ -1030,8 +1040,6 @@ body {
 }*/
 .cd-more-news-1 .item-big .pic-wrapper .pic {
     position: relative;
-    /*width: 301px;*/
-    height: 200px;
     overflow: hidden;
 }
 .cd-more-news-1 .item-big .pic-wrapper .pic img {
@@ -1048,7 +1056,7 @@ body {
 .cd-more-news-1 .item-big .pic-wrapper .status {
     position: absolute;
     bottom: 10px;
-    width: 300px;
+    width: 100%;
     text-align: center;
 }
 .cd-more-news-1 .item-big h2 {

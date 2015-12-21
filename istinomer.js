@@ -174,7 +174,7 @@ $(window).scroll(function() {
 // 	    // if we've scrolled more than the navigation, change its position to fixed to stick to top,
 // 	    // otherwise change it back to relative
 // 	    if ((scrollTop > stickyNavTop && !hot_news_open)||(scrollTop > 610 && hot_news_open)) { 
-// 	        $('#sticky-nav').addClass('gd-sticky-1');
+// 	        $('#sticky-nav').addClass('nav-sticky');
 // 	        $('#sticky-arrow').fadeIn(400);
 // 	    } else {
 // 	        $('#sticky-nav').removeClass('gd-sticky-1'); 
