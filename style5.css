@@ -1012,15 +1012,8 @@ body {
 .other-news {
     margin-top: 5px;
 }
-.cd-more-news-1 {
-    margin-right: 5px; /*question*/
-}
 .doslednost {
     margin-right: 0px;
-}
-.cd-more-news-1 .item-big {
-    padding: 0 0 20px;
-    border-bottom: 1px #a5a7aa solid;
 }
 .cd-more-news-1 .item-big .pic-wrapper {
     position: relative;
