@@ -51,14 +51,16 @@ ga('send', {
 var hot_news_open = false;
 
 function hot_news(){
-	if(!hot_news_open){
-		hot_news_open = true;
-		$('.cd-hot-news-1').slideDown('fast');
-		$('#hot-news-btn').addClass('selected');
-	}else{
-		hot_news_open = false;
-		$('.cd-hot-news-1').slideUp('fast');
-		$('#hot-news-btn').removeClass('selected');
+	if($(window).width()>1100) {
+		if(!hot_news_open){
+			hot_news_open = true;
+			$('.cd-hot-news-1').slideDown('fast');
+			$('#hot-news-btn').addClass('selected');
+		}else{
+			hot_news_open = false;
+			$('.cd-hot-news-1').slideUp('fast');
+			$('#hot-news-btn').removeClass('selected');
+		}
 	}
 }
 var hnews_active_slide = 1;

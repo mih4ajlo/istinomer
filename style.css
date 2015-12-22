@@ -33,7 +33,7 @@ a {
 h1, h2, p {
     margin: 0 !important;
 }
-ul {
+ul, li {
     -webkit-padding-start: 0px;
 }
 body {
@@ -1534,15 +1534,6 @@ body {
 .sidebar-nav li .social a {
     display: initial;
 }
-.sidebar-nav > .sidebar-brand {
-    height: 60px;
-    font-size: 18px;
-    line-height: 60px;
-}
-.sidebar-nav > .sidebar-brand {
-    color: #fff !important;
-    background: #111;
-}
 
 @media screen and (max-width: 768px) {
     .top-content .trending {
@@ -1554,4 +1545,92 @@ body {
     .cd-header-1 .logo {
         width: calc(100% - 124px);
     }
+}
+
+/*NEWEST SIDEBAR*/
+#newest-toggle {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    height: 60px;
+    top: 0;
+    display: none;
+}
+@media screen and (max-width: 1100px) {
+    #newest-toggle {
+        display: inherit;
+    }
+}
+#newest-all {
+    padding-right: 0;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+#newest-all.toggled .page-content-wrapper {
+    pointer-events: none;
+}
+#newest-all.toggled .content-blocker {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    position: fixed;
+    pointer-events: none;
+}
+#newest-wrapper {
+    z-index: 1000;
+    position: fixed;
+    right: 250px;
+    width: 0;
+    height: 100%;
+    margin-right: -252px;
+    border-left: 2px solid #c4161c;
+    overflow-y: auto;
+    background: #fff;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    font-family: "DroidSerif", serif;
+}
+#newest-all.toggled #newest-wrapper {
+    width: 252px;
+}
+.newest-nav {
+    position: absolute;
+    top: 0;
+    width: 250px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.newest-nav .newest-date {
+    font-family: "DinPro";
+    text-transform: uppercase;
+    background: #c4161c;
+    color: #fff;
+    display: initial;
+    padding: 2px 5px;
+}
+.newest-nav li {
+    list-style: none;
+}
+.newest-nav li a {
+    display: block;
+    text-decoration: none;
+}
+.newest-nav li a:hover {
+    text-decoration: none;
+    color: #c4161c !important;
+}
+.newest-nav li a:active,
+.newest-nav li a:focus {
+    text-decoration: none;
+}
+.newest-stories li {
+    margin-top: 10px;
 }

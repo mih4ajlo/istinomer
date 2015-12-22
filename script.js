@@ -1,3 +1,39 @@
+function toggleMainMenu() {
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
+    $(document).mouseup(function(e)
+    {
+        var container = $("#sidebar-wrapper");
+
+        if ($("#wrapper").hasClass("toggled") && !container.is(e.target)
+            && container.has(e.target).length === 0)
+        {
+            $("#wrapper").toggleClass("toggled");
+        }
+    });
+}
+
+function toggleHotNews() {
+    $("#newest-toggle").click(function(e) {
+        e.preventDefault();
+        $("#newest-all").toggleClass("toggled");
+    });
+
+    $(document).mouseup(function(e)
+    {
+        var container = $("#newest-wrapper");
+
+        if ($("#newest-all").hasClass("toggled") && !container.is(e.target)
+            && container.has(e.target).length === 0)
+        {
+            $("#newest-all").toggleClass("toggled");
+        }
+    });
+}
+
 function stickyMainMenu() {
 
 var menu = $('.cd-main-nav-1');
@@ -152,6 +188,8 @@ jQuery(document).ready(function() {
     stickyMainMenu();
     backToTop();
     hideStickyMainMenu();
+    toggleMainMenu();
+    toggleHotNews();
     // toggleCurrent();
 });
 
