@@ -330,8 +330,8 @@ body {
     display: flex;
     height: 60px;
 }
-.trending-dropdown li .text {
-    margin-top: 7px;
+.trending-dropdown li .text p {
+    margin-top: 17px !important;
 }
 .trending-dropdown li:hover .text {
     color: #c4161c;
