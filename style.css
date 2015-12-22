@@ -214,8 +214,9 @@ body {
     border: 1px solid #ccc;
     border-bottom: 0px;
 }
-.top-content .trending .tr-main:hover p {
-    color: #c4161c;
+.top-content .trending .tr-main:hover p:last-child {
+    color: #09223f;
+    cursor: pointer;
 }
 .top-content .trending .trending-img {
     display: block;
@@ -228,6 +229,7 @@ body {
     height: 100%;
 }
 .top-content .trending .text {
+    position: relative;
     padding: 10px;
     box-sizing: border-box;
     float: left;
@@ -247,8 +249,16 @@ body {
     text-transform: uppercase;
     color: #09223f;
 }
-.top-content .trending .text p:last-child {
+.top-content .trending .tr-main p:last-child {
     margin-top: 5px !important;
+}
+@media screen and (max-width: 992px) {
+    .top-content .trending .text {
+        padding: 5px;
+    }
+    .top-content .trending .tr-main p:last-child {
+        margin-top: 2px !important;
+    }
 }
 .trending-toggle {
     -webkit-transition-property: all;
@@ -307,10 +317,10 @@ body {
     color: #fff;
 }
 .trending-dropdown {
-    width: 488px;
     position: absolute;
     top: 60px;
-    left: 90px;
+    left: 0px;
+    width: 100%;
     background: #fff;
     display: none;
     z-index: 9999;
