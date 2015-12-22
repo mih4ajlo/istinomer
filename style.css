@@ -331,7 +331,7 @@ body {
     height: 60px;
 }
 .trending-dropdown li .text p {
-    margin-top: 17px !important;
+    margin-top: 15px !important;
 }
 .trending-dropdown li:hover .text {
     color: #c4161c;
