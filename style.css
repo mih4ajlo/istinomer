@@ -620,12 +620,14 @@ body {
     width: 99999px;
     height: 250px;
 }
+.cd-main-nav-1 .item-2:first-child, .cd-main-nav-1 .item-2:nth-child(5n+1) {
+    margin-left: 10px;
+}
 .cd-main-nav-1 .item-2 {
     box-sizing: border-box;
     float: left;
-    width: 192px;
-    /*margin: 0 0 20px 10px;*/ /*was*/
-    padding: 10px;
+    width: 192.8px;
+    margin: 10px 10px 10px 0px;
 }
 .cd-main-nav-1 .item-2 a {
     color: #000;
@@ -652,8 +654,7 @@ body {
     /*margin-top: 10px;*/ /*was*/
 }
 .cd-main-nav-1 .item-2 .picture img {
-    height: 116px;
-    /*position: absolute;*/
+    height: 128px;
     top: 0;
     left: 0;
     bottom: 0;
