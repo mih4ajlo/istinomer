@@ -571,6 +571,7 @@ body {
 .cd-main-nav-1 .item-1.selected .fa.fa-caret-up {
     display: inherit;
     color: #09223f;
+    display: none;
 }
 .cd-main-nav-1 .item-1 span {
     display: inline-block;
