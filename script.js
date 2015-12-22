@@ -23,7 +23,7 @@ function scroll() {
 
 function hideStickyMainMenu() {
     var previousScroll = 0,
-    navOffset = $('.cd-main-nav-1').height()+260;
+    navOffset = $('.cd-main-nav-1').height()+300;
 
     $(window).scroll(function () {
 
@@ -38,6 +38,10 @@ function hideStickyMainMenu() {
             }
         }
         previousScroll = currentScroll;
+
+         if ($(window).scrollTop() == 0) {
+            $('.cd-main-nav-1').removeClass("retreat");
+         }
     });
 }
 
