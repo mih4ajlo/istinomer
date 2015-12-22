@@ -510,6 +510,11 @@ body {
 .hn-col-wrap .hn-col-1:last-child {
     /*border-right: 0px;*/
 }
+@media screen and (max-width: 1100px) {
+    .cd-hot-news-1 {
+        display: none !important;
+    }
+}
 
 /*NAVIGATION*/
 .heading-h {
