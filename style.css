@@ -1400,9 +1400,13 @@ body {
 
 /*SIDE NAVIGATION*/
 .side-menu-button {
-    position: absolute;
-    margin-left: 10px;
-    margin-top: 5px;
+    float: left;
+    padding: 10px;
+    margin-top: 12px;
+}
+.navbar-toggle {
+    padding: 0px !important;
+    margin: 0px !important;
 }
 .navbar-toggle .icon-bar {
     border: 1.5px solid #09223f;
@@ -1427,7 +1431,7 @@ body {
         width: 66.9%;
     }
     .cd-header-1 .logo {
-        width: 33.1%;
+        width: calc(33.1% - 44px);
         height: 60px;
         margin-top: 0px;
         margin-left: 0px;
@@ -1438,9 +1442,7 @@ body {
         width: auto;
         height: 92%;
         margin-top: 3px;
-        /*float: right;*/
         float: left;
-        margin-left: 60px;
     }
     .top-content .trending {
         width: calc(100% - 80px);
@@ -1461,14 +1463,6 @@ body {
     }
 }
 
-/*!
- * Start Bootstrap - Simple Sidebar HTML Template (http://startbootstrap.com)
- * Code licensed under the Apache License v2.0.
- * For details, see http://www.apache.org/licenses/LICENSE-2.0.
- */
-
-/* Toggle Styles */
-
 #wrapper {
     padding-left: 0;
     -webkit-transition: all 0.5s ease;
@@ -1476,11 +1470,17 @@ body {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
-
-#wrapper.toggled {
-    padding-left: 250px;
+#wrapper.toggled .page-content-wrapper {
+    pointer-events: none;
 }
-
+#wrapper.toggled .content-blocker {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+    position: fixed;
+    pointer-events: none;
+}
 #sidebar-wrapper {
     z-index: 1000;
     position: fixed;
@@ -1488,35 +1488,19 @@ body {
     width: 0;
     height: 100%;
     margin-left: -252px;
-    border-right: 2px solid #09223f;
+    border-right: 2px solid #c4161c;
     overflow-y: auto;
-    background: #000;
+    background: #111;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
+    font-family: "DinPro";
+    font-size: 16px;
 }
-
 #wrapper.toggled #sidebar-wrapper {
     width: 252px;
 }
-
-#page-content-wrapper {
-    width: 100%;
-    position: absolute;
-    padding: 15px;
-}
-
-#wrapper.toggled #page-content-wrapper {
-    position: absolute;
-    margin-right: -250px;
-}
-#wrapper.toggled .page-content-wrapper {
-    opacity: 0;
-}
-
-/* Sidebar Styles */
-
 .sidebar-nav {
     position: absolute;
     top: 0;
@@ -1525,46 +1509,37 @@ body {
     padding: 0;
     list-style: none;
 }
-
 .sidebar-nav li {
     text-indent: 20px;
     line-height: 40px;
     background-color: #222;
     border-top: 1px solid #2f2f2f;
 }
-
 .sidebar-nav li a {
     display: block;
     text-transform: uppercase;
     text-decoration: none;
     color: #fff !important;
 }
-
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: #fff;
-    background: rgba(255,255,255,0.2);
+    color: #c4161c !important;
 }
-
 .sidebar-nav li a:active,
 .sidebar-nav li a:focus {
     text-decoration: none;
 }
-
+.sidebar-nav li .social a {
+    display: initial;
+}
 .sidebar-nav > .sidebar-brand {
-    height: 65px;
+    height: 60px;
     font-size: 18px;
     line-height: 60px;
 }
-
 .sidebar-nav > .sidebar-brand {
     color: #fff !important;
-    background: #000;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #fff;
-    background: none;
+    background: #111;
 }
 
 @media screen and (max-width: 768px) {
@@ -1575,6 +1550,6 @@ body {
         width: 80px;
     }
     .cd-header-1 .logo {
-        width: calc(100% - 80px);
+        width: calc(100% - 124px);
     }
 }

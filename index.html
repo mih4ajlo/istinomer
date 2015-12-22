@@ -12,7 +12,7 @@
 <!-- <link href="http://myoshu.github.io/istinomer/collector.css" rel="stylesheet" type="text/css" /> -->
 
 <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500&subset=latin-ext' rel='stylesheet' type='text/css'>
-<!-- <link rel="stylesheet" type="text/css" href="file:///F:/Github/Istinomer/style5.css">
+<!-- <link rel="stylesheet" type="text/css" href="file:///F:/Github/Istinomer/style.css">
 <link rel="stylesheet" type="text/css" href="file:///F:/Github/Istinomer/media.css"> -->
 <!-- <link rel="stylesheet" type="text/css" href="file:///C:/Users/Media/Documents/GitHub/Istinomer/style.css"> -->
 <!-- <link rel="stylesheet" type="text/css" href="file:///C:/Users/Media/Documents/GitHub/Istinomer/media.css"> -->
@@ -96,40 +96,51 @@
 	                <!-- <a href="#">Istinomer</a> -->
 	            </li>
 	            <li>
-	                <a href="#">Obećanja</a>
+	                <a href="pregled_ocena/5/Obecanja">Obećanja</a>
 	            </li>
 	            <li>
-	                <a href="#">Istinitost</a>
+	                <a href="pregled_ocena/3/Istinitost">Istinitost</a>
 	            </li>
 	            <li>
-	                <a href="#">Doslednost</a>
+	                <a href="pregled_ocena/4/Doslednost">Doslednost</a>
 	            </li>
 	            <li>
-	                <a href="#">Akteri</a>
+	                <a href="pregled_aktera/">Akteri</a>
 	            </li>
 	            <li>
-	                <a href="#">Retrovizor</a>
+	                <a href="pregled_clanaka/8/Retrovizor2">Retrovizor</a>
 	            </li>
 	            <li>
-	                <a href="#">Aktuelno</a>
+	                <a href="pregled_clanaka/6/Aktuelno">Aktuelno</a>
 	            </li>
 	            <li>
-	                <a href="#">U fokusu</a>
+	                <a href="pregled_clanaka/36/U-fokusu">U fokusu</a>
 	            </li>
 	            <li>
-	                <a href="#">Video</a>
+	                <a href="pregled_video/">Video</a>
 	            </li>
 	            <li>
-	                <a href="#">Amnezija</a>
+	                <a href="pregled_clanaka/7/Amnezija">Amnezija</a>
 	            </li>
 	            <li>
-	                <a href="#">Akcija</a>
+	                <a href="pregled_clanaka/5/Akcija">Akcija</a>
 	            </li>
+	            <li>
+		            <div class="social">
+						<a href="https://www.facebook.com/Istinomer" target="_blank"><i class="fa fa-facebook"></i></a>
+						<a href="http://www.facebook.com/verge" class="icon-facebook" title="Like us on Facebook" target="_blank"></a>
+						<a href="https://twitter.com/istinomer" target="_blank"><i class="fa fa-twitter"></i></a>
+						<a href="https://www.youtube.com/user/Istinomer" target="_blank"><i class="fa fa-youtube-play"></i></a>
+						<a href="https://plus.google.com/115238630692666107568" target="_blank"><i class="fa fa-google-plus"></i></a>
+						<a href="http://www.istinomer.rs/feed/" target="_blank"><i class="fa fa-rss"></i></a>
+					</div>
+				</li>
 	        </ul>
 	    </div>
-    </div>
 
-<div class="page-content-wrapper">
+		<div class="content-blocker">
+	</div>
+	<div class="page-content-wrapper">
 
 	<div class="container"> <!--gd-container-1-->
 		<div class="grid-12">
@@ -166,7 +177,25 @@
 				    $("#menu-toggle").click(function(e) {
 				        e.preventDefault();
 				        $("#wrapper").toggleClass("toggled");
-				    });
+				    
+					    $(document).mouseup(function (e)
+						 // e.preventDefault();
+						{
+						    var container = $("#sidebar-wrapper");
+
+						    if (!container.is(e.target)
+						        && container.has(e.target).length === 0)
+						    {
+						        $("#wrapper").toggleClass("toggled");
+						    }
+						});
+					});
+					// $("#wrapper").click(function(e) {
+				 //        e.preventDefault();
+				 //    	$("#wrapper").toggleClass("toggled");
+				 //    	alert("clicked");
+				 //    });
+
 				    </script>
 					<div class="logo">
 						<a href=""><img src="http://myoshu.github.io/istinomer/images/header-logo.png" alt=""></a>
