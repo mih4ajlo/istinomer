@@ -1279,7 +1279,7 @@ body {
 .img-shadow-lg, .img-shadow-sm {
     position: relative;
     max-width: 100%;
-    /*width: 100%;*/
+    width: 100%;
     float: left;
 }
 .img-shadow-lg::before {
