@@ -41,6 +41,14 @@ h1, h2, p {
 ul, li {
     -webkit-padding-start: 0px;
 }
+html {
+    overflow: auto;
+    height: auto;
+}
+html.toggled {
+    overflow: hidden;
+    height: 100%;
+}
 body {
     font-family: 'DroidSans', Arial, Helvetica, sans-serif !important;
     font-size: 13px !important;

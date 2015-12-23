@@ -2,6 +2,7 @@ function toggleMainMenu() {
     $("#menu-toggle").click(function(e) {
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
+        $("html").toggleClass("toggled");
     });
 
     $(document).mouseup(function(e)
@@ -12,6 +13,7 @@ function toggleMainMenu() {
             && container.has(e.target).length === 0)
         {
             $("#wrapper").toggleClass("toggled");
+            $("html").toggleClass("toggled");
         }
     });
 }
@@ -20,6 +22,7 @@ function toggleHotNews() {
     $("#newest-toggle").click(function(e) {
         e.preventDefault();
         $("#newest-all").toggleClass("toggled");
+        $("html").toggleClass("toggled");
     });
 
     $(document).mouseup(function(e)
@@ -30,6 +33,7 @@ function toggleHotNews() {
             && container.has(e.target).length === 0)
         {
             $("#newest-all").toggleClass("toggled");
+            $("html").toggleClass("toggled");
         }
     });
 }
