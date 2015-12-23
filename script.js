@@ -140,7 +140,7 @@ function fontSize() {
     			jQuery(this).find(".headline").css("line-height", "31px");
     		}
     	});
-    });
+    }
 
 	window.onload = fontSize;
 }

@@ -1541,6 +1541,9 @@ body {
 .newest-nav li a:focus {
     text-decoration: none;
 }
+.newest-day {
+    margin-top: 20px;
+}
 .newest-stories li {
     margin-top: 10px;
 }
