@@ -1197,6 +1197,7 @@ body {
 }
 .footer-logo {
     float: right;
+    margin: 10px 20px 0 0;
 }
 /*BOOTSTRAP EDIT*/
 .container {
@@ -1519,6 +1520,7 @@ body {
     list-style: none;
     padding: 20px;
     box-sizing: border-box;
+    padding-top: 0px;
 }
 .newest-nav .newest-date {
     font-family: "DinPro";
