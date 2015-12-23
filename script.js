@@ -131,14 +131,16 @@ function setDimensions() {
 }
 
 function fontSize() {
-	jQuery(".top-news-in").each(function() {
-		if (jQuery(this).height() > 300) {
-			jQuery(this).find(".headline").animate({
-				fontSize : '22px'
-			}, "fast");
-			jQuery(this).find(".headline").css("line-height", "31px");
-		}
-	});
+    if (jQuery(window).width() > 768) {
+    	jQuery(".top-news-in").each(function() {
+    		if (jQuery(this).height() > 300) {
+    			jQuery(this).find(".headline").animate({
+    				fontSize : '22px'
+    			}, "fast");
+    			jQuery(this).find(".headline").css("line-height", "31px");
+    		}
+    	});
+    });
 
 	window.onload = fontSize;
 }

@@ -69,8 +69,8 @@
         max-height: 50vw;
     }
     .cd-top-news-1 .item .headline {
-        font-size: 20px;
-        line-height: 28px;
+        font-size: 20px !important;
+        line-height: 28px !important;
     }
     /*.top-news-in .pic img {
         top: 50%;
@@ -106,7 +106,7 @@
 
 @media screen and (max-width: 480px) {
     .cd-top-news-1 .item .headline {
-        font-size: 16px;
-        line-height: 20px;
+        font-size: 16px !important;
+        line-height: 20px !important;
     }
 }
