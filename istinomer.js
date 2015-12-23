@@ -159,40 +159,59 @@ $(window).scroll(function() {
 	mni_active = false;
   	//$('#mni-position').animate({left:(mni_active-1)*(-930)},0);
 	$('.dropdown-wrapper').slideUp('fast');
-	$('.mni').removeClass('selected');	
+	$('.mni').removeClass('selected');
+
+	//
+	$('.search-input').slideUp('fast');
+	$('.search-btn').removeClass('selected');
+
+	//
+	$('.cd-hot-news-1').slideUp('fast');
+	$('.btn-hot-news-1').removeClass('selected');
+
+	//
+	$('.trending-dropdown').slideUp('fast');
+	$('.trending-toggle').removeClass('selected');
 });	
 
-//
+function anketa(id){
+	start_global_call_loader(); 
+	var id_ankete = id;
+	var odgovor = $('[name="answer"]:checked').val();
+	var call_url = "anketa";  
+	var call_data = { 
+		id_ankete:id_ankete,
+		odgovor:odgovor
+	}  
+	var callback = function(odgovor){  
+		finish_global_call_loader(); 
+		if(odgovor.success){  
+			valid_selector = "success"; 
+			rezultat_ankete();  
+		}else{  
+			valid_selector = "error";  
+		}  
+		show_user_message(valid_selector,odgovor.message);
+		 
+	}
+	ajax_json_call(call_url, call_data, callback);
+}
 
-// $(document).ready(function() {
-// 	// grab the initial top offset of the navigation 
-//    	var stickyNavTop = $('#sticky-nav').offset().top;
-   	
-//    	// our function that decides weather the navigation bar should have "fixed" css position or not.
-//    	var stickyNav = function(){
-
-// 	    var scrollTop = $(window).scrollTop(); // our current vertical position from the top
-	         
-// 	    // if we've scrolled more than the navigation, change its position to fixed to stick to top,
-// 	    // otherwise change it back to relative
-// 	    if ((scrollTop > stickyNavTop && !hot_news_open)||(scrollTop > 610 && hot_news_open)) { 
-// 	        $('#sticky-nav').addClass('nav-sticky');
-// 	        $('#sticky-arrow').fadeIn(400);
-// 	    } else {
-// 	        $('#sticky-nav').removeClass('gd-sticky-1'); 
-// 	        $('#sticky-arrow').fadeOut(400);
-// 	    }
-// 	};
-
-// 	stickyNav();
-// 	// and run it again every time you scroll
-// 	$(window).scroll(function() {
-// 		stickyNav();
-// 	});
-// });
-
-// function move_to_top(){
-// 	$('html, body').animate({
-//     scrollTop: $("#top-page").offset().top
-// 	}, 2000);
-// }
+function rezultat_ankete(){ 
+	var data = ''; 
+	var call_url = "rezultat_ankete";
+	var call_data = { 
+		data:data 
+	} 
+	var callback = function(odgovor){
+		$('.modul_anketa').html(odgovor); 
+	} 
+	ajax_call(call_url, call_data, callback);
+} 
+$(function(){
+	rezultat_ankete();
+}); 
+function prikazi_rezultate(){
+	$('.all-answers').hide();
+	$('.all-results').show();
+}
