@@ -602,7 +602,7 @@ body {
     position: relative;
     top: 3px;
     color: #a5a7aa;
-    display: none;
+    /*display: none;*/
 }
 /*.cd-main-nav-1 .item-1:hover .fa {
     color: #09223f;
@@ -616,7 +616,7 @@ body {
 .cd-main-nav-1 .item-1.selected .fa.fa-caret-up {
     display: inherit;
     color: #09223f;
-    display: none;
+    /*display: none;*/
 }
 .cd-main-nav-1 .item-1 span {
     display: inline-block;
