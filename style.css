@@ -75,6 +75,7 @@ body {
 }
 .item-big {
     min-height: 416px; /*prebaci u js*/
+    margin-bottom: 20px;
 }
 .wrap-border {
     border: 1px solid #ccc;
@@ -1096,20 +1097,16 @@ body {
 .cd-more-news-1 .item {
     position: relative;
     overflow: hidden;
-    margin-top: 5px;
     height: 88px;
-    padding: 10px 20px 10px 20px;
+    padding: 0px 20px 20px 20px;
     box-sizing: initial;
 }
 .cd-more-news-1 .item .pic {
     position: relative;
-    margin: 2px 0 0;
-    /*width: 90px;*/
     width: 130px;
     height: 90px;
     overflow: hidden;
     display: block;
-    /*padding: 2.5px;*/
 }
 /*.cd-more-news-1 .item .pic a {
     display: block;
