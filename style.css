@@ -566,7 +566,7 @@ body {
     box-sizing: border-box;
     position: relative;
     z-index: 99;
-    width: calc(100% - 1px);
+    /*width: calc(100% - 1px);*/
     /*width: 100%;*/
     background: #09223f; /*c4161c*/
     font-size: 13px;
@@ -1040,9 +1040,6 @@ body {
 /*MORE NEWS*/
 .alpha {
     float: left;
-}
-.other-news {
-    margin-top: 5px;
 }
 .doslednost {
     margin-right: 0px;
