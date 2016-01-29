@@ -2,6 +2,9 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+.article-left.col-sm-2, .article-rigth.col-sm-2 {
+	width: 20.8333333375%;
+}
 
 /*LEFT SIDE*/
 .pic-wrapper {
@@ -28,7 +31,7 @@
 	padding-left: 20px !important;
 }
 .article-header {
-	height: 113px;
+	height: 141px;
 	vertical-align: text-bottom;
 	display:box;
 	box-pack:center;
@@ -70,7 +73,7 @@
     padding: 5px 10px;
 }
 
-.article .heading-h {
+.article .heading-h, .article-right .heading-h {
 	padding-left: 0px;
 }
 .article-content a {
@@ -97,8 +100,15 @@
 }
 
 /*RIGHT SIDE*/
+.article-right {
+	border-top: 1px solid #ccc;
+}
 
-
+.most-read .item {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
 
 /*ISPRAVKE*/
 .footer-logo {
