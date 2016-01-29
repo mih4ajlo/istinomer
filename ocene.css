@@ -1,0 +1,104 @@
+.cd-page-navigation-1 {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+/*LEFT SIDE*/
+.pic-wrapper {
+	position: relative;
+}
+.pic-wrapper .status {
+	position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.akter-header {
+	margin-top: 10px;
+	padding: 10px;
+	height: 90px;
+	background: #f1f1f2;
+	text-align: center;
+	font-size: 16px;
+}
+
+/*MIDDLE*/
+.article {
+	padding-right: 20px !important;
+	padding-left: 20px !important;
+}
+.article-header {
+	height: 113px;
+	vertical-align: text-bottom;
+	display:box;
+	box-pack:center;
+	box-align:center;
+	display: -webkit-box;
+    -webkit-box-pack: inherit;
+    -webkit-box-align: end;
+}
+.article-header h1 {
+	font-family: 'Adelle', serif;
+	font-size: 28px;
+}
+.article-citat {
+	margin-left: -20px;
+	margin-top: 10px;
+	padding: 10px 20px 0 20px;
+	min-height: 90px;
+	background: #f1f1f2;
+}
+.article-citat h2 {
+	font-size: 16px;
+	line-height: 25px;
+}
+
+.article-photo-wrapper {
+	margin-top: 10px;
+	position: relative;
+}
+.article-photo-wrapper .photo img {
+	width: 100%;
+}
+.article-photo-wrapper .photo-source {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.article .heading-h {
+	padding-left: 0px;
+}
+.article-content a {
+	color: #c4161c !important;
+}
+.article .block-quote {
+	margin: 20px 0 20px 0;
+ 	padding: 20px;
+ 	background: #f1f1f2;
+}
+.article-tags {
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	padding-top: 15px;
+	padding-bottom: 20px;
+}
+.article-tags a {
+	background: #f1f1f2;
+	color: #333;
+	padding: 5px 7px;
+	margin-right: 5px;
+}
+
+/*RIGHT SIDE*/
+
+
+
+/*ISPRAVKE*/
+.footer-logo {
+	margin: 20px 0px 20px 0;
+}
