@@ -6,6 +6,10 @@
 	width: 20.8333333375%;
 }
 
+.container-border {
+	border-top: 1px solid #ccc;
+}
+
 /*LEFT SIDE*/
 .pic-wrapper {
 	position: relative;
@@ -86,7 +90,6 @@
 }
 .article-tags {
 	border-top: 1px solid #ccc;
-	border-bottom: 1px solid #ccc;
 	padding-top: 15px;
 	padding-bottom: 20px;
 	margin-top: 20px;
@@ -98,6 +101,19 @@
 	margin-right: 5px;
 	display: inline-block;
 	margin-bottom: 10px;
+}
+
+.related-articles.col-sm-9 {
+	width: 79.1666666625%;
+}
+.related-articles .item {
+	margin-top: 20px;
+	padding-left: 20px !important;
+}
+
+.related-articles .item h2 {
+	font-size: 13px;
+	padding-top: 10px;
 }
 
 /*RIGHT SIDE*/
