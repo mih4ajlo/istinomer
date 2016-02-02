@@ -32,6 +32,10 @@
 }
 
 @media screen and (max-width: 992px) {
+	.akter {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
 	.akter .pic-wrapper {
 		float: left;
 		max-width: 121px;
@@ -141,6 +145,28 @@
 		padding-top: 40px;
 	}
 }
+
+@media screen and (max-width: 768px) {
+	.related-articles {
+		padding-left: 20px !important;
+		padding-right: 20px !important;
+	}
+	.related-articles .item {
+		padding: 0 !important;
+	}
+	.related-articles .item .pic-wrapper {
+		float: left;
+		max-width: 121px;
+	}
+	.related-articles .item h2 {
+		display: flex;
+	}
+	.related-articles .item h2 a {
+		padding-left: 10px;
+		display: block;
+		float: left;
+	}
+}
 /*RIGHT SIDE*/
 .article-right {
 	border-top: 1px solid #ccc;
@@ -152,6 +178,11 @@
 	padding-bottom: 10px;
 }
 
+@media screen and (max-width: 992px) {
+	.most-read {
+		padding: 20px;
+	}
+}
 /*ISPRAVKE*/
 .footer-logo {
 	margin: 20px 0px 20px 0;
