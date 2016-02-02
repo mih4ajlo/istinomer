@@ -2,8 +2,10 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-.article-left.col-sm-2, .article-rigth.col-sm-2 {
-	width: 20.8333333375%;
+@media screen and (min-width: 992px) {
+	.article-left.col-md-2, .article-rigth.col-md-2 {
+		width: 20.8333333375%;
+	}
 }
 
 .container-border {
@@ -29,6 +31,23 @@
 	font-size: 16px;
 }
 
+@media screen and (max-width: 992px) {
+	.akter .pic-wrapper {
+		float: left;
+		max-width: 121px;
+	}
+	.akter .width-100p img {
+		width: auto;
+		max-height: 80px;
+	}
+	.akter-header {
+		float: left;
+		margin-top: 0px;
+		height: 80px;
+		background: transparent;
+	}
+}
+
 /*MIDDLE*/
 .article {
 	padding-right: 20px !important;
@@ -37,9 +56,9 @@
 .article-header {
 	height: 141px;
 	vertical-align: text-bottom;
-	display:box;
-	box-pack:center;
-	box-align:center;
+	display: box;
+	box-pack: center;
+	box-align: center;
 	display: -webkit-box;
     -webkit-box-pack: inherit;
     -webkit-box-align: end;
@@ -116,6 +135,12 @@
 	padding-top: 10px;
 }
 
+@media screen and (max-width: 992px) {
+	.article-header {
+		height: auto;
+		padding-top: 40px;
+	}
+}
 /*RIGHT SIDE*/
 .article-right {
 	border-top: 1px solid #ccc;
@@ -130,4 +155,21 @@
 /*ISPRAVKE*/
 .footer-logo {
 	margin: 20px 0px 20px 0;
+}
+
+@media screen and (max-width: 1100px) { /*mozda ubaciti da postoji stalno*/
+	.top-content {
+		border-bottom: 1px solid #ccc;
+	}
+}
+@media screen and (max-width: 992px) {
+	.cd-page-navigation-1 {
+		padding: 20px;
+		margin: 0;
+	}
+}
+@media screen and (max-width: 768px) {
+	.second-container .article-left {
+		display: none;
+	}
 }
