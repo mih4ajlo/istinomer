@@ -1586,3 +1586,212 @@ body {
 .newest-stories li {
     margin-top: 10px;
 }
+
+
+/*OCENE CSS*/
+.cd-page-navigation-1 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+@media screen and (min-width: 992px) {
+    .article-left.col-md-2, .article-rigth.col-md-2 {
+        width: 20.8333333375%;
+    }
+}
+
+.container-border {
+    border-top: 1px solid #ccc;
+}
+
+/*LEFT SIDE*/
+.pic-wrapper {
+    position: relative;
+}
+.pic-wrapper .status {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+.akter-header {
+    margin-top: 10px;
+    padding: 10px;
+    height: 90px;
+    background: #f1f1f2;
+    text-align: center;
+    font-size: 16px;
+}
+
+@media screen and (max-width: 992px) {
+    .akter {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .akter .pic-wrapper {
+        float: left;
+        max-width: 121px;
+    }
+    .akter .width-100p img {
+        width: auto;
+        max-height: 80px;
+    }
+    .akter-header {
+        float: left;
+        margin-top: 0px;
+        height: 80px;
+        background: transparent;
+    }
+}
+
+/*MIDDLE*/
+.article {
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+}
+.article-header {
+    height: 141px;
+    vertical-align: text-bottom;
+    display: box;
+    box-pack: center;
+    box-align: center;
+    display: -webkit-box;
+    -webkit-box-pack: inherit;
+    -webkit-box-align: end;
+}
+.article-header h1 {
+    font-family: 'Adelle', serif;
+    font-size: 28px;
+}
+.article-citat {
+    margin-left: -20px;
+    margin-top: 10px;
+    padding: 10px 20px 0 20px;
+    min-height: 90px;
+    background: #f1f1f2;
+}
+.article-citat h2 {
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.article-photo-wrapper {
+    margin-top: 10px;
+    position: relative;
+}
+.article-photo-wrapper .photo img {
+    width: 100%;
+}
+.article-photo-wrapper .photo-source {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
+}
+
+.article .heading-h, .article-right .heading-h {
+    padding-left: 0px;
+}
+.article-content a {
+    color: #c4161c !important;
+}
+.article .block-quote {
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    background: #f1f1f2;
+}
+.article-tags {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
+.article-tags a {
+    background: #f1f1f2;
+    color: #333;
+    padding: 5px 7px;
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.related-articles.col-sm-9 {
+    width: 79.1666666625%;
+}
+.related-articles .item {
+    margin-top: 20px;
+    padding-left: 20px !important;
+}
+
+.related-articles .item h2 {
+    font-size: 13px;
+    padding-top: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .article-header {
+        height: auto;
+        padding-top: 40px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .related-articles {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+    .related-articles .item {
+        padding: 0 !important;
+    }
+    .related-articles .item .pic-wrapper {
+        float: left;
+        max-width: 121px;
+    }
+    .related-articles .item h2 {
+        display: flex;
+    }
+    .related-articles .item h2 a {
+        padding-left: 10px;
+        display: block;
+        float: left;
+    }
+}
+/*RIGHT SIDE*/
+.article-right {
+    border-top: 1px solid #ccc;
+}
+
+.most-read .item {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .most-read {
+        padding: 20px;
+    }
+}
+/*ISPRAVKE*/
+.footer-logo {
+    margin: 20px 0px 20px 0;
+}
+
+@media screen and (max-width: 1100px) { /*mozda ubaciti da postoji stalno*/
+    .top-content {
+        border-bottom: 1px solid #ccc;
+    }
+}
+@media screen and (max-width: 992px) {
+    .cd-page-navigation-1 {
+        padding: 20px;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .second-container .article-left {
+        display: none;
+    }
+}
