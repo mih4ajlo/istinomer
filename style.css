@@ -478,9 +478,15 @@ body {
 .cd-hot-news-1 .hot-news-wrapper .hn-col-1 a {
     display: block;
     /*margin: 20px 0 0;*/
-    margin-top: 5px;
+    margin-top: 10px;
     color: #000;
     line-height: 20px;
+}
+.hn a {
+    color: #777 !important;
+}
+.todays-hn a {
+    color: #111 !important;
 }
 .cd-hot-news-1 .btn-left {
     box-sizing: border-box;
