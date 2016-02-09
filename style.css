@@ -1683,7 +1683,7 @@ body {
     line-height: 25px;
 }
 
-.article-photo-wrapper {
+/*.article-photo-wrapper {
     margin-top: 10px;
     position: relative;
 }
@@ -1698,6 +1698,9 @@ body {
     color: #fff;
     font-size: 12px;
     padding: 5px 10px;
+}*/
+.photography img {
+    width: 100%;
 }
 
 .article .heading-h, .article-right .heading-h {
