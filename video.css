@@ -47,7 +47,7 @@ iframe {
 		min-height: 134px;
 	}
 }
-.other-video .pic:after {
+.other-video .pic:after, .category-video .pic:after {
     -webkit-transition: all .6s ease-in-out;
     -ms-transition: all .6s ease-in-out;
     transition: all .6s ease-in-out;
@@ -69,7 +69,7 @@ iframe {
     margin: auto;
     cursor: pointer;
 }
-.other-video a:hover > .pic:after {
+.other-video a:hover > .pic:after, .category-video a:hover > .pic:after {
     -moz-opacity: .9;
     -khtml-opacity: .9;
     opacity: .9;
@@ -93,7 +93,7 @@ iframe {
 }
 .other-videos-wrapper {
 	position: relative;
-	height: 200px;
+	height: 180px;
 }
 .other-videos-wrapper .position {
 	position: absolute;
@@ -117,4 +117,25 @@ iframe {
 }
 #ovideos-btn-left .fa, #ovideos-btn-right .fa {
 	color: #fff;
+}
+
+.category-video-container {
+	position: relative;
+	border-bottom: 1px solid #ccc;
+}
+.category-video {
+	padding-right: 10px !important;
+}
+.category-video:last-child {
+	padding-right: 0px !important;
+}
+.all-category-videos {
+	position: absolute;
+	right: 0;
+	top: 10px;
+}
+
+/*ADD TO STYLE CSS*/
+.padding-0 {
+    padding-left: 0px !important;
 }
