@@ -1786,7 +1786,13 @@ body {
 /*DISCUSS*/
 #disqus_thread {
     clear: left;
-    padding: 20px;
+    font-family: "DroidSans", sans-serif;
+}
+
+@media screen and (max-width: 1100px) {
+    #disqus_thread {
+        padding: 20px;
+    }
 }
 
 /*ISPRAVKE*/
