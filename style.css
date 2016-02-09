@@ -1786,7 +1786,10 @@ body {
 /*DISCUSS*/
 #disqus_thread {
     clear: left;
-    font-family: "DroidSans", sans-serif;
+}
+
+#disqus_thread body {
+    font-family: 'DroidSans', Arial, Helvetica, sans-serif !important;
 }
 
 @media screen and (max-width: 1100px) {
