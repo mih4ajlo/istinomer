@@ -1782,6 +1782,13 @@ body {
         padding: 20px;
     }
 }
+
+/*DISCUSS*/
+.disqus_thread {
+    clear: left;
+    padding: 20px;
+}
+
 /*ISPRAVKE*/
 .footer-logo {
     margin: 20px 0px 20px 0;
