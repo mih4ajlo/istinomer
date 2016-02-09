@@ -1699,10 +1699,6 @@ body {
     font-size: 12px;
     padding: 5px 10px;
 }*/
-.photography img {
-    width: 100%;
-}
-
 .article .heading-h, .article-right .heading-h {
     padding-left: 0px;
 }
@@ -1806,4 +1802,18 @@ body {
     .second-container .article-left {
         display: none;
     }
+}
+
+/*CSS ZA STARI HTML*/
+.photography img {
+    width: 100%;
+}
+.photography-wrapper .source {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0,0,0,.8);
+    color: #fff;
+    font-size: 12px;
+    padding: 5px 10px;
 }
