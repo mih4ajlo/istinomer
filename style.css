@@ -1784,7 +1784,7 @@ body {
 }
 
 /*DISCUSS*/
-.disqus_thread {
+#disqus_thread {
     clear: left;
     padding: 20px;
 }
