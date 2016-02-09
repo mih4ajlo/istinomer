@@ -42,8 +42,10 @@ iframe {
 .other-video .pic {
 	position: relative;
 }
-.other-video .pic img {
-	min-height: 134px;
+@media screen and (min-width: 1024px) {
+	.other-video .pic img {
+		min-height: 134px;
+	}
 }
 .other-video .pic:after {
     -webkit-transition: all .6s ease-in-out;
