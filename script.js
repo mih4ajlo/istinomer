@@ -129,9 +129,9 @@ function setDimensions() {
         max = $(".article-citat").outerHeight() > $(".akter-header").outerHeight() ? $(".article-citat").outerHeight() : $(".akter-header").outerHeight();
         $(".article-citat, .akter-header").outerHeight(max);
     } else {
-        $(".akter-header").css("height", "auto");
+        $(".article-citat, .akter-header").css("height", "auto");
     }
-    
+
     if (jQuery(window).width() <= 768) {
             jQuery(".hn-col-1").css("float", "none");
             jQuery(".hn-col-1").css("width", "100%");
