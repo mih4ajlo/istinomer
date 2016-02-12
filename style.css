@@ -1774,6 +1774,9 @@ body {
     }
 }
 /*RIGHT SIDE*/
+.article-right .social {
+    margin-top: 152px;
+}
 .most-read .item {
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
@@ -1781,6 +1784,9 @@ body {
 }
 
 @media screen and (max-width: 992px) {
+    .article-right .social {
+        margin-top: 20px;
+    }
     .most-read {
         padding: 20px;
     }
