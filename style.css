@@ -1858,9 +1858,9 @@ body {
 }
 
 /*VIDEO CSS*/
-/*iframe {
+.social iframe {
     width: auto !important;
-}*/
+}
 
 .video-container {
     position: relative;
