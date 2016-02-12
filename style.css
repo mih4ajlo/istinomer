@@ -1851,9 +1851,9 @@ body {
 }
 
 /*VIDEO CSS*/
-iframe {
+/*iframe {
     width: auto !important;
-}
+}*/
 
 .video-container {
     position: relative;
@@ -1898,6 +1898,11 @@ iframe {
 @media screen and (min-width: 1024px) {
     .other-video .pic img {
         min-height: 134px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .social .facebook, .social .twitter {
+        float: none;
     }
 }
 .other-video .pic:after, .category-video .pic:after {
