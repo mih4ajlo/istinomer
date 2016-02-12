@@ -125,7 +125,7 @@ function quotesMaxHeight() {
 function setDimensions() {
 
     max = $(".article-citat").outerHeight() > $(".akter-header").outerHeight() ? $(".article-citat").outerHeight() : $(".akter-header").outerHeight();
-    $(".article-citat, akter-header").outerHeight(max);  
+    $(".article-citat, .akter-header").outerHeight(max);  
 
     if (jQuery(window).width() <= 768) {
             jQuery(".hn-col-1").css("float", "none");
