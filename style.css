@@ -1628,7 +1628,7 @@ body {
 }
 .akter-header p:last-child {
     font-size: 12px;
-    margin-top: 10px;
+    margin-top: 10px !important;
 }
 .akter .pic img {
     min-height: 140px;
@@ -1684,6 +1684,10 @@ body {
 .article-citat h2 {
     font-size: 16px;
     line-height: 25px;
+}
+.article-citat p:last-child {
+    text-align: right;
+    margin-top: 10px !important;
 }
 
 /*.article-photo-wrapper {
