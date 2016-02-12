@@ -1600,7 +1600,7 @@ body {
     margin-bottom: 20px;
 }
 @media screen and (min-width: 992px) {
-    .article-left.col-md-2, .article-rigth.col-md-2 {
+    .article-left.col-md-2, .article-right.col-md-2 {
         width: 20.8333333375%;
     }
 }
@@ -1627,7 +1627,7 @@ body {
     font-size: 16px;
 }
 .akter-header p:last-child {
-    font-size: 12px;
+    font-size: 13px;
     margin-top: 10px !important;
 }
 .akter .pic img {
@@ -1677,7 +1677,7 @@ body {
 .article-citat {
     margin-left: -20px;
     margin-top: 10px;
-    padding: 10px 20px 0 20px;
+    padding: 10px 20px 10px 20px;
     min-height: 90px;
     background: #f1f1f2;
 }
@@ -1826,6 +1826,7 @@ body {
 /*CSS ZA STARI HTML*/
 .photography-wrapper {
     position: relative;
+    margin-top: 10px;
 }
 .photography-wrapper .photography img {
     width: 100%;
