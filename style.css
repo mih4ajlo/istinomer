@@ -1622,7 +1622,7 @@ body {
 .akter-header {
     margin-top: 10px;
     padding: 10px;
-    height: 90px;
+    min-height: 90px;
     background: #f1f1f2;
     font-size: 16px;
 }
@@ -1642,6 +1642,9 @@ body {
     .akter .pic-wrapper {
         float: left;
         max-width: 121px;
+    }
+    .akter .pic img {
+        min-height: auto;
     }
     .akter .width-100p img {
         width: auto;
