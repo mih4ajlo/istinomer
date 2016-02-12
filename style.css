@@ -1624,8 +1624,11 @@ body {
     padding: 10px;
     height: 90px;
     background: #f1f1f2;
-    text-align: center;
     font-size: 16px;
+}
+.akter-header p:last-child {
+    font-size: 12px;
+    margin-top: 10px;
 }
 .akter .pic img {
     min-height: 140px;
@@ -1767,10 +1770,6 @@ body {
     }
 }
 /*RIGHT SIDE*/
-.article-right {
-    border-top: 1px solid #ccc;
-}
-
 .most-read .item {
     border-bottom: 1px solid #ccc;
     margin-bottom: 10px;
