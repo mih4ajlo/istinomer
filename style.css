@@ -1661,7 +1661,7 @@ body {
     padding-left: 20px !important;
 }
 .article-header {
-    height: 141px;
+    height: 140px;
     vertical-align: text-bottom;
     display: box;
     box-pack: center;
@@ -1775,7 +1775,7 @@ body {
 }
 /*RIGHT SIDE*/
 .article-right .social {
-    margin-top: 152px;
+    margin-top: 151px;
 }
 .most-read .item {
     border-bottom: 1px solid #ccc;
