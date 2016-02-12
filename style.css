@@ -1718,14 +1718,7 @@ body {
 .article .block-quote {
     margin: 20px 0 20px 0;
     padding: 20px;
-    padding-bottom: 40px;
     background: #f1f1f2;
-    position: relative;
-}
-.article .block-quote .info {
-    position: absolute;
-    bottom: 0;
-    right: 20px;
 }
 .article-tags {
     border-top: 1px solid #ccc;
