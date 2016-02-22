@@ -18,6 +18,17 @@ function toggleMainMenu() {
     });
 }
 
+function removeToggle(){
+	var container = $("#sidebar-wrapper");
+
+        if ($("#wrapper").hasClass("toggled") && !container.is(e.target)
+            && container.has(e.target).length === 0)
+        {
+            $("#wrapper").toggleClass("toggled");
+            $("html").toggleClass("toggled");
+        }
+}
+
 function toggleHotNews() {
     $("#newest-toggle").click(function(e) {
         e.preventDefault();
@@ -190,6 +201,9 @@ jQuery(document).ready(function() {
     hideStickyMainMenu();
     toggleMainMenu();
     toggleHotNews();
+    
+    
+    $("#wrapper").on("click tap touchstart",removeToggle);
 });
 
 jQuery(window).resize(function() {
